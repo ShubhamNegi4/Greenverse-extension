@@ -1,0 +1,42 @@
+{
+  "tshirt": {
+    "avgCO2": 6.0,
+    "maxCO2": 7.0,
+    "avgWater": 2700,
+    "maxWater": 3000,
+    "avgWaste": 0.2,
+    "maxWaste": 0.3
+  },
+  "plastic_bottle": {
+    "avgCO2": 0.11,
+    "maxCO2": 0.15,
+    "avgWater": 3,
+    "maxWater": 5,
+    "avgWaste": 0.04,
+    "maxWaste": 0.06
+  },
+  "phone_charger": {
+    "avgCO2": 0.10,
+    "maxCO2": 0.20,
+    "avgWater": 2,
+    "maxWater": 5,
+    "avgWaste": 0.02,
+    "maxWaste": 0.03
+  },
+  "coffee_mug": {
+    "avgCO2": 0.25,
+    "maxCO2": 0.35,
+    "avgWater": 5,
+    "maxWater": 10,
+    "avgWaste": 0.10,
+    "maxWaste": 0.15
+  },
+  "sneakers": {
+    "avgCO2": 12.0,
+    "maxCO2": 15.0,
+    "avgWater": 7000,
+    "maxWater": 9000,
+    "avgWaste": 1.5,
+    "maxWaste": 2.0
+  }
+}
