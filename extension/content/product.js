@@ -1,259 +1,326 @@
-// extension/content/product.js
+// File: extension/content/product.js
 
-// 1. Helper: infer keyword from title (if you need elsewhere)
-function inferKeywordFromTitle() {
-  const titleEl = document.querySelector('#productTitle');
-  if (!titleEl) return null;
-  const title = titleEl.innerText.trim().toLowerCase();
-  const categories = ['t-shirt','t shirt','jeans','charger','coffee mug','mug','water bottle','bottle','sneaker','shoe'];
-  for (let kw of categories) {
-    if (title.includes(kw)) {
-      return kw.replace(' ', '+');
-    }
-  }
-  const words = title.split(/\s+/).slice(0,2).join('+');
-  return words.toLowerCase();
-}
+// --- 1. Simplified Scoring Functions ---
+const POS_TERMS = ["organic","certified organic","gots","recycled","sustainable","eco-friendly"];
+const NEG_TERMS = ["polyester","pesticide","synthetic","chemical","toxic","harmful"];
 
-// 2. Helper: parse price text to number
-function parsePriceText(text) {
-  if (!text) return null;
-  const cleaned = text.replace(/₹|,|\s/g,'');
-  const parts = cleaned.split('–');
-  const num = parseFloat(parts[0]);
-  return isNaN(num) ? null : num;
-}
-
-// 3. Helper: get price range ±20%
-function getPriceRangeFromPage(defaultPct = 0.2) {
-  const priceEl = document.querySelector('#priceblock_ourprice, #priceblock_dealprice');
-  if (priceEl) {
-    const raw = priceEl.innerText;
-    const num = parsePriceText(raw);
-    if (num != null && !isNaN(num)) {
-      const delta = num * defaultPct;
-      return { min: Math.max(1, num - delta), max: num + delta };
-    }
-  }
-  return null;
-}
-
-// 4. Helper: simple keyword-based sustainability score (used offline; content script just displays)
-function computeKeywordScore(text = '') {
+function computeKeywordScore(text = "") {
   const lower = text.toLowerCase();
-  if (/\borganic\b/.test(lower)) return 100;
-  if (/\bcertified organic\b|\bGOTS\b/.test(lower)) return 100;
-  if (/\brecycled\b|\bsustainable\b|\beco-friendly\b|\beco friendly\b/.test(lower)) return 70;
-  return 50;
+  let s = 50;
+  POS_TERMS.forEach(t => lower.includes(t) && (s += 10));
+  NEG_TERMS.forEach(t => lower.includes(t) && (s -= 15));
+  return Math.max(0, Math.min(s, 100));
 }
 
-// 5. Helper: build Amazon search URL (unused here; background handles alternatives)
-function buildSearchUrl(keywordWithPlus, priceRange) {
-  const encoded = encodeURIComponent(keywordWithPlus);
-  const minPaise = Math.round(priceRange.min * 100);
-  const maxPaise = Math.round(priceRange.max * 100);
-  return `https://www.amazon.in/s?k=${encoded}&rh=p_36:${minPaise}-${maxPaise}`;
+function computeRatingScore(r = 0) { 
+  return Math.round((r/5)*100); 
 }
 
-// 6. Helper: scrape search results via hidden iframe (unused if background returns precomputed data)
-function scrapeAmazonSearch(searchUrl, requireOrganicKeyword, timeoutMs = 10000) {
-  return new Promise((resolve, reject) => {
-    console.log('[scrapeAmazonSearch] loading URL:', searchUrl);
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    iframe.src = searchUrl;
-    document.body.appendChild(iframe);
-
-    let finished = false;
-    const cleanup = () => {
-      if (iframe && iframe.parentNode) iframe.parentNode.removeChild(iframe);
-    };
-
-    const timer = setTimeout(() => {
-      if (!finished) {
-        finished = true;
-        cleanup();
-        reject(new Error('Timeout loading search iframe'));
-      }
-    }, timeoutMs);
-
-    iframe.onload = () => {
-      const doc = iframe.contentDocument;
-      const start = Date.now();
-      const poll = () => {
-        const itemsDivs = doc.querySelectorAll('div[data-asin]');
-        if (itemsDivs.length > 0 || Date.now() - start > timeoutMs) {
-          const results = [];
-          itemsDivs.forEach(div => {
-            const asin = div.getAttribute('data-asin');
-            if (!asin) return;
-            const titleEl = div.querySelector('span.a-size-medium.a-color-base.a-text-normal');
-            const title = titleEl ? titleEl.innerText.trim() : '';
-            if (!title) return;
-            let price = null;
-            const priceWhole = div.querySelector('span.a-price-whole');
-            const priceFrac = div.querySelector('span.a-price-fraction');
-            if (priceWhole) {
-              const whole = priceWhole.innerText.replace(/[,₹\s]/g,'');
-              const frac = priceFrac ? priceFrac.innerText.replace(/[,₹\s]/g,'') : '00';
-              const num = parseFloat(whole + '.' + frac);
-              if (!isNaN(num)) price = num;
-            }
-            const imgEl = div.querySelector('img.s-image');
-            const imageUrl = imgEl ? imgEl.src : '';
-            if (requireOrganicKeyword) {
-              if (!title.toLowerCase().includes('organic')) return;
-            }
-            results.push({ asin, title, price, imgUrl: imageUrl });
-          });
-          finished = true;
-          clearTimeout(timer);
-          cleanup();
-          console.log('[scrapeAmazonSearch] found items:', results.length);
-          resolve(results);
-        } else {
-          setTimeout(poll, 500);
-        }
-      };
-      poll();
-    };
-    // If onload never fires, timeout handles it.
-  });
+function computeReviewCountScore(c = 0) {
+  const lg = Math.min(Math.log10(c+1), 4);
+  return Math.round((lg/4)*100);
 }
 
-// 7. Insert “Show greener alternatives” button
+function computeFinalScore(vals) {
+  const {keywords, rating, reviews} = vals;
+  return Math.round(keywords*0.4 + rating*0.3 + reviews*0.3);
+}
+
+// --- 2. Page Scraping Helpers ---
+function getText(sel) {
+  const el = document.querySelector(sel);
+  return el?.textContent?.trim() || "";
+}
+
+function parsePrice(txt) {
+  if (!txt) return null;
+  const match = txt.match(/(\d[\d,]*\.?\d*)/);
+  return match ? parseFloat(match[0].replace(/,/g, '')) : null;
+}
+
+function getNumber(sel, re) {
+  const m = getText(sel).match(re);
+  return m ? parseFloat(m[1].replace(/,/g, '')) : 0;
+}
+
+// --- 3. Category Mapping ---
+const CATEGORY_MAP = {
+  "t-shirt": "tshirt", "t shirt": "tshirt", "tee": "tshirt", 
+  "jeans": "jeans", "pants": "jeans", 
+  "charger": "phone_charger", "adapter": "phone_charger",
+  "coffee mug": "coffee_mug", "mug": "coffee_mug", 
+  "water bottle": "plastic_bottle", "bottle": "plastic_bottle", 
+  "sneaker": "sneakers", "shoe": "sneakers", "footwear": "sneakers"
+};
+
+// --- 4. Insert Button ---
 function insertGreenerButton() {
-  let target = document.querySelector('#titleSection') || document.querySelector('#title');
-  if (!target) {
-    const titleEl = document.querySelector('#productTitle');
-    if (titleEl) target = titleEl.parentElement;
-  }
-  if (!target || document.getElementById('greener-btn')) return;
+  const titleEl = document.querySelector('#productTitle') || 
+                 document.querySelector('#title');
+  
+  if (!titleEl || document.getElementById('greener-btn')) return;
+  
   const btn = document.createElement('button');
   btn.id = 'greener-btn';
   btn.innerText = 'Show greener alternatives';
   Object.assign(btn.style, {
     marginLeft: '10px', padding: '6px 12px',
     backgroundColor: '#4CAF50', color: '#fff',
-    border: 'none', borderRadius: '4px', cursor: 'pointer'
+    border: 'none', borderRadius: '4px', cursor: 'pointer',
+    fontSize: '14px'
   });
   btn.onclick = onGreenerClick;
-  target.appendChild(btn);
+  
+  titleEl.parentElement.appendChild(btn);
 }
 
-// 8. Click handler with background messaging, now including basePrice
+// --- 5. Main Click Handler ---
 async function onGreenerClick() {
   if (document.getElementById('greener-panel')) return;
 
-  const titleEl = document.querySelector('#productTitle');
-  if (!titleEl) {
-    alert('Cannot detect product title.');
-    return;
-  }
-  const titleText = titleEl.innerText.trim();
-
-  // Determine priceRange
-  let priceRange = getPriceRangeFromPage();
-  if (!priceRange) {
-    const inp = prompt('Enter desired price range (min-max), e.g., 200-500:');
-    if (!inp) return;
-    const parts = inp.split('-').map(s => parseFloat(s.trim()));
-    if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
-      priceRange = { min: parts[0], max: parts[1] };
-    } else {
-      alert('Invalid range.');
-      return;
-    }
+  // Show loading state
+  const btn = document.getElementById('greener-btn');
+  if (btn) {
+    btn.disabled = true;
+    btn.innerText = 'Loading alternatives...';
   }
 
-  // Extract basePrice if available
-  const priceEl = document.querySelector('#priceblock_ourprice, #priceblock_dealprice');
-  const basePrice = priceEl
-    ? parsePriceText(priceEl.innerText) || null
-    : null;
+  try {
+    // Scrape basic product info
+    const rawTitle = getText('#productTitle') || getText('#title') || '';
+    const priceText = getText('#priceblock_ourprice') || 
+                     getText('#priceblock_dealprice') || 
+                     getText('.a-price-whole') ||
+                     getText('.a-offscreen');
+    const basePrice = parsePrice(priceText);
+    
+    if (!rawTitle || basePrice === null) {
+      return alert('Could not detect product title or price.');
+    }
+    
+    const rating = getNumber('.a-icon-alt', /([0-5]\.?\d?) out of 5/);
+    const reviewCount = getNumber('#acrCustomerReviewText', /([\d,]+)/);
+    
+    // Get product description text
+    const bullets = Array.from(document.querySelectorAll('#feature-bullets li'))
+                       .map(li => li.textContent.trim()).join(' ');
+    const desc = getText('#productDescription');
+    const allText = [rawTitle, bullets, desc].join(' ');
 
-  console.log('[onGreenerClick] title:', titleText, 'priceRange:', priceRange, 'basePrice:', basePrice);
-
-  // Send to background
-  chrome.runtime.sendMessage(
-    { type: 'GET_ALTERNATIVES', payload: { title: titleText, priceRange, basePrice } },
-    resp => {
-      if (!resp) {
-        console.error('No response for GET_ALTERNATIVES');
-        alert('Error retrieving alternatives.');
-        return;
-      }
-      if (resp.error) {
-        alert(resp.error);
-        return;
-      }
-      const list = resp.alternatives || [];
-      if (list.length === 0) {
-        alert('No greener alternatives found.');
-      } else {
-        displayRecommendations(list);
+    // Determine category
+    const lowerTitle = rawTitle.toLowerCase();
+    let categoryKey = null;
+    for (const [kw, cat] of Object.entries(CATEGORY_MAP)) {
+      if (lowerTitle.includes(kw)) {
+        categoryKey = cat;
+        break;
       }
     }
-  );
+    
+    if (!categoryKey) {
+      return alert('Could not determine product category.');
+    }
+
+    // Calculate current product score
+    const kScore = computeKeywordScore(allText);
+    const rScore = computeRatingScore(rating);
+    const vScore = computeReviewCountScore(reviewCount);
+    const pageScore = computeFinalScore({
+      keywords: kScore,
+      rating: rScore,
+      reviews: vScore
+    });
+
+    // Load alternatives
+    let alts;
+    try {
+      const response = await fetch(chrome.runtime.getURL('data/alternatives.json'));
+      alts = await response.json();
+    } catch (e) {
+      console.error(e);
+      return alert('Failed to load alternatives.');
+    }
+
+    // Find alternatives in the same category
+    const categoryAlts = alts.filter(a => a.category === categoryKey);
+    
+    if (categoryAlts.length === 0) {
+      return alert('No alternatives found for this category.');
+    }
+
+    // Sort by score descending
+    categoryAlts.sort((a, b) => b.score - a.score);
+    
+    // Always show top recommendations
+    const topRecommendations = categoryAlts.slice(0, 5);
+    
+    // Display recommendations
+    displayRecommendations(topRecommendations, pageScore);
+  } catch (error) {
+    console.error('Error:', error);
+    alert('An error occurred. Please try again.');
+  } finally {
+    // Restore button state
+    if (btn) {
+      btn.disabled = false;
+      btn.innerText = 'Show greener alternatives';
+    }
+  }
 }
 
-// 9. Display panel
-function displayRecommendations(items) {
-  const old = document.getElementById('greener-panel');
-  if (old) old.remove();
+// --- 6. Display Recommendations ---
+function displayRecommendations(items, currentScore) {
+  const existingPanel = document.getElementById('greener-panel');
+  if (existingPanel) existingPanel.remove();
+  
   const panel = document.createElement('div');
   panel.id = 'greener-panel';
   Object.assign(panel.style, {
-    position: 'fixed', top: '10%', right: '10%',
-    width: '350px', maxHeight: '80%', overflowY: 'auto',
-    backgroundColor: '#fff', border: '1px solid #ccc',
-    padding: '10px', zIndex: 10000, boxShadow: '0 2px 8px rgba(0,0,0,0.3)'
+    position: 'fixed', top: '20px', right: '20px',
+    width: '400px', maxHeight: '80vh', overflowY: 'auto',
+    backgroundColor: '#fff', border: '2px solid #4CAF50',
+    padding: '20px', zIndex: 10000, boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
+    fontFamily: 'Arial, sans-serif', borderRadius: '10px'
   });
+
   const closeBtn = document.createElement('button');
   closeBtn.innerText = '×';
-  Object.assign(closeBtn.style, {
-    float: 'right', border: 'none', background: 'transparent',
-    fontSize: '16px', cursor: 'pointer'
-  });
+  closeBtn.style.cssText = `
+    position: absolute; top: 10px; right: 15px;
+    border: none; background: transparent;
+    font-size: 24px; cursor: pointer; color: #666;
+    line-height: 1;
+  `;
   closeBtn.onclick = () => panel.remove();
   panel.appendChild(closeBtn);
 
   const header = document.createElement('h3');
-  header.innerText = 'Greener Alternatives';
-  header.style.marginTop = '0';
+  header.innerText = '🌿 Recommended Alternatives';
+  header.style.margin = '0 0 15px 0';
+  header.style.color = '#2E7D32';
+  header.style.fontSize = '18px';
   panel.appendChild(header);
 
+  const scoreInfo = document.createElement('div');
+  scoreInfo.innerHTML = `Your current product score: <strong>${currentScore}/100</strong>`;
+  scoreInfo.style.marginBottom = '20px';
+  scoreInfo.style.paddingBottom = '15px';
+  scoreInfo.style.borderBottom = '1px solid #eee';
+  panel.appendChild(scoreInfo);
+
+  const subtitle = document.createElement('div');
+  subtitle.innerHTML = 'Top sustainable alternatives:';
+  subtitle.style.fontWeight = 'bold';
+  subtitle.style.marginBottom = '15px';
+  subtitle.style.color = '#555';
+  panel.appendChild(subtitle);
+
   items.forEach(item => {
-    const div = document.createElement('div');
-    div.style.marginBottom = '12px';
+    const itemDiv = document.createElement('div');
+    itemDiv.style.marginBottom = '20px';
+    itemDiv.style.padding = '15px';
+    itemDiv.style.border = '1px solid #e0e0e0';
+    itemDiv.style.borderRadius = '8px';
+    itemDiv.style.transition = 'all 0.3s';
+    itemDiv.style.cursor = 'pointer';
+    
+    itemDiv.onmouseover = () => {
+      itemDiv.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+      itemDiv.style.borderColor = '#4CAF50';
+    };
+    
+    itemDiv.onmouseout = () => {
+      itemDiv.style.boxShadow = 'none';
+      itemDiv.style.borderColor = '#e0e0e0';
+    };
 
-    const img = document.createElement('img');
-    img.src = item.imgUrl;
-    Object.assign(img.style, {
-      width: '50px', height: '50px', objectFit: 'cover',
-      marginRight: '8px', verticalAlign: 'middle'
-    });
-
+    const title = document.createElement('div');
+    title.textContent = item.title;
+    title.style.fontWeight = 'bold';
+    title.style.marginBottom = '8px';
+    title.style.fontSize = '15px';
+    itemDiv.appendChild(title);
+    
+    const score = document.createElement('div');
+    score.textContent = `Sustainability score: ${item.score}/100`;
+    score.style.marginBottom = '8px';
+    score.style.fontSize = '14px';
+    score.style.color = item.score > 70 ? '#4CAF50' : 
+                       item.score > 50 ? '#FF9800' : '#F44336';
+    itemDiv.appendChild(score);
+    
     const link = document.createElement('a');
     link.href = `https://www.amazon.in/dp/${item.asin}`;
+    link.textContent = 'View on Amazon';
     link.target = '_blank';
-    link.innerText = item.title;
-    link.style.fontSize = '12px';
-
-    const priceDiv = document.createElement('div');
-    priceDiv.innerText = item.price != null ? `₹${item.price}` : '';
-    priceDiv.style.fontSize = '12px';
-
-    const scoreDiv = document.createElement('div');
-    scoreDiv.innerText = `Score: ${item.score}`;
-    scoreDiv.style.fontSize = '12px';
-
-    div.append(img, link, priceDiv, scoreDiv);
-    panel.appendChild(div);
+    link.style.display = 'block';
+    link.style.padding = '8px 12px';
+    link.style.backgroundColor = '#f0f8ff';
+    link.style.color = '#0066c0';
+    link.style.textAlign = 'center';
+    link.style.borderRadius = '4px';
+    link.style.textDecoration = 'none';
+    link.style.fontWeight = '500';
+    link.style.transition = 'background 0.2s';
+    
+    link.onmouseover = () => {
+      link.style.backgroundColor = '#e1f0ff';
+    };
+    
+    link.onmouseout = () => {
+      link.style.backgroundColor = '#f0f8ff';
+    };
+    
+    itemDiv.appendChild(link);
+    
+    // Add click handler to entire card
+    itemDiv.onclick = (e) => {
+      if (e.target.tagName !== 'A') {
+        window.open(link.href, '_blank');
+      }
+    };
+    
+    panel.appendChild(itemDiv);
   });
 
+  const footer = document.createElement('div');
+  footer.style.marginTop = '15px';
+  footer.style.paddingTop = '15px';
+  footer.style.borderTop = '1px solid #eee';
+  footer.style.textAlign = 'center';
+  footer.style.fontSize = '12px';
+  footer.style.color = '#777';
+  footer.innerText = 'Powered by GreenVerse Extension';
+  panel.appendChild(footer);
+
   document.body.appendChild(panel);
+  
+  // Add overlay
+  const overlay = document.createElement('div');
+  overlay.style.position = 'fixed';
+  overlay.style.top = '0';
+  overlay.style.left = '0';
+  overlay.style.width = '100%';
+  overlay.style.height = '100%';
+  overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+  overlay.style.zIndex = '9999';
+  overlay.onclick = () => {
+    panel.remove();
+    overlay.remove();
+  };
+  document.body.appendChild(overlay);
 }
 
-// Initialize on page load
-window.addEventListener('load', insertGreenerButton);
+// Initialize with retry
+function initExtension() {
+  insertGreenerButton();
+  
+  // Retry after delay if button not inserted
+  setTimeout(() => {
+    if (!document.getElementById('greener-btn')) {
+      insertGreenerButton();
+    }
+  }, 2000);
+}
+
+window.addEventListener('load', initExtension);

@@ -23,6 +23,16 @@
     }
   ],
 
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "data/categories.json",
+        "data/alternatives.json"
+      ],
+      "matches": ["https://www.amazon.in/*"]
+    }
+  ],
+
   "action": {
     "default_popup": "frontend/popup/index.html",
     "default_icon": {

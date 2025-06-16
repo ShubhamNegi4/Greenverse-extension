@@ -15,10 +15,9 @@ export default function App() {
   // Load stored preferences on mount
   useEffect(() => {
     chrome.runtime.sendMessage({ type: 'GET_PREFS' }, (resp) => {
-      if (resp && resp.prefs) {
-        setStrictOrganic(resp.prefs.strictOrganic);
-        // Ensure weights sum to 1
-        const ow = typeof resp.prefs.organicWeight === 'number' ? resp.prefs.organicWeight : 0.7;
+      if (resp) {
+        setStrictOrganic(resp.strictOrganic || false);
+        const ow = typeof resp.organicWeight === 'number' ? resp.organicWeight : 0.7;
         setOrganicWeight(Math.min(Math.max(ow, 0), 1));
       }
     });

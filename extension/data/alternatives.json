@@ -1,206 +1,471 @@
 [
   {
-    "asin": "B0DWXN9C2D",
+    "asin": "B0F75D8BGB",
     "category": "tshirt",
-    "title": "RYPPED",
-    "score": 13
+    "title": "NOQUO",
+    "score": 15,
+    "imgUrl": "https://m.media-amazon.com/images/I/71XdXbAobZL._AC_UL320_.jpg"
   },
   {
-    "asin": "B08X4Q48F3",
+    "asin": "B0D95X2JLW",
     "category": "tshirt",
-    "title": "Jockey",
-    "score": 44
+    "title": "Freecultr",
+    "score": 35,
+    "imgUrl": "https://m.media-amazon.com/images/I/71oyEl-nv5L._AC_UL320_.jpg"
   },
   {
-    "asin": "B0D5VVP18K",
+    "asin": "B0DYJ2SG82",
     "category": "tshirt",
-    "title": "ME VENTURES",
-    "score": 25
+    "title": "AMAREE",
+    "score": 25,
+    "imgUrl": "https://m.media-amazon.com/images/I/31zfd781QNL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0D5VD5RZS",
+    "asin": "B0F7HTLYMM",
     "category": "tshirt",
-    "title": "ME VENTURES",
-    "score": 45
+    "title": "ADRO",
+    "score": 25,
+    "imgUrl": "https://m.media-amazon.com/images/I/61lGuwk5iOL._AC_UL320_.jpg"
   },
   {
-    "asin": "B06Y2CH63N",
+    "asin": "B0D4PZXPRS",
     "category": "tshirt",
-    "title": "Allen Solly",
-    "score": 53
+    "title": "Not Funny",
+    "score": 45,
+    "imgUrl": "https://m.media-amazon.com/images/I/51RR-f9xFdL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0DP7MLXBJ",
+    "asin": "B0D95VCCF2",
     "category": "tshirt",
-    "title": "Lymio",
-    "score": 53
+    "title": "Freecultr",
+    "score": 42,
+    "imgUrl": "https://m.media-amazon.com/images/I/71gUa+dVMuL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0DJRBQ485",
+    "asin": "B0BKPNZQ7Q",
     "category": "tshirt",
-    "title": "TAGDO",
-    "score": 55
+    "title": "F A S O",
+    "score": 51,
+    "imgUrl": "https://m.media-amazon.com/images/I/61K+Gtcp8rL._AC_UL320_.jpg"
   },
   {
-    "asin": "B01BYBU24W",
+    "asin": "B0F7HWDQC9",
+    "category": "tshirt",
+    "title": "ADRO",
+    "score": 45,
+    "imgUrl": "https://m.media-amazon.com/images/I/51QmSt+ZwjL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0B72CZXYZ",
+    "category": "tshirt",
+    "title": "DAMENSCH",
+    "score": 38,
+    "imgUrl": "https://m.media-amazon.com/images/I/814Jc3OVXVL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0F1G98S7V",
+    "category": "tshirt",
+    "title": "His'en'Her",
+    "score": 45,
+    "imgUrl": "https://m.media-amazon.com/images/I/51-gve2GuEL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DRDCYRK3",
+    "category": "tshirt",
+    "title": "MaZen",
+    "score": 46,
+    "imgUrl": "https://m.media-amazon.com/images/I/715NeRbzOPL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0C9J9BL6W",
+    "category": "tshirt",
+    "title": "DAMENSCH",
+    "score": 37,
+    "imgUrl": "https://m.media-amazon.com/images/I/71JGWboLzIL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DKFZMKC6",
+    "category": "jeans",
+    "title": "Numero Uno",
+    "score": 15,
+    "imgUrl": "https://m.media-amazon.com/images/I/51ejzgK1MvL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0F38FV7KP",
+    "category": "jeans",
+    "title": "Numero Uno",
+    "score": 25,
+    "imgUrl": "https://m.media-amazon.com/images/I/71fpwrcJoxL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0F38BZDRS",
+    "category": "jeans",
+    "title": "Numero Uno",
+    "score": 20,
+    "imgUrl": "https://m.media-amazon.com/images/I/61IOm+9jM0L._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0F38D6VQ6",
+    "category": "jeans",
+    "title": "Numero Uno",
+    "score": 25,
+    "imgUrl": "https://m.media-amazon.com/images/I/51Bqh2FT91L._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0F38FR9HY",
+    "category": "jeans",
+    "title": "Numero Uno",
+    "score": 25,
+    "imgUrl": "https://m.media-amazon.com/images/I/51JWv5QQprL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0F3PCV4F9",
+    "category": "jeans",
+    "title": "Numero Uno",
+    "score": 23,
+    "imgUrl": "https://m.media-amazon.com/images/I/61xmtVk6QWL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0BC1CZRZ6",
+    "category": "jeans",
+    "title": "Numero Uno",
+    "score": 40,
+    "imgUrl": "https://m.media-amazon.com/images/I/61zEzeNouoL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DKPDX1N9",
+    "category": "jeans",
+    "title": "GRECIILOOKS",
+    "score": 50,
+    "imgUrl": "https://m.media-amazon.com/images/I/71pMkYPPWyL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DNFRMMKD",
+    "category": "jeans",
+    "title": "INKD",
+    "score": 46,
+    "imgUrl": "https://m.media-amazon.com/images/I/71tlpFt396L._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DS15ZKW7",
+    "category": "jeans",
+    "title": "GRECIILOOKS",
+    "score": 54,
+    "imgUrl": "https://m.media-amazon.com/images/I/71t2g4nLpsL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0C4977G1R",
+    "category": "jeans",
+    "title": "PARIS HAMILTON",
+    "score": 51,
+    "imgUrl": "https://m.media-amazon.com/images/I/615p1BxvyLL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DK7NCX5K",
+    "category": "jeans",
+    "title": "Levi's",
+    "score": 42,
+    "imgUrl": "https://m.media-amazon.com/images/I/51sIqaK3eyL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0C2KZ2455",
     "category": "plastic_bottle",
-    "title": "CELLO H2O Water Bottles Set of 3, 1000ml Each | Airtight & Leakproof Lid | Unbreakable, BPA-Free, Food Grade Bottle For Kitchen | Reusable Set of Fridge Plastic Bottles for Home, Office, Gym, Gifting",
-    "score": 53
+    "title": "ISKO® Borosilicate glass water bottle 100% eco-friendly with Protective fabric cover with wooden cork (1000 ML)",
+    "score": 49,
+    "imgUrl": "https://m.media-amazon.com/images/I/41OpbwdHXvL._AC_UL320_.jpg"
   },
   {
-    "asin": "B01BSY2ZTU",
+    "asin": "B0F7LQ3GMP",
     "category": "plastic_bottle",
-    "title": "MILTON Pacific Pack of 6 Water Bottles, 1 Litre Each, Reusable Plastic Fridge Bottle Set, BPA Free and Leak Proof Bottles for Travel, Work, Blue",
-    "score": 56
+    "title": "PEXPO Craft Pro 1000 ISI Certified Stainless Steel Sports/Fridge Water Bottle with Sipper Cap (Pack of 3) 950ml, Purple-Pink Ombre |Eco friendly | BPA Free | Water Bottle for Office, Gym, School, Yoga",
+    "score": 50,
+    "imgUrl": "https://m.media-amazon.com/images/I/71zpDuDZbJL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0CVL1N6J6",
+    "asin": "B0F4QHSHYM",
     "category": "plastic_bottle",
-    "title": "AQUAWARE Frosty Plastic Food Grade Fridge Square Water Bottle Gift Set(6 pieces, 1L,Assorted) | 950 milliliter",
-    "score": 42
+    "title": "GLENNSTORE Eco-Friendly Glass Water Bottle with Cactus Love Print, Colorful Plastic Covered Glass Bottle, Reusable Glass Water Bottle, BPA-Free Plastic Sleeve, Multicolour(Pack of 1)",
+    "score": 40,
+    "imgUrl": "https://m.media-amazon.com/images/I/41KjL+ZF1PL._AC_UL320_.jpg"
   },
   {
-    "asin": "B082TBL7S7",
+    "asin": "B0FC327JK3",
     "category": "plastic_bottle",
-    "title": "CELLO H2O Round Unbreakable Plastic Water Bottle Premium Edition | Lid is sealed by a silicone ring | Leak proof & break-proof | 1 Liter | Clear",
-    "score": 57
+    "title": "LIMRA HANDICRAFTS Premium Copper Honeycomb Water Bottle - Leak-Proof, Reusable, and Eco-Friendly Thermal Water Container",
+    "score": 41,
+    "imgUrl": "https://m.media-amazon.com/images/I/41r-RrRx6qL._AC_UL320_.jpg"
   },
   {
-    "asin": "B073V47YP7",
+    "asin": "B0BQRSXKN5",
     "category": "plastic_bottle",
-    "title": "CELLO H2O Premium Edition Plastic Bottle, 1 Litre, Set of 4, Clear",
-    "score": 44
+    "title": "The Better Home Stainless Steel Bottle 1 Litre | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free Steel Bottles 1+ Litre | Eco Friendly Stainless Steel Water Bottle (Pack of 5) (Blue)",
+    "score": 41,
+    "imgUrl": "https://m.media-amazon.com/images/I/610q2iumjsL._AC_UL320_.jpg"
   },
   {
-    "asin": "B073V4XQKX",
+    "asin": "B0BXJ93M67",
     "category": "plastic_bottle",
-    "title": "Cello H2O Premium Edition Water Bottles Set of 3, 1000ml Each | Airtight & Leakproof Lid |BPA-Free, Food Grade Bottle For Kitchen |Reusable Set of Fridge Plastic Bottles for Home, Office, Gym, Gifting",
-    "score": 46
+    "title": "MERCAPE® - 100% Pure Copper Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free Bottles | Eco Friendly Water Bottle (900 ml) (Pack of 1)",
+    "score": 44,
+    "imgUrl": "https://m.media-amazon.com/images/I/71cRT-d2YCL._AC_UL320_.jpg"
   },
   {
-    "asin": "B07BFBNFSF",
+    "asin": "B0BYNB8KVC",
     "category": "plastic_bottle",
-    "title": "Cello Venice Water Bottles Set of 5, 1000ml Each | Unbreakable, BPA-Free, Food Grade Bottle For Kitchen| Airtight & Leakproof Lid| Reusable Set of Fridge Plastic Bottles for Home, Office, Gym, Gifting",
-    "score": 43
+    "title": "The Better Home Copper Water Bottle | Copper Water Bottle 950ml | With Anti Oxidant Properities | Provides Health Benefits | Pure Tamba | Teal",
+    "score": 51,
+    "imgUrl": "https://m.media-amazon.com/images/I/71xoyR0-VEL._AC_UL320_.jpg"
   },
   {
-    "asin": "B09XBJ1CTN",
+    "asin": "B0DV97K4P9",
+    "category": "plastic_bottle",
+    "title": "Omichef Ozone Stainless Steel 1000ML Single Walled & Fridge Water Bottle Ideal for Yoga/Gym/Sports/Home/Office and BPA Free & Leak-Proof (Pack of 2)",
+    "score": 45,
+    "imgUrl": "https://m.media-amazon.com/images/I/51-eF-YjHeL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B091V714VM",
+    "category": "plastic_bottle",
+    "title": "PATCO - 30ml Black HDPE Empty Bottle For Capsules & Tablets - For Ayurvedic Powder Storage Bottle/Air Tight (Pack of 100)",
+    "score": 33,
+    "imgUrl": "https://m.media-amazon.com/images/I/31cR3Wd3GXL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B08P7PPZ9H",
+    "category": "plastic_bottle",
+    "title": "Vency 500ml Glass Water Bottle with Leak-Proof Airtight Stainless Steel Lid for Water, Smoothie, Juices (Set Of 2)",
+    "score": 49,
+    "imgUrl": "https://m.media-amazon.com/images/I/61TcbbIHNsL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B09BNC2PM7",
+    "category": "plastic_bottle",
+    "title": "Brezzycloud 500ml French Square Reusable Travel Glass Drinking Fridge Bottle with Metal Silver Lid, Perfect for Home, Travel, Juicing, Water, Smoothie - 500ml - Set Of 2",
+    "score": 54,
+    "imgUrl": "https://m.media-amazon.com/images/I/717VDiCngmS._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0CWGV5GJ2",
     "category": "phone_charger",
-    "title": "MI Xiaomi 22.5W Fast Charger with USB-C Cable, Quick Charge 3.0 Power Adapter Compatible with Redmi Note Series, Poco, Mi, Any Type C Devices - with Power Delivery (White)",
-    "score": 44
+    "title": "Honeywell Zest Charger GaN 65W, Ultra-Fast Charger with PPS Support, 1xType C PD 3.0 Port & 1x USB A Port, BIS Certified, Compatible with iPhone,MacBook Air,iPad Pro,Pixel,Galaxy,Laptops",
+    "score": 37,
+    "imgUrl": "https://m.media-amazon.com/images/I/61yA0QQCdaL._AC_UY218_.jpg"
   },
   {
-    "asin": "B0CHJQ28F3",
+    "asin": "B0DYPFNH6Z",
     "category": "phone_charger",
-    "title": "Portronics Adapto 12 2.4A 12W Fast Wall Charger for iPhone 11/Xs/XS Max/XR/X/8/7/6/Plus, iPad Pro/Air 2/Mini 3/Mini 4, Samsung S4/S5, and More(White)",
-    "score": 59
+    "title": "Kratos 65W Fast Charger Adapter & USB-A to Type C Cable Combo, Compatible with OnePlus, Realme, Xiaomi, Redmi, Oppo, Vivo & Other Smartphones, Type C Charger Supports Dash, Warp, Vooc,SuperVooc",
+    "score": 49,
+    "imgUrl": "https://m.media-amazon.com/images/I/51WaJLCa2FL._AC_UY218_.jpg"
   },
   {
-    "asin": "B09HN3BMD8",
+    "asin": "B0DGQN8YTF",
     "category": "phone_charger",
-    "title": "Portronics Adapto 66 2.4A 12w Dual USB Port 5V/2.4A Wall Charger,Comes with 1M Micro USB Cable, USB Wall Charger Adapter for Smartphone (Black)",
-    "score": 56
+    "title": "25W Energy Efficient Charger Adapter – Ideal for Samsung Galaxy Type-C Series",
+    "score": 42,
+    "imgUrl": "https://m.media-amazon.com/images/I/61oJhL60JVL._AC_UY218_.jpg"
   },
   {
-    "asin": "B0BBRJVLWD",
+    "asin": "B0DGQQB68Y",
     "category": "phone_charger",
-    "title": "Portronics Adapto 45 22.5 W Mobile Charger Adapter with Dual Port (USB A + PD Type C), Fast Charging, Short Circuit Protection, Wide Compatibility (Black)",
-    "score": 50
+    "title": "New 25W Energy Efficient Charger Adapter – Compatible with Samsung Galaxy Type-C Series",
+    "score": 42,
+    "imgUrl": "https://m.media-amazon.com/images/I/61euTd59+nL._AC_UY218_.jpg"
   },
   {
-    "asin": "B0D5QTPJT2",
+    "asin": "B0DGQPMMRT",
     "category": "phone_charger",
-    "title": "Amazon Basics 12W Dual Port Fast Charger | 12W Max Output | Includes 1 m Type C Cable | Universal Compatibility",
-    "score": 54
+    "title": "New 25W Energy Efficient USB-C Charger – Perfect for Samsung Galaxy Type-C Models",
+    "score": 42,
+    "imgUrl": "https://m.media-amazon.com/images/I/51Sh1TLySJL._AC_UY218_.jpg"
   },
   {
-    "asin": "B08LQNKJH9",
+    "asin": "B0DCGDSXHF",
     "category": "phone_charger",
-    "title": "Portronics Adapto 66 2.4A 12w Dual USB Port 5V/2.4A Wall Charger,Comes with 1M Micro USB Cable, USB Wall Charger Adapter for iPhone 11/Xs/XS Max/XR/X/8/7/6/Plus(White)",
-    "score": 55
+    "title": "AILKIN SUPERVOOC 65W Ultra Fast Charger Adapter Only- True 65W PD Charging, Unleash True Power for OnePlus 12/12R/11/11R/10/10R, Nord CE 3 Lite 5G, Nord 2T 5G, Nord CE 2 Lite 5G, Nord 5G",
+    "score": 48,
+    "imgUrl": "https://m.media-amazon.com/images/I/51bjespV+LL._AC_UL320_.jpg"
   },
   {
-    "asin": "B085CZ3SR1",
+    "asin": "B0F7RPM16F",
     "category": "phone_charger",
-    "title": "Mi Xiaomi 2A Fast Charger USB-A Power Adapter - Phone Wall Charger Compatible with Android, Samsung Galaxy, Xiaomi Redmi, Headphones, Bluetooth Devices - 10W Mobile Charging Block - Black",
-    "score": 50
+    "title": "AILKIN 65W SUPERVOOC Charger Adapter for Oneplus | 65W Warp/Dash/Supervooc Adapter Compatible for Oneplus 13/13R/12/12R/11/11R/10/10 Pro/9/9 Pro/ 9R/ 8/ 8T/7/Nord/CE 3 & Other Devices",
+    "score": 56,
+    "imgUrl": "https://m.media-amazon.com/images/I/61NQHy4zNpL._AC_UL320_.jpg"
   },
   {
-    "asin": "B07DXHCJYQ",
+    "asin": "B0DW7W4QG3",
+    "category": "phone_charger",
+    "title": "Costar 22.5W GaN Dual Port Charger Combo PD and QC3.0 Fast Charging, Compatible for Mobile,White (Adapter + 1.5m Type C Cable)",
+    "score": 51,
+    "imgUrl": "https://m.media-amazon.com/images/I/612S0BIivqL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0F7RPSH26",
+    "category": "phone_charger",
+    "title": "AILKIN 80W SUPERVOOC Charger for Oneplus | 80W Warp/Dash/Supervooc Adapter with Type C Dash Cable Compatible for Oneplus 13/13R/12/12R/11/11R/10/10 Pro/9/9 Pro/ 9R/ 8/ 8T/7/Nord/CE 3 & Other Devices",
+    "score": 57,
+    "imgUrl": "https://m.media-amazon.com/images/I/61KxLoFQPnL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DZ6NSD6C",
+    "category": "phone_charger",
+    "title": "DR VAKU® 2 in 1 PD QC 20W Dual Port Charger Type C Adapter for iPhone 16/16 Plus/16 Pro/16 Pro Max, 15/15 Plus/15 Pro/15 Pro Max, 14/13/12 Series PD 3.0 Multiple Protection Fast Charging Adaptor-White",
+    "score": 55,
+    "imgUrl": "https://m.media-amazon.com/images/I/615YNgpC7eL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0BGS6KCHN",
     "category": "coffee_mug",
-    "title": "Borosil - vacuum insulated Hydra Coffeemate stainless Steel travel mug - spill proof - hot and cold_BT300BLK110_300ml",
-    "score": 44
+    "title": "Borosil Coffeemate Insulated Mug, Vacuum Insulated Travel Coffee Mug with Lid, 8 Hours Hot and 14 Hours Cold, 300 ml, Mocha, Stainless Steel",
+    "score": 44,
+    "imgUrl": "https://m.media-amazon.com/images/I/51W4E6R5ZFL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0DWFYGQVN",
+    "asin": "B0BT1ZF2G6",
     "category": "coffee_mug",
-    "title": "XMART INDIA Insulated Stainless Steel Coffee Mug with Lid – 300ml Double Wall Tea & Milk Mug for Travel, Home, Office, Restaurant Stylish, Leakproof, Drinkware Gifts for Woman,Man(1 Pc, Dark Green)",
-    "score": 54
+    "title": "WHATS YOUR KICK - Pisces Zodiac Inspiration Printed Black Patch Ceramic Coffee Cup & Mug - Zodiac | Gift for Friend | Best Gift - Black Color",
+    "score": 44,
+    "imgUrl": "https://m.media-amazon.com/images/I/71zAEvJhlGL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0CF9FVLMJ",
+    "asin": "B0BYYZ649G",
     "category": "coffee_mug",
-    "title": "SKDBPM Ice Juice Drinks Glass Can Mug with Straw for Milk/Coffee/Green Tea Cup Set of 1-510ml Transparent Printed Can Shape Cup (Pack of 1) (Wooden LID CAN)",
-    "score": 55
-  },
-  {
-    "asin": "B0CS39B5QF",
-    "category": "coffee_mug",
-    "title": "KiKiluxxa Glass Coffee Mug with Straw Green Tea Sipper Tumbler Mugs with Lid - Pack of 1- Travel Mug, Drinking Glass, Mason jar, Can Sipper,Milk Mugs,Juice Cup (Pattaya Can 1)",
-    "score": 50
-  },
-  {
-    "asin": "B0CLYF83TY",
-    "category": "coffee_mug",
-    "title": "Larah by BOROSIL Orbit White Opalware Mug, Set of 2 Tea/Coffee Cups, 240 ml Each, Microwave & Dishwasher Safe, Bone-Ash Free, Crockery Set Ideal for Daily Use & Gifting",
-    "score": 52
+    "title": "MAE Coffee Mug with Lid | 370 ML | Made with Rice Husk | Eco Friendly & Sustainable Cup | Insulated | Microwave Safe | Travel Friendly | Spill Proof | Office | Home | Gift | Mug | Cup with lid |1 pc",
+    "score": 55,
+    "imgUrl": "https://m.media-amazon.com/images/I/71dWa9VdyqL._AC_UL320_.jpg"
   },
   {
     "asin": "B0D66YVCQB",
     "category": "coffee_mug",
     "title": "Sleepy Owl Coffee Mug with Lid | Crafted from Used Coffee Grounds | Eco-Friendly & Sustainable Cup | Microwave Safe | Spill Proof | Travel Friendly | Office | Home | Premium Gift | 370ml 1 Piece",
-    "score": 54
+    "score": 58,
+    "imgUrl": "https://m.media-amazon.com/images/I/61qkm65hJOL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0BSLJ245T",
+    "asin": "B0D66YVCQB",
+    "category": "coffee_mug",
+    "title": "Sleepy Owl Coffee Mug with Lid | Crafted from Used Coffee Grounds | Eco-Friendly & Sustainable Cup | Microwave Safe | Spill Proof | Travel Friendly | Office | Home | Premium Gift | 370ml 1 Piece",
+    "score": 58,
+    "imgUrl": "https://m.media-amazon.com/images/I/61qkm65hJOL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0BYYZ649G",
+    "category": "coffee_mug",
+    "title": "MAE Coffee Mug with Lid | 370 ML | Made with Rice Husk | Eco Friendly & Sustainable Cup | Insulated | Microwave Safe | Travel Friendly | Spill Proof | Office | Home | Gift | Mug | Cup with lid |1 pc",
+    "score": 55,
+    "imgUrl": "https://m.media-amazon.com/images/I/71dWa9VdyqL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DF2WB258",
+    "category": "coffee_mug",
+    "title": "Sleepy Owl French Vanilla Coffee Gift Set | 100% Arabica Instant Coffee (100g) with Sustainable Coffee Mug | Includes Coffee with Mug | Premium Corporate Gifts, Coffee Kit, Coffee Hamper Gift Set",
+    "score": 45,
+    "imgUrl": "https://m.media-amazon.com/images/I/61t+l6kQC8L._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0BYYZ649G",
+    "category": "coffee_mug",
+    "title": "MAE Coffee Mug with Lid | 370 ML | Made with Rice Husk | Eco Friendly & Sustainable Cup | Insulated | Microwave Safe | Travel Friendly | Spill Proof | Office | Home | Gift | Mug | Cup with lid |1 pc",
+    "score": 55,
+    "imgUrl": "https://m.media-amazon.com/images/I/71dWa9VdyqL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0D66YVCQB",
+    "category": "coffee_mug",
+    "title": "Sleepy Owl Coffee Mug with Lid | Crafted from Used Coffee Grounds | Eco-Friendly & Sustainable Cup | Microwave Safe | Spill Proof | Travel Friendly | Office | Home | Premium Gift | 370ml 1 Piece",
+    "score": 58,
+    "imgUrl": "https://m.media-amazon.com/images/I/61qkm65hJOL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0CBQFQVSY",
+    "category": "coffee_mug",
+    "title": "eha Set of 6 Earth-Friendly Cutting Chai Cups | 100 ml | Coffee Cup Made with Rice Husk & Bamboo Fibers | Microwave Safe Tea Set |Hot & Cold Coffee Mug, Milk & Tea Cup Set| Innocent Color",
+    "score": 38,
+    "imgUrl": "https://m.media-amazon.com/images/I/813tAy0VzqL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0BVVP7Q1L",
+    "category": "coffee_mug",
+    "title": "Irida Naturals Unbreakable Coffee Mug - Eco-Friendly & Microwave Safe Mugs for Tea or Coffee, Rice Husk Milk & Tea Coffee Cups for Hot and Cold, Matte Finish Mugs for Gift, 300 ML (Mint Green)",
+    "score": 52,
+    "imgUrl": "https://m.media-amazon.com/images/I/41pHWgRzTlL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0CM97FVSQ",
     "category": "sneakers",
-    "title": "Puma",
-    "score": 47
+    "title": "urban Wipe",
+    "score": 52,
+    "imgUrl": "https://m.media-amazon.com/images/I/61qu8fCBBwL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0D5XXCKC1",
+    "asin": "B0C6TP999C",
     "category": "sneakers",
-    "title": "ASIAN",
-    "score": 52
+    "title": "SNEAKARE",
+    "score": 48,
+    "imgUrl": "https://m.media-amazon.com/images/I/71tZb5Um52L._AC_UL320_.jpg"
   },
   {
-    "asin": "B0C5MXJ5JT",
+    "asin": "B0CXXF17W7",
     "category": "sneakers",
-    "title": "ASIAN",
-    "score": 54
+    "title": "Levi's",
+    "score": 36,
+    "imgUrl": "https://m.media-amazon.com/images/I/51fA4u24ZVL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0DSC5DDH2",
+    "asin": "B0F279LHR4",
+    "category": "sneakers",
+    "title": "HEALTH FIT",
+    "score": 33,
+    "imgUrl": "https://m.media-amazon.com/images/I/71Z--Yhc3DL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DSC4S7PK",
     "category": "sneakers",
     "title": "Cruiser",
-    "score": 52
+    "score": 47,
+    "imgUrl": "https://m.media-amazon.com/images/I/61RQ7eVs7rL._AC_UL320_.jpg"
   },
   {
-    "asin": "B000LFG274",
+    "asin": "B09W3787CD",
     "category": "sneakers",
-    "title": "Converse",
-    "score": 45
+    "title": "Bacca Bucci",
+    "score": 46,
+    "imgUrl": "https://m.media-amazon.com/images/I/71O6djFBtsL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0BSLQ2DZ5",
+    "asin": "B0DPG91FHD",
     "category": "sneakers",
-    "title": "ASIAN",
-    "score": 54
+    "title": "Plaeto",
+    "score": 35,
+    "imgUrl": "https://m.media-amazon.com/images/I/71OVuoyP8SL._AC_UL320_.jpg"
   },
   {
-    "asin": "B0B8T3C321",
+    "asin": "B0DP4Z3MLP",
     "category": "sneakers",
-    "title": "U.S. POLO ASSN.",
-    "score": 50
+    "title": "Overstar",
+    "score": 43,
+    "imgUrl": "https://m.media-amazon.com/images/I/61LyNO7A3wL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0DFGY6JPX",
+    "category": "sneakers",
+    "title": "NARKI",
+    "score": 25,
+    "imgUrl": "https://m.media-amazon.com/images/I/71k671hrMWL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0FBLDBNB8",
+    "category": "sneakers",
+    "title": "Generic",
+    "score": 29,
+    "imgUrl": "https://m.media-amazon.com/images/I/616xg--AjXL._AC_UL320_.jpg"
+  },
+  {
+    "asin": "B0CLTW3J84",
+    "category": "sneakers",
+    "title": "urban Wipe",
+    "score": 38,
+    "imgUrl": "https://m.media-amazon.com/images/I/61ylWXT4eUL._AC_UL320_.jpg"
   }
 ]

@@ -28,57 +28,123 @@ import {
 
 async function scrapeSearch(categoryKey, query) {
   const url = `https://www.amazon.in/s?k=${encodeURIComponent(query)}`;
-  const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+  const res = await fetch(url, { 
+    headers: { 
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+      'Accept-Language': 'en-US,en;q=0.9'
+    } 
+  });
   const html = await res.text();
   const dom = new JSDOM(html, { virtualConsole });
   const items = Array.from(
     dom.window.document.querySelectorAll('.s-result-item[data-asin]')
-  ).slice(0, 10);
+  ).slice(0, 15); // Increase to get more results
 
   const results = [];
   for (const el of items) {
     const asin = el.getAttribute('data-asin');
     if (!asin) continue;
+    
+    // Title
     const title = el.querySelector('h2')?.textContent.trim() || '';
-    const priceStr = el.querySelector('.a-price-whole')?.textContent.replace(/[,$]/g, '') || '0';
-    const price = parseFloat(priceStr);
-    const ratingStr = el.querySelector('.a-icon-alt')
-      ?.textContent.match(/([0-5]\.?\d?) out of 5/)?.[1] || '0';
-    const rating = parseFloat(ratingStr);
-    const reviewCountStr = el.querySelector('[aria-label$=" ratings"]')
-      ?.getAttribute('aria-label')?.replace(/[^0-9]/g, '') || '0';
-    const reviewCount = parseInt(reviewCountStr, 10);
-
-    const detailRes = await fetch(`https://www.amazon.in/dp/${asin}`, {
-      headers: { 'User-Agent': 'Mozilla/5.0' }
+    
+    // Price
+    const priceWhole = el.querySelector('.a-price-whole')?.textContent.replace(/[^\d.]/g, '') || '0';
+    const priceFraction = el.querySelector('.a-price-fraction')?.textContent || '00';
+    const price = parseFloat(`${priceWhole}.${priceFraction}`);
+    
+    // Rating
+    const ratingStr = el.querySelector('.a-icon-alt')?.textContent || '';
+    const ratingMatch = ratingStr.match(/([0-5]\.?\d?) out of 5/);
+    const rating = ratingMatch ? parseFloat(ratingMatch[1]) : 0;
+    
+    // Review Count
+    const reviewCountStr = el.querySelector('[aria-label$=" ratings"]')?.getAttribute('aria-label') || 
+                          el.querySelector('.a-size-base')?.textContent || '0';
+    const reviewCount = parseInt(reviewCountStr.replace(/[^0-9]/g, ''), 10) || 0;
+    
+    // Image URL
+    const imgElement = el.querySelector('.s-image');
+    let imgUrl = imgElement ? imgElement.src : '';
+    
+    // Handle image placeholders
+    if (imgUrl.includes('data:image') || imgUrl.includes('placeholder')) {
+      imgUrl = '';
+    }
+    
+    // Fetch product details page for more text content
+    let allText = title;
+    try {
+      const detailRes = await fetch(`https://www.amazon.in/dp/${asin}`, {
+        headers: { 
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+          'Accept-Language': 'en-US,en;q=0.9'
+        }
+      });
+      const detailHtml = await detailRes.text();
+      const detailDom = new JSDOM(detailHtml, { virtualConsole });
+      
+      // Feature bullets
+      const bullets = Array.from(
+        detailDom.window.document.querySelectorAll('#feature-bullets li, .product-facts li')
+      ).map(li => li.textContent.trim()).join(' ');
+      
+      // Product description
+      const desc = detailDom.window.document.querySelector('#productDescription')?.textContent.trim() || 
+                 detailDom.window.document.querySelector('#productDescription_feature_div')?.textContent.trim() || 
+                 '';
+      
+      // Technical details
+      const detailsTable = Array.from(
+        detailDom.window.document.querySelectorAll('#productDetails_techSpec_section_1 tr, .techD, #productDetails_detailBullets_sections1 tr')
+      ).map(tr => tr.textContent.replace(/\s+/g, ' ').trim()).join(' ');
+      
+      allText = [title, bullets, desc, detailsTable].join(' ');
+    } catch (e) {
+      console.error(`Error fetching details for ASIN ${asin}:`, e.message);
+    }
+    
+    results.push({ 
+      categoryKey, 
+      asin, 
+      title, 
+      price, 
+      rating, 
+      reviewCount, 
+      allText,
+      imgUrl
     });
-    const detailHtml = await detailRes.text();
-    const detailDom = new JSDOM(detailHtml, { virtualConsole });
-    const bullets = Array.from(
-      detailDom.window.document.querySelectorAll('#feature-bullets li')
-    ).map(li => li.textContent.trim()).join(' ');
-    const desc = detailDom.window.document.querySelector('#productDescription')
-      ?.textContent.trim() || '';
-    const detailsTable = Array.from(
-      detailDom.window.document.querySelectorAll('#productDetails_techSpec_section_1 tr')
-    ).map(tr => tr.textContent.replace(/\s+/g, ' ').trim()).join(' ');
-    const allText = [title, bullets, desc, detailsTable].join(' ');
-
-    results.push({ categoryKey, asin, title, price, rating, reviewCount, allText });
   }
   return results;
 }
 
 (async () => {
   const allProducts = [];
-  for (const key of Object.keys(categoryData)) {
-    const query = key.replace(/_/g, ' ');
-    const items = await scrapeSearch(key, query);
-    allProducts.push(...items);
+  
+  // Define search queries for each category
+  const categoryQueries = {
+    tshirt: "organic cotton t-shirt",
+    jeans: "sustainable jeans",
+    plastic_bottle: "eco-friendly water bottle",
+    phone_charger: "energy efficient charger",
+    coffee_mug: "sustainable coffee mug",
+    sneakers: "eco-friendly sneakers"
+  };
+  
+  for (const [key, query] of Object.entries(categoryQueries)) {
+    console.log(`Scraping category: ${key} with query: ${query}`);
+    try {
+      const items = await scrapeSearch(key, query);
+      allProducts.push(...items);
+      console.log(`Found ${items.length} products for ${key}`);
+    } catch (e) {
+      console.error(`Error scraping ${key}:`, e.message);
+    }
   }
 
   if (allProducts.length === 0) {
     console.warn('⚠️ No products scraped; check selectors or network');
+    process.exit(1);
   }
 
   // Compute price bounds per category
@@ -91,7 +157,13 @@ async function scrapeSearch(categoryKey, query) {
 
   // Score each product
   const alternatives = allProducts.map(p => {
-    const { maxCO2, maxWater, maxWaste } = categoryData[p.categoryKey];
+    const category = categoryData[p.categoryKey];
+    if (!category) {
+      console.warn(`No category data for ${p.categoryKey}, skipping ${p.asin}`);
+      return null;
+    }
+    
+    const { maxCO2, maxWater, maxWaste } = category;
     const footprint = computeFootprintScore(
       { co2: maxCO2, water: maxWater, waste: maxWaste },
       { maxCO2, maxWater, maxWaste }
@@ -113,9 +185,10 @@ async function scrapeSearch(categoryKey, query) {
       asin: p.asin,
       category: p.categoryKey,
       title: p.title,
-      score: finalScore
+      score: finalScore,
+      imgUrl: p.imgUrl
     };
-  });
+  }).filter(Boolean); // Remove null items
 
   const outPath = path.resolve(__dirname, '../extension/data/alternatives.json');
   fs.writeFileSync(outPath, JSON.stringify(alternatives, null, 2), 'utf-8');

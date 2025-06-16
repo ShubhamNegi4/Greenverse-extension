@@ -1,5 +1,3 @@
-// extension/background.js
-
 async function loadJSON(name) {
   const url = chrome.runtime.getURL(`data/${name}`);
   const res = await fetch(url);
@@ -42,6 +40,26 @@ function deriveCategoryKey(text = '') {
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   const { type, payload } = message;
+  
+  // FIXED: Proper preferences handling
+  if (type === 'GET_PREFS') {
+    chrome.storage.local.get('prefs', data => {
+      sendResponse(data.prefs || {
+        strictOrganic: false,
+        organicWeight: 0.7,
+        priceWeight: 0.3
+      });
+    });
+    return true; // Indicates async response
+  }
+  
+  if (type === 'SET_PREFS') {
+    chrome.storage.local.set({ prefs: payload }, () => {
+      sendResponse({ success: true });
+    });
+    return true;
+  }
+
   if (type === 'GET_ALTERNATIVES') {
     const { title, priceRange, basePrice } = payload;
     const categoryKey = deriveCategoryKey(title) || null;
@@ -99,18 +117,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     return true;
   }
 
-  // ... GET_PREFS, SET_PREFS, LOG_ACTION ...
-  if (type === 'GET_PREFS') {
-    chrome.storage.local.get(
-      { strictOrganic: false, organicWeight: 0.7, priceWeight: 0.3 },
-      prefs => sendResponse({ prefs })
-    );
-    return true;
-  }
-  if (type === 'SET_PREFS') {
-    chrome.storage.local.set(payload, () => sendResponse({ success: true }));
-    return true;
-  }
   if (type === 'LOG_ACTION') {
     const { deltaCO2 } = payload || {};
     chrome.storage.local.get(['totalCO2Saved'], data => {
