@@ -1,3 +1,4 @@
+// File: extension/background.js
 async function loadJSON(name) {
   const url = chrome.runtime.getURL(`data/${name}`);
   const res = await fetch(url);
@@ -20,28 +21,64 @@ async function loadAllData() {
   }
 }
 
+// Updated keyword scoring to match backend
 function computeKeywordScore(text = '') {
   const lower = text.toLowerCase();
-  if (/\borganic\b/.test(lower)) return 100;
-  if (/\bcertified organic\b|\bGOTS\b/.test(lower)) return 100;
-  if (/\brecycled\b|\bsustainable\b|\beco-friendly\b|\beco friendly\b/.test(lower)) return 70;
-  return 50;
+  let score = 50;
+  
+  const POSITIVE_TERMS = [
+    "organic", "certified organic", "gots", "recycled", "sustainable", "eco-friendly", "eco friendly",
+    "biodegradable", "compostable", "fair trade", "energy efficient", "renewable", "low impact", "vegan",
+    "cruelty free", "zero waste", "carbon neutral", "plant-based", "upcycled", "refurbished", "fsc",
+    "organic cotton", "hemp", "bamboo", "eco", "green", "natural", "non-toxic", "water saving",
+    "energy saving", "reusable", "durable", "recyclable", "recycled content", "cradle to cradle",
+    "closed loop", "sustainably sourced", "ethically sourced", "locally made", "sustainable materials",
+    "environmentally friendly", "sustainable packaging", "plastic free", "minimal packaging",
+    "compostable packaging", "recycled packaging", "low carbon", "carbon negative", "climate positive"
+  ];
+
+  const NEGATIVE_TERMS = [
+    "polyester", "pesticide", "synthetic", "chemical", "toxic", "harmful", "petroleum", "pvc", "phthalate", "bpa",
+    "lead", "cadmium", "mercury", "heavy metal", "unsustainable", "high carbon", "high energy", "wasteful",
+    "disposable", "single use", "fast fashion", "excessive packaging", "plastic packaging", "non-recyclable",
+    "virgin plastic", "deforestation", "overexploited", "sweatshop", "low quality", "short lifespan",
+    "planned obsolescence", "hard to repair", "toxic chemicals", "hazardous", "polluting", "high water usage",
+    "water intensive", "energy intensive", "carbon intensive", "fossil fuel", "non-renewable", "high emission",
+    "high footprint", "landfill", "incineration", "imported", "long distance transport", "air freighted"
+  ];
+  
+  POSITIVE_TERMS.forEach(term => {
+    if (term.includes("certified") || term === "gots" || term === "fsc") {
+      if (lower.includes(term)) score += 15;
+    } else if (lower.includes(term)) {
+      score += 10;
+    }
+  });
+  
+  NEGATIVE_TERMS.forEach(term => {
+    if (term === "toxic" || term === "bpa" || term === "phthalate") {
+      if (lower.includes(term)) score -= 20;
+    } else if (lower.includes(term)) {
+      score -= 15;
+    }
+  });
+  
+  return Math.min(Math.max(score, 0), 100);
 }
 
 function deriveCategoryKey(text = '') {
   const lower = text.toLowerCase();
-  if (lower.includes('t-shirt') || lower.includes('t shirt') || lower.includes('polo') || lower.includes('shirt')) return 'tshirt';
-  if (lower.includes('charger') || lower.includes('adapter')) return 'phone_charger';
-  if (lower.includes('coffee mug') || lower.includes('mug') || lower.includes('cup')) return 'coffee_mug';
-  if (lower.includes('water bottle') || lower.includes('bottle') || lower.includes('flask')) return 'plastic_bottle';
-  if (lower.includes('sneaker') || lower.includes('shoe') || lower.includes('trainers') || lower.includes('running shoe')) return 'sneakers';
+  if (/(t[- ]?shirt|polo)/.test(lower)) return 'tshirt';
+  if (/(charger|adapter)/.test(lower)) return 'phone_charger';
+  if (/(coffee mug|mug|cup)/.test(lower)) return 'coffee_mug';
+  if (/(water bottle|bottle|flask)/.test(lower)) return 'plastic_bottle';
+  if (/(sneaker|shoe|trainers|running shoe)/.test(lower)) return 'sneakers';
   return null;
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   const { type, payload } = message;
   
-  // FIXED: Proper preferences handling
   if (type === 'GET_PREFS') {
     chrome.storage.local.get('prefs', data => {
       sendResponse(data.prefs || {
@@ -50,7 +87,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         priceWeight: 0.3
       });
     });
-    return true; // Indicates async response
+    return true;
   }
   
   if (type === 'SET_PREFS') {

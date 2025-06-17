@@ -1,14 +1,45 @@
 // File: extension/content/product.js
 
-// --- 1. Simplified Scoring Functions ---
-const POS_TERMS = ["organic","certified organic","gots","recycled","sustainable","eco-friendly"];
-const NEG_TERMS = ["polyester","pesticide","synthetic","chemical","toxic","harmful"];
+// Updated keyword lists
+const POS_TERMS = [
+  "organic", "certified organic", "gots", "recycled", "sustainable", "eco-friendly", "eco friendly",
+  "biodegradable", "compostable", "fair trade", "energy efficient", "renewable", "low impact", "vegan",
+  "cruelty free", "zero waste", "carbon neutral", "plant-based", "upcycled", "refurbished", "fsc",
+  "organic cotton", "hemp", "bamboo", "eco", "green", "natural", "non-toxic", "water saving",
+  "energy saving", "reusable", "durable", "recyclable", "recycled content", "cradle to cradle",
+  "closed loop", "sustainably sourced", "ethically sourced", "locally made", "sustainable materials",
+  "environmentally friendly", "sustainable packaging", "plastic free", "minimal packaging",
+  "compostable packaging", "recycled packaging", "low carbon", "carbon negative", "climate positive"
+];
 
+const NEG_TERMS = [
+  "polyester", "pesticide", "synthetic", "chemical", "toxic", "harmful", "petroleum", "pvc", "phthalate", "bpa",
+  "lead", "cadmium", "mercury", "heavy metal", "unsustainable", "high carbon", "high energy", "wasteful",
+  "disposable", "single use", "fast fashion", "excessive packaging", "plastic packaging", "non-recyclable",
+  "virgin plastic", "deforestation", "overexploited", "sweatshop", "low quality", "short lifespan",
+  "planned obsolescence", "hard to repair", "toxic chemicals", "hazardous", "polluting", "high water usage",
+  "water intensive", "energy intensive", "carbon intensive", "fossil fuel", "non-renewable", "high emission",
+  "high footprint", "landfill", "incineration", "imported", "long distance transport", "air freighted"
+];
+
+// Enhanced scoring functions
 function computeKeywordScore(text = "") {
   const lower = text.toLowerCase();
   let s = 50;
-  POS_TERMS.forEach(t => lower.includes(t) && (s += 10));
-  NEG_TERMS.forEach(t => lower.includes(t) && (s -= 15));
+  POS_TERMS.forEach(t => {
+    if (t.includes("certified") || t === "gots" || t === "fsc") {
+      if (lower.includes(t)) s += 15;
+    } else {
+      if (lower.includes(t)) s += 10;
+    }
+  });
+  NEG_TERMS.forEach(t => {
+    if (t === "toxic" || t === "bpa" || t === "phthalate") {
+      if (lower.includes(t)) s -= 20;
+    } else {
+      if (lower.includes(t)) s -= 15;
+    }
+  });
   return Math.max(0, Math.min(s, 100));
 }
 
@@ -21,12 +52,128 @@ function computeReviewCountScore(c = 0) {
   return Math.round((lg/4)*100);
 }
 
-function computeFinalScore(vals) {
-  const {keywords, rating, reviews} = vals;
-  return Math.round(keywords*0.4 + rating*0.3 + reviews*0.3);
+function computeDurabilityScore(text = '') {
+  const lower = text.toLowerCase();
+  let score = 50;
+  
+  if (/\bdurable\b/.test(lower)) score += 20;
+  if (/\blong lasting\b/.test(lower)) score += 15;
+  if (/\bhigh quality\b/.test(lower)) score += 10;
+  if (/\bhard to repair\b/.test(lower)) score -= 20;
+  if (/\bplanned obsolescence\b/.test(lower)) score -= 25;
+  
+  return Math.min(Math.max(score, 0), 100);
 }
 
-// --- 2. Page Scraping Helpers ---
+function computeFinalScore(vals) {
+  const {keywords, rating, reviews, durability = 50} = vals;
+  return Math.round(keywords*0.4 + rating*0.3 + reviews*0.2 + durability*0.1);
+}
+
+// Hybrid Carbon Estimation with corrected weights
+const CARBON_BASE = {
+  tshirt: 8.2,
+  jeans: 12.5,
+  plastic_bottle: 0.18,
+  phone_charger: 0.15,
+  coffee_mug: 0.35,
+  sneakers: 16.8
+};
+
+class CarbonModel {
+  constructor() {
+    this.weights = {
+      organic: -0.205,
+      recycled: -0.295,
+      recycledPercent: -0.0028,
+      polyester: 0.2375,
+      imported: 0.18,
+      airFreight: 0.4625,
+      fastFashion: 0.195,
+      sustainableBrand: -0.23,
+      distance: 0.000045,
+      durability: -0.095,
+      waterEfficient: -0.0625,
+      energyStar: -0.0875
+    };
+  }
+
+  predict(features) {
+    let correction = 0;
+    for (const [feature, value] of Object.entries(features)) {
+      if (this.weights[feature] !== undefined) {
+        correction += this.weights[feature] * value;
+      }
+    }
+    return correction;
+  }
+}
+
+function extractFeatures(text = '', categoryKey) {
+  const lower = text.toLowerCase();
+  const features = {
+    organic: 0,
+    recycled: 0,
+    recycledPercent: 0,
+    polyester: 0,
+    imported: 0,
+    airFreight: 0,
+    fastFashion: 0,
+    sustainableBrand: 0,
+    distance: 0,
+    durability: 0,
+    waterEfficient: 0,
+    energyStar: 0
+  };
+  
+  if (/\borganic\b/.test(lower)) features.organic = 1;
+  
+  const recycledMatch = lower.match(/(\d+)% recycled/);
+  if (recycledMatch) {
+    features.recycled = 1;
+    features.recycledPercent = parseInt(recycledMatch[1]) / 100;
+  } else if (/\brecycled\b/.test(lower)) {
+    features.recycled = 1;
+    features.recycledPercent = 0.3;
+  }
+  
+  if (/\bpolyester\b/.test(lower)) features.polyester = 1;
+  if (/\bimported\b(?! from)/.test(lower)) features.imported = 1;
+  if (/\bair freight\b/.test(lower)) features.airFreight = 1;
+  if (/\bfast fashion\b/.test(lower)) features.fastFashion = 1;
+  
+  const SUSTAINABLE_BRANDS = ['patagonia', 'tentree', 'allbirds', 'reformation', 
+                             'ecofriendly', 'ecoalf', 'thought', 'people tree'];
+  if (SUSTAINABLE_BRANDS.some(b => new RegExp(`\\b${b}\\b`).test(lower))) {
+    features.sustainableBrand = 1;
+  }
+  
+  if (/\bmade in china\b/.test(lower)) features.distance = 5000;
+  else if (/\bmade in bangladesh\b/.test(lower)) features.distance = 3000;
+  else if (/\bmade in india\b/.test(lower)) features.distance = 0;
+  else if (/\bimported\b/.test(lower)) features.distance = 4000;
+  
+  if (/\bdurable\b/.test(lower)) features.durability += 0.4;
+  if (/\blong lasting\b/.test(lower)) features.durability += 0.3;
+  if (/\bhigh quality\b/.test(lower)) features.durability += 0.3;
+  features.durability = Math.min(features.durability, 1.0);
+  
+  if (/\bwater efficient\b/.test(lower)) features.waterEfficient = 1;
+  if (/\benergy star\b/.test(lower)) features.energyStar = 1;
+  
+  return features;
+}
+
+function estimateCarbonFootprint(text = '', categoryKey) {
+  const base = CARBON_BASE[categoryKey] || 8.0;
+  const features = extractFeatures(text, categoryKey);
+  const model = new CarbonModel();
+  const correction = model.predict(features);
+  const adjustedFootprint = base * (1 + correction);
+  return Math.max(0.1, parseFloat(adjustedFootprint.toFixed(2)));
+}
+
+// Page scraping helpers
 function getText(sel) {
   const el = document.querySelector(sel);
   return el?.textContent?.trim() || "";
@@ -43,7 +190,7 @@ function getNumber(sel, re) {
   return m ? parseFloat(m[1].replace(/,/g, '')) : 0;
 }
 
-// --- 3. Category Mapping ---
+// Category mapping
 const CATEGORY_MAP = {
   "t-shirt": "tshirt", "t shirt": "tshirt", "tee": "tshirt", 
   "jeans": "jeans", "pants": "jeans", 
@@ -53,7 +200,7 @@ const CATEGORY_MAP = {
   "sneaker": "sneakers", "shoe": "sneakers", "footwear": "sneakers"
 };
 
-// --- 4. Insert Button ---
+// Insert button
 function insertGreenerButton() {
   const titleEl = document.querySelector('#productTitle') || 
                  document.querySelector('#title');
@@ -74,7 +221,7 @@ function insertGreenerButton() {
   titleEl.parentElement.appendChild(btn);
 }
 
-// --- 5. Main Click Handler ---
+// Main click handler
 async function onGreenerClick() {
   if (document.getElementById('greener-panel')) return;
 
@@ -121,14 +268,19 @@ async function onGreenerClick() {
       return alert('Could not determine product category.');
     }
 
+    // Calculate current product carbon
+    const currentCarbon = estimateCarbonFootprint(allText, categoryKey);
+    
     // Calculate current product score
     const kScore = computeKeywordScore(allText);
     const rScore = computeRatingScore(rating);
     const vScore = computeReviewCountScore(reviewCount);
+    const dScore = computeDurabilityScore(allText);
     const pageScore = computeFinalScore({
       keywords: kScore,
       rating: rScore,
-      reviews: vScore
+      reviews: vScore,
+      durability: dScore
     });
 
     // Load alternatives
@@ -154,8 +306,8 @@ async function onGreenerClick() {
     // Always show top recommendations
     const topRecommendations = categoryAlts.slice(0, 5);
     
-    // Display recommendations
-    displayRecommendations(topRecommendations, pageScore);
+    // Display recommendations with current carbon
+    displayRecommendations(topRecommendations, pageScore, currentCarbon);
   } catch (error) {
     console.error('Error:', error);
     alert('An error occurred. Please try again.');
@@ -168,8 +320,8 @@ async function onGreenerClick() {
   }
 }
 
-// --- 6. Display Recommendations ---
-function displayRecommendations(items, currentScore) {
+// Display recommendations with carbon info
+function displayRecommendations(items, currentScore, currentCarbon) {
   const existingPanel = document.getElementById('greener-panel');
   if (existingPanel) existingPanel.remove();
   
@@ -202,7 +354,17 @@ function displayRecommendations(items, currentScore) {
   panel.appendChild(header);
 
   const scoreInfo = document.createElement('div');
-  scoreInfo.innerHTML = `Your current product score: <strong>${currentScore}/100</strong>`;
+  scoreInfo.innerHTML = `
+    <div style="margin-bottom: 10px">Current Product:</div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 5px">
+      <span>Sustainability Score:</span>
+      <span style="font-weight: bold">${currentScore}/100</span>
+    </div>
+    <div style="display: flex; justify-content: space-between">
+      <span>Carbon Footprint:</span>
+      <span style="font-weight: bold">${currentCarbon.toFixed(2)} kg CO₂e</span>
+    </div>
+  `;
   scoreInfo.style.marginBottom = '20px';
   scoreInfo.style.paddingBottom = '15px';
   scoreInfo.style.borderBottom = '1px solid #eee';
@@ -248,6 +410,30 @@ function displayRecommendations(items, currentScore) {
     score.style.color = item.score > 70 ? '#4CAF50' : 
                        item.score > 50 ? '#FF9800' : '#F44336';
     itemDiv.appendChild(score);
+    
+    // Add carbon footprint display
+    if (item.carbon) {
+      const savings = currentCarbon - item.carbon;
+      const absSavings = Math.abs(savings).toFixed(2);
+      
+      const carbon = document.createElement('div');
+      carbon.innerHTML = `
+        <div style="display: flex; justify-content: space-between">
+          <span>Carbon Footprint:</span>
+          <span>${item.carbon.toFixed(2)} kg CO₂e</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 5px">
+          <span>Savings:</span>
+          <span style="color: ${savings > 0 ? '#4CAF50' : savings < 0 ? '#F44336' : '#000'}; font-weight: bold">
+            ${savings > 0 ? '↓' : savings < 0 ? '↑' : ''} ${absSavings} kg
+          </span>
+        </div>
+      `;
+      carbon.style.marginBottom = '8px';
+      carbon.style.fontSize = '13px';
+      carbon.style.color = '#555';
+      itemDiv.appendChild(carbon);
+    }
     
     const link = document.createElement('a');
     link.href = `https://www.amazon.in/dp/${item.asin}`;
