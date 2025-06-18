@@ -9,6 +9,15 @@
     "price": 449
   },
   {
+    "asin": "B0CR4BQD9R",
+    "category": "tshirt",
+    "title": "NOBERO",
+    "score": 31,
+    "imgUrl": "https://m.media-amazon.com/images/I/61Uh+N4IubL._AC_UL320_.jpg",
+    "carbon": 8.2,
+    "price": 999
+  },
+  {
     "asin": "B0BKP7SRJM",
     "category": "tshirt",
     "title": "F A S O",
@@ -16,15 +25,6 @@
     "imgUrl": "https://m.media-amazon.com/images/I/61tPp-Qb0iL._AC_UL320_.jpg",
     "carbon": 6.52,
     "price": 749
-  },
-  {
-    "asin": "B0DK5JFTDH",
-    "category": "tshirt",
-    "title": "DOMIN8",
-    "score": 46,
-    "imgUrl": "https://m.media-amazon.com/images/I/71IAQtoKi2L._AC_UL320_.jpg",
-    "carbon": 6.04,
-    "price": 673
   },
   {
     "asin": "B0D95VCCF2",
@@ -45,31 +45,13 @@
     "price": 549
   },
   {
-    "asin": "B0919TCH5N",
+    "asin": "B0DK5JFTDH",
     "category": "tshirt",
-    "title": "Woodwose Organic Clothing",
-    "score": 44,
-    "imgUrl": "https://m.media-amazon.com/images/I/61nrZvoukTL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 499
-  },
-  {
-    "asin": "B0BKPNZQ7Q",
-    "category": "tshirt",
-    "title": "F A S O",
+    "title": "DOMIN8",
     "score": 46,
-    "imgUrl": "https://m.media-amazon.com/images/I/61K+Gtcp8rL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 249
-  },
-  {
-    "asin": "B0939ZCB5V",
-    "category": "tshirt",
-    "title": "Woodwose Organic Clothing",
-    "score": 45,
-    "imgUrl": "https://m.media-amazon.com/images/I/71pi4KHLwrS._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 239
+    "imgUrl": "https://m.media-amazon.com/images/I/71IAQtoKi2L._AC_UL320_.jpg",
+    "carbon": 6.04,
+    "price": 673
   },
   {
     "asin": "B0C4PVBJ76",
@@ -81,40 +63,40 @@
     "price": 1371
   },
   {
-    "asin": "B0CR4BQD9R",
+    "asin": "B0919TCH5N",
     "category": "tshirt",
-    "title": "NOBERO",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/61Uh+N4IubL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 999
+    "title": "Woodwose Organic Clothing",
+    "score": 44,
+    "imgUrl": "https://m.media-amazon.com/images/I/61nrZvoukTL._AC_UL320_.jpg",
+    "carbon": 6.52,
+    "price": 499
   },
   {
-    "asin": "B0D984X51P",
+    "asin": "B0C7ZM9CKY",
     "category": "tshirt",
-    "title": "Scott International",
-    "score": 32,
-    "imgUrl": "https://m.media-amazon.com/images/I/61j-lvYNvGL._AC_UL320_.jpg",
+    "title": "Allen Solly",
+    "score": 33,
+    "imgUrl": "https://m.media-amazon.com/images/I/61PlZsWFU5L._AC_UL320_.jpg",
     "carbon": 8.2,
-    "price": 549
+    "price": 749
   },
   {
-    "asin": "B0DS12626G",
+    "asin": "B0B6WTLHDR",
     "category": "tshirt",
-    "title": "Kuku Kids",
-    "score": 35,
-    "imgUrl": "https://m.media-amazon.com/images/I/41w5oqE7MOL._AC_UL320_.jpg",
+    "title": "DAMENSCH",
+    "score": 33,
+    "imgUrl": "https://m.media-amazon.com/images/I/71PXL-cxSuL._AC_UL320_.jpg",
     "carbon": 8.2,
-    "price": 474
+    "price": 801
   },
   {
-    "asin": "B0CWL8RGFS",
+    "asin": "B08Q3PSNR1",
     "category": "tshirt",
-    "title": "LUDIC",
-    "score": 35,
-    "imgUrl": "https://m.media-amazon.com/images/I/31uiMKhj0TL._AC_UL320_.jpg",
+    "title": "BABY GO",
+    "score": 38,
+    "imgUrl": "https://m.media-amazon.com/images/I/61xbuqpqLOL._AC_UL320_.jpg",
     "carbon": 8.2,
-    "price": 599
+    "price": 419
   },
   {
     "asin": "B0D361P477",
@@ -126,40 +108,13 @@
     "price": 349
   },
   {
-    "asin": "B09SF5V8B1",
+    "asin": "B0CWL8RGFS",
     "category": "tshirt",
-    "title": "F A S O",
-    "score": 46,
-    "imgUrl": "https://m.media-amazon.com/images/I/61zYjOdcUNL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 429
-  },
-  {
-    "asin": "B0D5H82D79",
-    "category": "tshirt",
-    "title": "DOMIN8",
-    "score": 32,
-    "imgUrl": "https://m.media-amazon.com/images/I/61IuoUhrNAL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 779
-  },
-  {
-    "asin": "B0F4QXH2WJ",
-    "category": "tshirt",
-    "title": "The Boo Boo Club",
-    "score": 16,
-    "imgUrl": "https://m.media-amazon.com/images/I/51TR9btg5HL._AC_UL320_.jpg",
+    "title": "LUDIC",
+    "score": 35,
+    "imgUrl": "https://m.media-amazon.com/images/I/31uiMKhj0TL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 599
-  },
-  {
-    "asin": "B0D1VS9XRN",
-    "category": "tshirt",
-    "title": "XENOVAURBAN",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/41LHbRYD7PL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 679
   },
   {
     "asin": "B0CBBDWQH2",
@@ -171,13 +126,22 @@
     "price": 349
   },
   {
-    "asin": "B0DSPDNHP2",
+    "asin": "B012STPJMY",
     "category": "tshirt",
-    "title": "Kidbea",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/71PGrzS7clL._AC_UL320_.jpg",
+    "title": "Jockey",
+    "score": 38,
+    "imgUrl": "https://m.media-amazon.com/images/I/61u6Qz-GLKL._AC_UL320_.jpg",
     "carbon": 8.2,
-    "price": 699
+    "price": 579
+  },
+  {
+    "asin": "B07NF4CD53",
+    "category": "tshirt",
+    "title": "Amazon Brand - Symbol",
+    "score": 37,
+    "imgUrl": "https://m.media-amazon.com/images/I/71rbbm-LIAL._AC_UL320_.jpg",
+    "carbon": 8.2,
+    "price": 799
   },
   {
     "asin": "B0F2M7L4Z8",
@@ -189,24 +153,6 @@
     "price": 399
   },
   {
-    "asin": "B0CWKPGB25",
-    "category": "tshirt",
-    "title": "LUDIC",
-    "score": 35,
-    "imgUrl": "https://m.media-amazon.com/images/I/31lz051DfDL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 599
-  },
-  {
-    "asin": "B0D5H84345",
-    "category": "tshirt",
-    "title": "DOMIN8",
-    "score": 32,
-    "imgUrl": "https://m.media-amazon.com/images/I/71LgoHn1rcL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 798
-  },
-  {
     "asin": "B09PYZ4L69",
     "category": "tshirt",
     "title": "FastB",
@@ -216,40 +162,13 @@
     "price": 799
   },
   {
-    "asin": "B0D5H3TM51",
+    "asin": "B0D1VS9XRN",
     "category": "tshirt",
-    "title": "DOMIN8",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/71rDnVoNFiL._AC_UL320_.jpg",
+    "title": "XENOVAURBAN",
+    "score": 36,
+    "imgUrl": "https://m.media-amazon.com/images/I/41LHbRYD7PL._AC_UL320_.jpg",
     "carbon": 8.2,
-    "price": 899
-  },
-  {
-    "asin": "B09RQT576R",
-    "category": "tshirt",
-    "title": "FastB",
-    "score": 45,
-    "imgUrl": "https://m.media-amazon.com/images/I/61JdOaEX5GL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 799
-  },
-  {
-    "asin": "B09HW1FL7V",
-    "category": "tshirt",
-    "title": "FastB",
-    "score": 45,
-    "imgUrl": "https://m.media-amazon.com/images/I/61k9O6ePQXL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 799
-  },
-  {
-    "asin": "B09RQTCRX6",
-    "category": "tshirt",
-    "title": "FastB",
-    "score": 45,
-    "imgUrl": "https://m.media-amazon.com/images/I/61xpyfjJODL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 799
+    "price": 679
   },
   {
     "asin": "B0CYHP1P1V",
@@ -279,15 +198,6 @@
     "price": 499
   },
   {
-    "asin": "B0B6WTLHDR",
-    "category": "tshirt",
-    "title": "DAMENSCH",
-    "score": 33,
-    "imgUrl": "https://m.media-amazon.com/images/I/71PXL-cxSuL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 801
-  },
-  {
     "asin": "B08P91YQNW",
     "category": "tshirt",
     "title": "Workshop",
@@ -306,15 +216,6 @@
     "price": 399
   },
   {
-    "asin": "B09RZNXCQS",
-    "category": "tshirt",
-    "title": "F A S O",
-    "score": 46,
-    "imgUrl": "https://m.media-amazon.com/images/I/61VKvitoG2L._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 429
-  },
-  {
     "asin": "B08R9SR657",
     "category": "tshirt",
     "title": "InnerClan",
@@ -322,15 +223,6 @@
     "imgUrl": "https://m.media-amazon.com/images/I/71I50mxS+NL._AC_UL320_.jpg",
     "carbon": 6.21,
     "price": 0
-  },
-  {
-    "asin": "B0DQ5QKFML",
-    "category": "tshirt",
-    "title": "DOMIN8",
-    "score": 42,
-    "imgUrl": "https://m.media-amazon.com/images/I/51Z3Vin+VdL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 1299
   },
   {
     "asin": "B0DKFWG9S8",
@@ -360,15 +252,6 @@
     "price": 0
   },
   {
-    "asin": "B0FDG64M1Y",
-    "category": "tshirt",
-    "title": "Generic",
-    "score": 47,
-    "imgUrl": "https://m.media-amazon.com/images/I/41Ixn4fokQL._AC_UL320_.jpg",
-    "carbon": 4.09,
-    "price": 0
-  },
-  {
     "asin": "B0FD8N6GBM",
     "category": "tshirt",
     "title": "Afon Teifi",
@@ -378,24 +261,6 @@
     "price": 749
   },
   {
-    "asin": "B0FD3JC7TL",
-    "category": "tshirt",
-    "title": "Generic",
-    "score": 15,
-    "imgUrl": "https://m.media-amazon.com/images/I/51F2ypq3+IL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 699
-  },
-  {
-    "asin": "B0FCYVCQJY",
-    "category": "tshirt",
-    "title": "Generic",
-    "score": 15,
-    "imgUrl": "https://m.media-amazon.com/images/I/612OccrKAgL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 699
-  },
-  {
     "asin": "B0FCTPHL73",
     "category": "tshirt",
     "title": "Lyonardo",
@@ -403,15 +268,6 @@
     "imgUrl": "https://m.media-amazon.com/images/I/51NbBhmFglL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 399
-  },
-  {
-    "asin": "B0FCS19NWZ",
-    "category": "tshirt",
-    "title": "Generic",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/615eDHjT+OL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 899
   },
   {
     "asin": "B0F21KDFLC",
@@ -441,42 +297,6 @@
     "price": 499
   },
   {
-    "asin": "B0F9YSFX59",
-    "category": "tshirt",
-    "title": "Javelin Tiger",
-    "score": 37,
-    "imgUrl": "https://m.media-amazon.com/images/I/617CdQ2h5ZL._AC_UL320_.jpg",
-    "carbon": 6.21,
-    "price": 499
-  },
-  {
-    "asin": "B0F9YV2XGH",
-    "category": "tshirt",
-    "title": "Javelin Tiger",
-    "score": 37,
-    "imgUrl": "https://m.media-amazon.com/images/I/61wrE26D+9L._AC_UL320_.jpg",
-    "carbon": 6.21,
-    "price": 499
-  },
-  {
-    "asin": "B0F9YT5F8N",
-    "category": "tshirt",
-    "title": "Javelin Tiger",
-    "score": 37,
-    "imgUrl": "https://m.media-amazon.com/images/I/61wrE26D+9L._AC_UL320_.jpg",
-    "carbon": 6.21,
-    "price": 499
-  },
-  {
-    "asin": "B0F9YTKQRY",
-    "category": "tshirt",
-    "title": "Javelin Tiger",
-    "score": 37,
-    "imgUrl": "https://m.media-amazon.com/images/I/61wrE26D+9L._AC_UL320_.jpg",
-    "carbon": 6.21,
-    "price": 499
-  },
-  {
     "asin": "B0DLH43RG8",
     "category": "tshirt",
     "title": "Calvin Klein",
@@ -484,33 +304,6 @@
     "imgUrl": "https://m.media-amazon.com/images/I/61BVK3UtwpL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 1799
-  },
-  {
-    "asin": "B0DZ335BJH",
-    "category": "tshirt",
-    "title": "Tommy Hilfiger",
-    "score": 9,
-    "imgUrl": "https://m.media-amazon.com/images/I/61gU0hojX0L._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 1799
-  },
-  {
-    "asin": "B0DT9QS4JR",
-    "category": "tshirt",
-    "title": "Tommy Hilfiger",
-    "score": 10,
-    "imgUrl": "https://m.media-amazon.com/images/I/51XbpFOFt3L._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 1622
-  },
-  {
-    "asin": "B0DCZPQNLC",
-    "category": "tshirt",
-    "title": "Tommy Hilfiger",
-    "score": 28,
-    "imgUrl": "https://m.media-amazon.com/images/I/51vgbqRhyIL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 1199
   },
   {
     "asin": "B0F3CT2MX1",
@@ -540,186 +333,6 @@
     "price": 1199
   },
   {
-    "asin": "B0F38FR9HY",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 23,
-    "imgUrl": "https://m.media-amazon.com/images/I/51JWv5QQprL._AC_UL320_.jpg",
-    "carbon": 12.03,
-    "price": 1199
-  },
-  {
-    "asin": "B0DSL2CRC8",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 18,
-    "imgUrl": "https://m.media-amazon.com/images/I/51n2Blzb6CL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1049
-  },
-  {
-    "asin": "B0DN9X55D7",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 17,
-    "imgUrl": "https://m.media-amazon.com/images/I/61eJ721qalL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1599
-  },
-  {
-    "asin": "B0F4XZ4K4K",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 28,
-    "imgUrl": "https://m.media-amazon.com/images/I/61UqkGpRfaL._AC_UL320_.jpg",
-    "carbon": 12.03,
-    "price": 1399
-  },
-  {
-    "asin": "B0DSQ2TMGM",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 18,
-    "imgUrl": "https://m.media-amazon.com/images/I/61AauiIbSOL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1079
-  },
-  {
-    "asin": "B0F38FDFP8",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 18,
-    "imgUrl": "https://m.media-amazon.com/images/I/51aUh80pVxL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1199
-  },
-  {
-    "asin": "B0BC1CZRZ6",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 28,
-    "imgUrl": "https://m.media-amazon.com/images/I/61zEzeNouoL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1269
-  },
-  {
-    "asin": "B0F38FFNNY",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 22,
-    "imgUrl": "https://m.media-amazon.com/images/I/61YvuOWHCDL._AC_UL320_.jpg",
-    "carbon": 12.03,
-    "price": 1799
-  },
-  {
-    "asin": "B0F7RL9NGD",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 14,
-    "imgUrl": "https://m.media-amazon.com/images/I/61qK8Bwz4GL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 2599
-  },
-  {
-    "asin": "B0F38F3FDS",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 18,
-    "imgUrl": "https://m.media-amazon.com/images/I/61HWsf9nIKL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1199
-  },
-  {
-    "asin": "B0DSQ3R7CB",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 19,
-    "imgUrl": "https://m.media-amazon.com/images/I/51fFVHwfjPL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 960
-  },
-  {
-    "asin": "B0F4XWHWVJ",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 27,
-    "imgUrl": "https://m.media-amazon.com/images/I/61eH1tpIz6L._AC_UL320_.jpg",
-    "carbon": 12.03,
-    "price": 2599
-  },
-  {
-    "asin": "B0DKFYQ7XP",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 17,
-    "imgUrl": "https://m.media-amazon.com/images/I/61DX62DKysL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1599
-  },
-  {
-    "asin": "B0F3PG8PRS",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 15,
-    "imgUrl": "https://m.media-amazon.com/images/I/61O9Ir87msL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1199
-  },
-  {
-    "asin": "B0F4Y16RZ4",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 25,
-    "imgUrl": "https://m.media-amazon.com/images/I/51Anba+MRxL._AC_UL320_.jpg",
-    "carbon": 12.03,
-    "price": 2599
-  },
-  {
-    "asin": "B0F3PCYZRJ",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 21,
-    "imgUrl": "https://m.media-amazon.com/images/I/61gG5wbBKGL._AC_UL320_.jpg",
-    "carbon": 12.03,
-    "price": 1199
-  },
-  {
-    "asin": "B0DSQ463P7",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 18,
-    "imgUrl": "https://m.media-amazon.com/images/I/61BAxpE6mLL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1079
-  },
-  {
-    "asin": "B0F4XVCMFQ",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 25,
-    "imgUrl": "https://m.media-amazon.com/images/I/51CSxiO0z0L._AC_UL320_.jpg",
-    "carbon": 12.03,
-    "price": 3499
-  },
-  {
-    "asin": "B0DN9W1JZS",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 17,
-    "imgUrl": "https://m.media-amazon.com/images/I/616DQTzK4wL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1559
-  },
-  {
-    "asin": "B0BC1BW3CQ",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/61YdtKH0pTL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1566
-  },
-  {
     "asin": "B0C5JVFTTH",
     "category": "jeans",
     "title": "LOUIS STITCH",
@@ -738,24 +351,6 @@
     "price": 2969
   },
   {
-    "asin": "B0BT7T96NL",
-    "category": "jeans",
-    "title": "Pepe Jeans",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/51Q5IpV7MFL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 2399
-  },
-  {
-    "asin": "B0DN9RYJC6",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/51PSkIAHaZL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1319
-  },
-  {
     "asin": "B0BRB1SVCC",
     "category": "jeans",
     "title": "Awack",
@@ -765,60 +360,6 @@
     "price": 1899
   },
   {
-    "asin": "B0BC19S9MN",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/61VJyBxuiYL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1276
-  },
-  {
-    "asin": "B0CLM64JZW",
-    "category": "jeans",
-    "title": "Pepe Jeans",
-    "score": 29,
-    "imgUrl": "https://m.media-amazon.com/images/I/61gWL3z5jeL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1579
-  },
-  {
-    "asin": "B09ZY4PNK3",
-    "category": "jeans",
-    "title": "Awack",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/61GNn0Hpp1L._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 999
-  },
-  {
-    "asin": "B0BC1BD8ZC",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 32,
-    "imgUrl": "https://m.media-amazon.com/images/I/61MAcRO+NsL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1119
-  },
-  {
-    "asin": "B0BC1ZWC2W",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/61yVsHjlPfL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1119
-  },
-  {
-    "asin": "B09NKTW34S",
-    "category": "jeans",
-    "title": "Awack",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/81v60FPcF7L._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 999
-  },
-  {
     "asin": "B0D35SQVTP",
     "category": "jeans",
     "title": "Urbano Fashion",
@@ -826,15 +367,6 @@
     "imgUrl": "https://m.media-amazon.com/images/I/516lCOF55DL._AC_UL320_.jpg",
     "carbon": 12.03,
     "price": 1049
-  },
-  {
-    "asin": "B0BT7SG1DN",
-    "category": "jeans",
-    "title": "Pepe Jeans",
-    "score": 33,
-    "imgUrl": "https://m.media-amazon.com/images/I/71NiNcXwYIL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1719
   },
   {
     "asin": "B0C66147R5",
@@ -855,220 +387,13 @@
     "price": 960
   },
   {
-    "asin": "B09ZQM8SJF",
-    "category": "jeans",
-    "title": "Awack",
-    "score": 27,
-    "imgUrl": "https://m.media-amazon.com/images/I/61OMG3lnxHL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1999
-  },
-  {
-    "asin": "B09NQBHZH8",
-    "category": "jeans",
-    "title": "Awack",
-    "score": 29,
-    "imgUrl": "https://m.media-amazon.com/images/I/71uMejG5aXL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 999
-  },
-  {
-    "asin": "B0DWX7CCDY",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/61sWGehYwbL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 2399
-  },
-  {
-    "asin": "B0F8Q9MJ4G",
-    "category": "jeans",
-    "title": "GAP",
-    "score": 38,
-    "imgUrl": "https://m.media-amazon.com/images/I/61h2Yys55pL._AC_UL320_.jpg",
-    "carbon": 11.78,
-    "price": 1929
-  },
-  {
-    "asin": "B0F6YRRBTT",
-    "category": "jeans",
-    "title": "GAP",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/61mptai9omL._AC_UL320_.jpg",
-    "carbon": 8.81,
-    "price": 2249
-  },
-  {
-    "asin": "B0FBK9H89J",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 12,
-    "imgUrl": "https://m.media-amazon.com/images/I/51ZWsmnyoWL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 3499
-  },
-  {
-    "asin": "B0DK7D6Z89",
-    "category": "jeans",
-    "title": "Pepe Jeans",
-    "score": 21,
-    "imgUrl": "https://m.media-amazon.com/images/I/61dXPygBORL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1938
-  },
-  {
-    "asin": "B0DK7DGHCL",
-    "category": "jeans",
-    "title": "Pepe Jeans",
-    "score": 19,
-    "imgUrl": "https://m.media-amazon.com/images/I/61AbUDfn8eL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 1938
-  },
-  {
-    "asin": "B0F3PF1K7J",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 12,
-    "imgUrl": "https://m.media-amazon.com/images/I/51C89KJyS8L._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 3499
-  },
-  {
     "asin": "B0F5BGJYWF",
     "category": "jeans",
     "title": "American Eagle",
-    "score": 30,
+    "score": 29,
     "imgUrl": "https://m.media-amazon.com/images/I/61yYczIkh5L._AC_UL320_.jpg",
     "carbon": 8.8,
     "price": 4599
-  },
-  {
-    "asin": "B0F3DR9Z31",
-    "category": "jeans",
-    "title": "Tommy Hilfiger",
-    "score": 6,
-    "imgUrl": "https://m.media-amazon.com/images/I/7163R5HJNwL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 4799
-  },
-  {
-    "asin": "B0F9FMQPHH",
-    "category": "jeans",
-    "title": "GAP",
-    "score": 17,
-    "imgUrl": "https://m.media-amazon.com/images/I/61Y43M5QDLL._AC_UL320_.jpg",
-    "carbon": 12.03,
-    "price": 3499
-  },
-  {
-    "asin": "B0F3DVQKPR",
-    "category": "jeans",
-    "title": "Tommy Hilfiger",
-    "score": 7,
-    "imgUrl": "https://m.media-amazon.com/images/I/614Ax1DoS0L._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 4316
-  },
-  {
-    "asin": "B0DCZPSHPD",
-    "category": "jeans",
-    "title": "Tommy Hilfiger",
-    "score": 6,
-    "imgUrl": "https://m.media-amazon.com/images/I/51AAlwfFxvL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 4799
-  },
-  {
-    "asin": "B0DCZQVC25",
-    "category": "jeans",
-    "title": "Tommy Hilfiger",
-    "score": 6,
-    "imgUrl": "https://m.media-amazon.com/images/I/51UBWvz9VOL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 4799
-  },
-  {
-    "asin": "B0F1NDCR3N",
-    "category": "jeans",
-    "title": "American Eagle",
-    "score": 18,
-    "imgUrl": "https://m.media-amazon.com/images/I/61a0n-sIQqL._AC_UL320_.jpg",
-    "carbon": 11.3,
-    "price": 3824
-  },
-  {
-    "asin": "B0F9YV8F76",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 12,
-    "imgUrl": "https://m.media-amazon.com/images/I/61gMH66NIFL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 3499
-  },
-  {
-    "asin": "B0FBK8WG64",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 12,
-    "imgUrl": "https://m.media-amazon.com/images/I/61WhTcEyIhL._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 3499
-  },
-  {
-    "asin": "B0F9YT2J6F",
-    "category": "jeans",
-    "title": "Numero Uno",
-    "score": 12,
-    "imgUrl": "https://m.media-amazon.com/images/I/61-IBJuKu6L._AC_UL320_.jpg",
-    "carbon": 12.5,
-    "price": 3499
-  },
-  {
-    "asin": "B0F8QC5RL3",
-    "category": "jeans",
-    "title": "GAP",
-    "score": 47,
-    "imgUrl": "https://m.media-amazon.com/images/I/51A03B4rbsL._AC_UL320_.jpg",
-    "carbon": 8.34,
-    "price": 1929
-  },
-  {
-    "asin": "B0F8Q9XM8G",
-    "category": "jeans",
-    "title": "GAP",
-    "score": 38,
-    "imgUrl": "https://m.media-amazon.com/images/I/61h2Yys55pL._AC_UL320_.jpg",
-    "carbon": 11.78,
-    "price": 1929
-  },
-  {
-    "asin": "B0F8Q9WDNM",
-    "category": "jeans",
-    "title": "GAP",
-    "score": 23,
-    "imgUrl": "https://m.media-amazon.com/images/I/51RwO0T8epL._AC_UL320_.jpg",
-    "carbon": 11.78,
-    "price": 1500
-  },
-  {
-    "asin": "B0F8Q87CDL",
-    "category": "jeans",
-    "title": "GAP",
-    "score": 44,
-    "imgUrl": "https://m.media-amazon.com/images/I/51xEK7qr55L._AC_UL320_.jpg",
-    "carbon": 8.34,
-    "price": 1250
-  },
-  {
-    "asin": "B0F8QC5MNR",
-    "category": "jeans",
-    "title": "GAP",
-    "score": 23,
-    "imgUrl": "https://m.media-amazon.com/images/I/51RFSHcjpZL._AC_UL320_.jpg",
-    "carbon": 11.78,
-    "price": 1750
   },
   {
     "asin": "B0BXJ93M67",
@@ -1134,15 +459,6 @@
     "price": 249
   },
   {
-    "asin": "B0DRCYP93L",
-    "category": "plastic_bottle",
-    "title": "PEXPO Craft Pro 1000 ISI Certified Stainless Steel Sports/Fridge Water Bottle with Sipper Cap, 950ml, Purple-Pink Ombre |Eco Friendly | BPA Free | Water Bottle for Office, Gym, School, Yoga",
-    "score": 49,
-    "imgUrl": "https://m.media-amazon.com/images/I/51KoFtDZxLL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 299
-  },
-  {
     "asin": "B0D73X8PDY",
     "category": "plastic_bottle",
     "title": "Eha Earth Friendly Insulated Sipper bottle for adults | Water Bottle for Office and Gym | Made with Rice Husk Biocomposite| Water Bottle for kids | 1 Unit, 600 ml | Celeste",
@@ -1150,6 +466,15 @@
     "imgUrl": "https://m.media-amazon.com/images/I/71S5Ob6DhBL._AC_UL320_.jpg",
     "carbon": 0.13,
     "price": 875
+  },
+  {
+    "asin": "B0DRH1658N",
+    "category": "plastic_bottle",
+    "title": "Your Name Customised Eco Friendly Bamboo Stainless Steel Wooden Bamboo Bottle 24 Hours Vacuum Flask, 500ml, Silver 12 Hours Hot & Cold Stainless Steel Flask Water Thermos with Double Wall Hot & Cold",
+    "score": 43,
+    "imgUrl": "https://m.media-amazon.com/images/I/31pvaM0rfBL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 699
   },
   {
     "asin": "B0DXFPKDNN",
@@ -1161,13 +486,13 @@
     "price": 299
   },
   {
-    "asin": "B0DRH1658N",
+    "asin": "B0DRCVZ7H9",
     "category": "plastic_bottle",
-    "title": "Your Name Customised Eco Friendly Bamboo Stainless Steel Wooden Bamboo Bottle 24 Hours Vacuum Flask, 500ml, Silver 12 Hours Hot & Cold Stainless Steel Flask Water Thermos with Double Wall Hot & Cold",
-    "score": 43,
-    "imgUrl": "https://m.media-amazon.com/images/I/31pvaM0rfBL._AC_UL320_.jpg",
+    "title": "PEXPO Craft Pro 1000, 950 ml ISI Certified Stainless Steel Sports/Fridge Water Bottle with Sipper Cap, 950ml, Purple-Green Ombre |Eco friendly | BPA Free | Water Bottle for Office, Gym, School, Yoga",
+    "score": 51,
+    "imgUrl": "https://m.media-amazon.com/images/I/51fbkkR9WzL._AC_UL320_.jpg",
     "carbon": 0.17,
-    "price": 699
+    "price": 299
   },
   {
     "asin": "B0CXDV45V5",
@@ -1260,11 +585,11 @@
     "price": 594
   },
   {
-    "asin": "B0DNMJY6R8",
+    "asin": "B0DNMHGTYB",
     "category": "plastic_bottle",
-    "title": "SuperGeneriX Motivational Water Bottle 1 Litre, Durable BPA-Free Leakproof Bottle with Time Marker for Office, Gym, Outdoor, Fitness, Hydration Goals, and Ideal for Gifting (Matt Green)",
+    "title": "SuperGeneriX Motivational Water Bottle 1 Litre, Durable BPA-Free Leakproof Bottle with Time Marker for Office, Gym, Outdoor, Fitness, Hydration Goals, and Ideal for Gifting (Glossy Green)",
     "score": 49,
-    "imgUrl": "https://m.media-amazon.com/images/I/61P9h7WrOxL._AC_UL320_.jpg",
+    "imgUrl": "https://m.media-amazon.com/images/I/61njdAHsvqL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 348
   },
@@ -1512,33 +837,6 @@
     "price": 489
   },
   {
-    "asin": "B0FDFWWPVT",
-    "category": "plastic_bottle",
-    "title": "MAHITEK Stainless Steel Water Bottle with Grooved Grip Design – 1000 ml Capacity – Leak-Proof, Lightweight & Reusable Bottle for Office, Gym, Travel, School & Outdoor Use – Silver Finish",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/61KsHNK5QGL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 340
-  },
-  {
-    "asin": "B0FDFTF8NR",
-    "category": "plastic_bottle",
-    "title": "MAHITEK Stainless Steel Water Bottle with Grooved Grip Design – 1000 ml Capacity – Leak-Proof, Lightweight & Reusable Bottle for Office, Gym, Travel, School & Outdoor Use – Silver Finish(Pack of 3)",
-    "score": 25,
-    "imgUrl": "https://m.media-amazon.com/images/I/71DWsa-xQLL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 950
-  },
-  {
-    "asin": "B0FDFRJNWX",
-    "category": "plastic_bottle",
-    "title": "MAHITEK Stainless Steel Water Bottle with Grooved Grip Design – 1000 ml Capacity – Leak-Proof, Lightweight & Reusable Bottle for Office, Gym, Travel, School & Outdoor Use – Silver Finish(Pack of 4)",
-    "score": 24,
-    "imgUrl": "https://m.media-amazon.com/images/I/61b9FMeweFL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 1170
-  },
-  {
     "asin": "B0FDFRLPG8",
     "category": "plastic_bottle",
     "title": "RACQUE Hello-Master Borosilicate Water Bottle Transparent Water Bottle for Home, Office, Gym, Picnic and Travelling Stylish Glass Bottle Multicolor",
@@ -1611,15 +909,6 @@
     "price": 999
   },
   {
-    "asin": "B0FCFLRNSM",
-    "category": "phone_charger",
-    "title": "Smart 67W Charger for Redmi 12 Pro Note 13 Pro+ 5G Energy Efficient",
-    "score": 40,
-    "imgUrl": "https://m.media-amazon.com/images/I/51zg8vk4ykL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 1599
-  },
-  {
     "asin": "B08NK4P62Q",
     "category": "phone_charger",
     "title": "Eveready 9W Emergency Inverter LED Bulb, Cool Day Light (6500K), Rechargeable Bulb with 3 Hours Backup, Ideal for Powercuts, Energy Efficient, B22 Base, Pack of 1",
@@ -1629,13 +918,31 @@
     "price": 241
   },
   {
-    "asin": "B0FCFM1WB4",
+    "asin": "B075DB1F13",
     "category": "phone_charger",
-    "title": "Original 33W Charger for Redmi Note 11S, Redmi Note 10 | Energy Efficient",
-    "score": 42,
-    "imgUrl": "https://m.media-amazon.com/images/I/31B0fq3tr8L._AC_UY218_.jpg",
+    "title": "Panasonic Eneloop CC55N Smart and Quick Charger for AA & AAA Rechargeable Batteries,Input AC100V‐240V 50‐60HZ,Charging Output AA×2 1500mA AAA×2 550mA,Timer Control Charging-on,Full Charged-off.",
+    "score": 51,
+    "imgUrl": "https://m.media-amazon.com/images/I/61T4iebGjrL._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 1299
+    "price": 1490
+  },
+  {
+    "asin": "B0B919D52V",
+    "category": "phone_charger",
+    "title": "WEIRD WOLF 3 Colour Mode LED Study/Table/Desk Lamp with Pen Holder, 6 Month Warranty(Plastic, White, Pack of 1)",
+    "score": 61,
+    "imgUrl": "https://m.media-amazon.com/images/I/81FsiUBcq1L._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 499
+  },
+  {
+    "asin": "B09NPVCHXC",
+    "category": "phone_charger",
+    "title": "Eveready 12W Emergency Inverter LED Bulb, Cool Day Light (6500K), Rechargeable Bulb with 3 Hours Backup, Ideal for Powercuts, Energy Efficient, B22 Base, Pack of 1",
+    "score": 57,
+    "imgUrl": "https://m.media-amazon.com/images/I/71ISgAd-E0L._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 280
   },
   {
     "asin": "B0B3HZF9T8",
@@ -1656,24 +963,6 @@
     "price": 1349
   },
   {
-    "asin": "B09NPVCHXC",
-    "category": "phone_charger",
-    "title": "Eveready 12W Emergency Inverter LED Bulb, Cool Day Light (6500K), Rechargeable Bulb with 3 Hours Backup, Ideal for Powercuts, Energy Efficient, B22 Base, Pack of 1",
-    "score": 57,
-    "imgUrl": "https://m.media-amazon.com/images/I/71ISgAd-E0L._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 280
-  },
-  {
-    "asin": "B075DB1F13",
-    "category": "phone_charger",
-    "title": "Panasonic Eneloop CC55N Smart and Quick Charger for AA & AAA Rechargeable Batteries,Input AC100V‐240V 50‐60HZ,Charging Output AA×2 1500mA AAA×2 550mA,Timer Control Charging-on,Full Charged-off.",
-    "score": 51,
-    "imgUrl": "https://m.media-amazon.com/images/I/61T4iebGjrL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 1490
-  },
-  {
     "asin": "B0CNM4V6Q5",
     "category": "phone_charger",
     "title": "Dr Vaku® 20W Fast Charger Adapter for iPhone 16/16 Plus/16 Pro/16 Pro Max, 15/15 Plus/15Pro/15 Pro Max & Other Type C Devices with 1 Meter Nylon Braided USB C to Type C Data Cable PD(Adapter+Cable)",
@@ -1683,67 +972,76 @@
     "price": 748
   },
   {
-    "asin": "B0FCG1ZGSZ",
+    "asin": "B0D8Q3Z8QL",
     "category": "phone_charger",
-    "title": "Genuine 33W Charger for Redmi Note 11, Poco M2 Pro | Turbo Charging | Energy Efficient",
-    "score": 42,
-    "imgUrl": "https://m.media-amazon.com/images/I/41tqnhTZrOL._AC_UY218_.jpg",
+    "title": "WEIRD WOLF LED Study/Table/Desk Lamp with 3 Colour Mode, Lithium Battery, 6 Month Warranty (Plastic, White, Pack of 1)",
+    "score": 58,
+    "imgUrl": "https://m.media-amazon.com/images/I/61C6-GZ8HBL._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 1299
+    "price": 375
   },
   {
-    "asin": "B0FCG3JXBD",
+    "asin": "B0D45GMSFZ",
     "category": "phone_charger",
-    "title": "Smart 67W Charger for Redmi Note 12 Pro+ 5G, 12T | Energy Efficient",
-    "score": 40,
-    "imgUrl": "https://m.media-amazon.com/images/I/51zg8vk4ykL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 1599
-  },
-  {
-    "asin": "B0DVQ1TZRD",
-    "category": "phone_charger",
-    "title": "Kratos Power PQ2 Dual Port 12w Charger Adapter, 5V/2.4A Adapter Charger, Travel-Friendly Mobile Charger Adapter for Smartphones, Smartwaches, Earbuds & Other Gadgets,White",
-    "score": 57,
-    "imgUrl": "https://m.media-amazon.com/images/I/51XulQVbsML._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 249
-  },
-  {
-    "asin": "B0DVC4S81M",
-    "category": "phone_charger",
-    "title": "Original 80W Type-C Charger for ONE-Plus 9/9 Pro/ 9R/ 8/ 8T/ OPP-O X2, Reno 4 Pro, Reno 5 Pro 5G, Reno 6 5G, Reno 6 Pro 5 (Original 80W,SU-42,WT)",
+    "title": "Portronics Luxcell MagClick 10k 10000 mAh 15W Magnetic Wireless Fast Charging Power Bank Premium Finish, 22.5 Wired Output Compatible with iPhone 12 & Above,Type C Smartphones,Tablets(Dark Grey)",
     "score": 49,
-    "imgUrl": "https://m.media-amazon.com/images/I/51Drz28QLzL._AC_UY218_.jpg",
+    "imgUrl": "https://m.media-amazon.com/images/I/51BsxOdN0xL._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 470
+    "price": 1399
   },
   {
-    "asin": "B0FCG4TBHW",
+    "asin": "B00GC0BF9C",
     "category": "phone_charger",
-    "title": "Smart 33W Charger for Poco M2 Pro, Note 11 | Energy Efficient",
-    "score": 42,
-    "imgUrl": "https://m.media-amazon.com/images/I/31B0fq3tr8L._AC_UY218_.jpg",
+    "title": "ENVIE® (ECR 20 MC+4xAA3200) Rechargeable Battery Charger for AA & AAA Ni-mh/Ni-Cd with AA3200 Infinite Plus 4PL Rechargeable Batteries",
+    "score": 46,
+    "imgUrl": "https://m.media-amazon.com/images/I/61PhiDy44qL._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 1299
+    "price": 1099
   },
   {
-    "asin": "B0FCFYMMKG",
+    "asin": "B0DPSVVX69",
     "category": "phone_charger",
-    "title": "Smart 33W Charger for Redmi Note 12, Redmi Note 11S | Energy Efficient | High-Speed Supply | Energy Efficient",
-    "score": 42,
-    "imgUrl": "https://m.media-amazon.com/images/I/31745Ze5OEL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 1299
+    "title": "PLIGHT 12V Battery Charger – Fast Charging for UPS, Car, SUV & Kids' Ride-on Bike | Reliable & Efficient Power Supply",
+    "score": 55,
+    "imgUrl": "https://m.media-amazon.com/images/I/51sL8ir8rFL._AC_UY218_.jpg",
+    "carbon": 0.14,
+    "price": 600
   },
   {
-    "asin": "B0FCLWTFHB",
+    "asin": "B0DFH4FBRM",
     "category": "phone_charger",
-    "title": "Efficient 33W Charger for Note 12, Redmi Note K40 | Performance Ready | Energy Efficient",
-    "score": 42,
-    "imgUrl": "https://m.media-amazon.com/images/I/31745Ze5OEL._AC_UY218_.jpg",
+    "title": "boAt Energyshroom PB400 Pro 20000mAh | Pocket Size, Compact Power Bank w/Type-C Input (2-Way Port), 3X Output Ports, Compatible with Tablets, Smartphones, Earbuds, Smartwatch(Emerald Green)",
+    "score": 54,
+    "imgUrl": "https://m.media-amazon.com/images/I/71HCCp+h3FL._AC_UY218_.jpg",
+    "carbon": 0.14,
+    "price": 1999
+  },
+  {
+    "asin": "B0D7W83YMN",
+    "category": "phone_charger",
+    "title": "GM G+ 20W Dual-Port Charger - Compact Design with High Power Delivery, Combined Output of Dual Port 24W | 2-in-1 PD QC 3.0 Charger, Type C and USB A Adaptor for iPhones and Android Phones",
+    "score": 37,
+    "imgUrl": "https://m.media-amazon.com/images/I/51uzu-MopaL._AC_UY218_.jpg",
+    "carbon": 0.2,
+    "price": 399
+  },
+  {
+    "asin": "B0CTJ1NTRG",
+    "category": "phone_charger",
+    "title": "pTron Newly Launched Dynamo Nergy 10000mAh 22.5W Fast Charging Power Bank, Supports VOOC/Wrap/Dash USB Charging, 20W PD Fast Charging, 3 Outputs, 1 Input & Multiple Layers of Protection (Blue)",
+    "score": 52,
+    "imgUrl": "https://m.media-amazon.com/images/I/614RfJAfL3L._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 1299
+    "price": 699
+  },
+  {
+    "asin": "B0CQK23MSN",
+    "category": "phone_charger",
+    "title": "Portronics Luxcell B 10K 10000 mAh 22.5W Fast Charging Power Bank, Ultra Slim Power Bank with Mach USB-A Output, Type C PD Output, Type C Input, Wake Up Button(Yellow)",
+    "score": 50,
+    "imgUrl": "https://m.media-amazon.com/images/I/610b8CUauXL._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 1099
   },
   {
     "asin": "B0DYPFNH6Z",
@@ -1769,15 +1067,6 @@
     "title": "AILKIN 25W GaN USB-C Superfast Charger Adapter Compatible with Samsung Galaxy S/A/M/F/Z Series-Compatible with S25/S24/S23/S22 Ultra/S21/21FE/S20/Note/M54/M53 5G/M33/M23/A34/A54 5G/A13 & More(Black)",
     "score": 54,
     "imgUrl": "https://m.media-amazon.com/images/I/61NCSJBgNAL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 749
-  },
-  {
-    "asin": "B0F53P1VPJ",
-    "category": "phone_charger",
-    "title": "AILKIN 25W GaN USB-C Superfast Charger Adapter Compatible with Samsung Galaxy S/A/M/F/Z Series-Compatible with S25/S24/S23/S22 Ultra/S21/21FE/S20/Note/M54/M53 5G/M33/M23/A34/A54 5G/A13 & More(White)",
-    "score": 54,
-    "imgUrl": "https://m.media-amazon.com/images/I/51YBzdCShqL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 749
   },
@@ -1827,15 +1116,6 @@
     "price": 999
   },
   {
-    "asin": "B0F1YQDW4H",
-    "category": "phone_charger",
-    "title": "Samsung 25W Gan Fast Charging Adapter with 1M Type C to C Cable Compatible with Galaxy S25, A56, A16, A06,M05,M06, M16,F16,F05,F06 & Other 25 watt USB C Devices, Superfast Mobile Phone Charger, Black",
-    "score": 59,
-    "imgUrl": "https://m.media-amazon.com/images/I/51nkx-nXLUL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 669
-  },
-  {
     "asin": "B0F9T99M2N",
     "category": "phone_charger",
     "title": "45W Type-C Fast Charger Adapter for Nothing Phone 3a/3a Pro/CMF Phone 2 Pro/Samsung S25/S24(Edge|Ultra|Plus|Fe) iPhone 16/15/Moto Edge 60/50/iQOO/Dell/Hp Laptop/Tablet 45-Watt USB-C GaN Charge, White",
@@ -1848,15 +1128,6 @@
     "asin": "B0FBK3RY16",
     "category": "phone_charger",
     "title": "45W USB-C Fast Charger Adapter for Dell/Hp/infinix/MSI/Lenovo/Galaxy/ASUS Laptop/ChromeBook/Pad/Tablet, Nothing Phone 3a/3a Pro/Samsung S25/S24 (Edge|Ultra|Plus), 45-Watt USB-C PD 3.0 Charge, Black",
-    "score": 50,
-    "imgUrl": "https://m.media-amazon.com/images/I/41yaDflOZ6L._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 999
-  },
-  {
-    "asin": "B0F9T8WC17",
-    "category": "phone_charger",
-    "title": "45W Type-C Fast Charger Adapter for Nothing Phone 3a/3a Pro/CMF Phone 2 Pro/Samsung S25/S24(Edge|Ultra|Plus|Fe) iPhone 16/15/Moto Edge 60/50/iQOO/Dell/Hp Laptop/Tablet 45-Watt USB-C GaN Charge, Black",
     "score": 50,
     "imgUrl": "https://m.media-amazon.com/images/I/41yaDflOZ6L._AC_UY218_.jpg",
     "carbon": 0.15,
@@ -1890,22 +1161,22 @@
     "price": 1299
   },
   {
-    "asin": "B0DJSKV553",
+    "asin": "B0D5YQWKYL",
     "category": "phone_charger",
-    "title": "Noise Power Series 65W GaN Charger: Super Fast Charging Adapter, 3 Ports (2 USB-C Type, 1 USB-A), Globally Compatible, Supports All iPhones, Android Phones, Laptops, Macbooks (Black)",
-    "score": 38,
-    "imgUrl": "https://m.media-amazon.com/images/I/511rRThunjL._AC_UY218_.jpg",
+    "title": "Charger Adapter 20W Original Type C for 16/16 Plus/16 Pro/16 Pro Max, 15/i Phone 14/13/12/11 Series with PD 3.0 USB-C Fast Charging Adaptor BIS Certified",
+    "score": 54,
+    "imgUrl": "https://m.media-amazon.com/images/I/51sPyZDiRwL._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 2499
+    "price": 598
   },
   {
-    "asin": "B0DFZ2G76V",
+    "asin": "B0D4TS9B97",
     "category": "phone_charger",
-    "title": "Stuffcool Nuevo 25W Type A+ C Dual Port Compact Wall Charger for Fast-Charging iPhones, Samsung and Google Phones.",
-    "score": 50,
-    "imgUrl": "https://m.media-amazon.com/images/I/41efOwcSUXL._AC_UY218_.jpg",
+    "title": "Ambrane 10000mAh MagSafe Powerbank with Stand 22.5W Wired & 15W Wireless Fast Charging Dual Input (Type-C & Lightning) | Triple Output | for iPhone 16/15/14/13/12 & Android Devices (PB11, Black)",
+    "score": 47,
+    "imgUrl": "https://m.media-amazon.com/images/I/71r-Wg4tXWL._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 599
+    "price": 1499
   },
   {
     "asin": "B0FDG7SK1Y",
@@ -1913,15 +1184,6 @@
     "title": "30W Car Charger for Oppo A5 Energy Dual USB Port Car Charger High Speed Quick Rapid Fast Turbo Charge QC 3.0 Smart with 1.2m 3-in-1 Multi Cable Micro USB Android iOS Type-C USB Cable (Black, ST.N2)",
     "score": 48,
     "imgUrl": "https://m.media-amazon.com/images/I/51KiK17HTwL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDG7Z8Q9",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Oppo A5 Energy Dual USB Port Car Charger High Speed Quick Rapid Fast Turbo Charge QC 3.0 Smart with 1.2m 3-in-1 Multi Cable Micro USB Android iOS Type-C USB Cable (Black, ST.N)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/51fegmMV9+L._AC_UY218_.jpg",
     "carbon": 0.14,
     "price": 499
   },
@@ -1967,87 +1229,6 @@
     "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Red Charging & Sync Cable (Black, SE.M7)",
     "score": 48,
     "imgUrl": "https://m.media-amazon.com/images/I/51-iKCEz0FL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDBCM25Q",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Red Charging & Sync Cable (Black, SE.M6)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/5105X9msmOL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDBFV3KP",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Red Charging & Sync Cable (Black, SE.M5)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/51drABc2bvL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDBDVNKT",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Red Charging & Sync Cable (Black, SE.M4)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/51+PXM0y69L._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDBCGRYT",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Red Charging & Sync Cable (Black, SE.M3)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/511ART021DL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDBD55HF",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Red Charging & Sync Cable (Black, SE.M2)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/517eRTxeotL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDBDBRB9",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Red Charging & Sync Cable (Black, SE.M1)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/51LZRrk9oYL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDB8H4WC",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Charging & Sync Cable (Black, SE.M9)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/51SttXSUxVL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDBD55CR",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Charging & Sync Cable (Black, SE.M8)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/5170dGQFm3L._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0FDBD6SZ8",
-    "category": "phone_charger",
-    "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Charging & Sync Cable (Black, SE.M7)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/510USW+4GnL._AC_UY218_.jpg",
     "carbon": 0.14,
     "price": 499
   },
@@ -2248,15 +1429,6 @@
     "imgUrl": "https://m.media-amazon.com/images/I/510gDJ-MQVL._AC_UL320_.jpg",
     "carbon": 0.26,
     "price": 490
-  },
-  {
-    "asin": "B0BVVM4VXN",
-    "category": "coffee_mug",
-    "title": "Irida Naturals Unbreakable Coffee Mug - Eco-Friendly & Microwave Safe Mugs for Tea or Coffee, Rice Husk Milk & Tea Coffee Cups for Hot and Cold, Matte Finish Mugs for Gift, 300 ML (Sky Blue)",
-    "score": 62,
-    "imgUrl": "https://m.media-amazon.com/images/I/41eg9oDzrsL._AC_UL320_.jpg",
-    "carbon": 0.23,
-    "price": 284
   },
   {
     "asin": "B01DRM37NE",
@@ -2586,109 +1758,46 @@
     "asin": "B0F5BJ99S4",
     "category": "sneakers",
     "title": "Neeman's",
-    "score": 41,
+    "score": 43,
     "imgUrl": "https://m.media-amazon.com/images/I/61vIP6905mL._AC_UL320_.jpg",
     "carbon": 11.83,
     "price": 1899
   },
   {
-    "asin": "B0DRD9CQKT",
+    "asin": "B0DRD7HR5C",
     "category": "sneakers",
     "title": "hummel",
-    "score": 34,
+    "score": 37,
     "imgUrl": "https://m.media-amazon.com/images/I/61JZPZ4fCOL._AC_UL320_.jpg",
     "carbon": 16.16,
     "price": 1799
   },
   {
-    "asin": "B0DRD94WFF",
-    "category": "sneakers",
-    "title": "hummel",
-    "score": 22,
-    "imgUrl": "https://m.media-amazon.com/images/I/61wMMq4C1XL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2399
-  },
-  {
-    "asin": "B0DQP85FDS",
-    "category": "sneakers",
-    "title": "hummel",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/61hHVS3NrUL._AC_UL320_.jpg",
-    "carbon": 16.16,
-    "price": 1799
-  },
-  {
-    "asin": "B0BYZRB5RJ",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 33,
-    "imgUrl": "https://m.media-amazon.com/images/I/51gDtKUTN3L._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2499
-  },
-  {
-    "asin": "B0B77MJ3VH",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 37,
-    "imgUrl": "https://m.media-amazon.com/images/I/519+mDFyO+L._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1349
-  },
-  {
     "asin": "B0CCPF5CHJ",
     "category": "sneakers",
     "title": "GLOBAL RICH",
-    "score": 19,
+    "score": 22,
     "imgUrl": "https://m.media-amazon.com/images/I/713SiQ+Mt4L._AC_UL320_.jpg",
     "carbon": 16.32,
     "price": 1599
   },
   {
-    "asin": "B0F9FCTMBJ",
+    "asin": "B0DTTNSKK6",
     "category": "sneakers",
-    "title": "Neeman's",
-    "score": 17,
-    "imgUrl": "https://m.media-amazon.com/images/I/61R9lVk4bNL._AC_UL320_.jpg",
+    "title": "YOHO",
+    "score": 35,
+    "imgUrl": "https://m.media-amazon.com/images/I/71N9zON5z4L._AC_UL320_.jpg",
     "carbon": 16.8,
-    "price": 2899
+    "price": 1598
   },
   {
     "asin": "B0DPG8YXNJ",
     "category": "sneakers",
     "title": "Plaeto",
-    "score": 33,
+    "score": 34,
     "imgUrl": "https://m.media-amazon.com/images/I/71t5ZS3HN7L._AC_UL320_.jpg",
     "carbon": 16.8,
     "price": 2299
-  },
-  {
-    "asin": "B0DR91JDW1",
-    "category": "sneakers",
-    "title": "YOHO",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/71zEfQ57jWL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1690
-  },
-  {
-    "asin": "B0F5BR2MM3",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 20,
-    "imgUrl": "https://m.media-amazon.com/images/I/61MrxWBTkrL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2199
-  },
-  {
-    "asin": "B0F9FBY6B8",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 18,
-    "imgUrl": "https://m.media-amazon.com/images/I/61MXlRMhXaL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2699
   },
   {
     "asin": "B0DRPDBT5N",
@@ -2703,25 +1812,16 @@
     "asin": "B0F7FH987Q",
     "category": "sneakers",
     "title": "GreenSole",
-    "score": 18,
+    "score": 20,
     "imgUrl": "https://m.media-amazon.com/images/I/31qfKYQp65L._AC_UL320_.jpg",
     "carbon": 16.8,
     "price": 2467
   },
   {
-    "asin": "B0DR2WYJNQ",
-    "category": "sneakers",
-    "title": "YOHO",
-    "score": 33,
-    "imgUrl": "https://m.media-amazon.com/images/I/81g7cHOgk5L._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1559
-  },
-  {
     "asin": "B0DM8BSDX8",
     "category": "sneakers",
     "title": "SOLETHREADS",
-    "score": 15,
+    "score": 16,
     "imgUrl": "https://m.media-amazon.com/images/I/517ddQzo7bL._AC_UL320_.jpg",
     "carbon": 16.8,
     "price": 2999
@@ -2730,55 +1830,10 @@
     "asin": "B09SWZR6GM",
     "category": "sneakers",
     "title": "Shanrya",
-    "score": 17,
+    "score": 20,
     "imgUrl": "https://m.media-amazon.com/images/I/41G+SbopAbL._AC_UL320_.jpg",
     "carbon": 16.8,
     "price": 1701
-  },
-  {
-    "asin": "B0C63T3KF9",
-    "category": "sneakers",
-    "title": "SOLETHREADS",
-    "score": 34,
-    "imgUrl": "https://m.media-amazon.com/images/I/71F9BgHfTTL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1499
-  },
-  {
-    "asin": "B0C63DZ6ZT",
-    "category": "sneakers",
-    "title": "SOLETHREADS",
-    "score": 34,
-    "imgUrl": "https://m.media-amazon.com/images/I/71abtBaNCJL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1499
-  },
-  {
-    "asin": "B0F5WD5TTC",
-    "category": "sneakers",
-    "title": "GreenSole",
-    "score": 17,
-    "imgUrl": "https://m.media-amazon.com/images/I/318-GecGqvL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2922
-  },
-  {
-    "asin": "B0DPG7FCC4",
-    "category": "sneakers",
-    "title": "Plaeto",
-    "score": 33,
-    "imgUrl": "https://m.media-amazon.com/images/I/71t5ZS3HN7L._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2299
-  },
-  {
-    "asin": "B0C63K82KN",
-    "category": "sneakers",
-    "title": "SOLETHREADS",
-    "score": 34,
-    "imgUrl": "https://m.media-amazon.com/images/I/71abtBaNCJL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1499
   },
   {
     "asin": "B0C7P37P4K",
@@ -2790,85 +1845,13 @@
     "price": 4336
   },
   {
-    "asin": "B0D8L93W1H",
-    "category": "sneakers",
-    "title": "YOHO",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/71jEu+y7t5L._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2439
-  },
-  {
-    "asin": "B0BZNZNY7C",
-    "category": "sneakers",
-    "title": "SOLETHREADS",
-    "score": 28,
-    "imgUrl": "https://m.media-amazon.com/images/I/71ZDW7IYQuL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2999
-  },
-  {
-    "asin": "B0BYZR7M5J",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 33,
-    "imgUrl": "https://m.media-amazon.com/images/I/51pNnLvTQAL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2499
-  },
-  {
     "asin": "B0DPJ24DQC",
     "category": "sneakers",
     "title": "Legwork",
-    "score": 34,
+    "score": 37,
     "imgUrl": "https://m.media-amazon.com/images/I/41IuoZzTqOL._AC_UL320_.jpg",
     "carbon": 16.8,
     "price": 1349
-  },
-  {
-    "asin": "B0DRD63S61",
-    "category": "sneakers",
-    "title": "hummel",
-    "score": 22,
-    "imgUrl": "https://m.media-amazon.com/images/I/61wMMq4C1XL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2399
-  },
-  {
-    "asin": "B0F9FFQNVQ",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 17,
-    "imgUrl": "https://m.media-amazon.com/images/I/61flc9ZOwgL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2899
-  },
-  {
-    "asin": "B0F5BMVVJT",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 41,
-    "imgUrl": "https://m.media-amazon.com/images/I/611Uxdio77L._AC_UL320_.jpg",
-    "carbon": 11.83,
-    "price": 1899
-  },
-  {
-    "asin": "B0F9FBTBNH",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 18,
-    "imgUrl": "https://m.media-amazon.com/images/I/61EyjRKOvLL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2699
-  },
-  {
-    "asin": "B0CCPFHWH1",
-    "category": "sneakers",
-    "title": "GLOBAL RICH",
-    "score": 22,
-    "imgUrl": "https://m.media-amazon.com/images/I/81qeK9MebWL._AC_UL320_.jpg",
-    "carbon": 16.32,
-    "price": 0
   },
   {
     "asin": "B0DLSCW8T9",
@@ -2883,126 +1866,9 @@
     "asin": "B0DDTHLZVL",
     "category": "sneakers",
     "title": "Earthen Tunes",
-    "score": 15,
+    "score": 16,
     "imgUrl": "https://m.media-amazon.com/images/I/71xHwYfEATL._AC_UL320_.jpg",
     "carbon": 16.8,
     "price": 2999
-  },
-  {
-    "asin": "B0F9FDZLDQ",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 17,
-    "imgUrl": "https://m.media-amazon.com/images/I/61R9lVk4bNL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2899
-  },
-  {
-    "asin": "B0F5BKPJYL",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 20,
-    "imgUrl": "https://m.media-amazon.com/images/I/61MrxWBTkrL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2199
-  },
-  {
-    "asin": "B0F5BJ3XZ7",
-    "category": "sneakers",
-    "title": "Neeman's",
-    "score": 41,
-    "imgUrl": "https://m.media-amazon.com/images/I/61bmv+jO5RL._AC_UL320_.jpg",
-    "carbon": 11.83,
-    "price": 1899
-  },
-  {
-    "asin": "B0DLSKMGHH",
-    "category": "sneakers",
-    "title": "tresmode",
-    "score": 11,
-    "imgUrl": "https://m.media-amazon.com/images/I/61mBHk-WsoL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 4749
-  },
-  {
-    "asin": "B0DP2KSF74",
-    "category": "sneakers",
-    "title": "tresmode",
-    "score": 13,
-    "imgUrl": "https://m.media-amazon.com/images/I/51RwkDGcqjL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 3649
-  },
-  {
-    "asin": "B0DP2KNLJS",
-    "category": "sneakers",
-    "title": "tresmode",
-    "score": 11,
-    "imgUrl": "https://m.media-amazon.com/images/I/61FuzWgn2bL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 4899
-  },
-  {
-    "asin": "B0DR926QL3",
-    "category": "sneakers",
-    "title": "YOHO",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/71zEfQ57jWL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1690
-  },
-  {
-    "asin": "B0DM8BF8JH",
-    "category": "sneakers",
-    "title": "SOLETHREADS",
-    "score": 15,
-    "imgUrl": "https://m.media-amazon.com/images/I/517ddQzo7bL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2999
-  },
-  {
-    "asin": "B0DM89FTV1",
-    "category": "sneakers",
-    "title": "SOLETHREADS",
-    "score": 19,
-    "imgUrl": "https://m.media-amazon.com/images/I/51-fXNBYYzL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2999
-  },
-  {
-    "asin": "B0DQP2FZF4",
-    "category": "sneakers",
-    "title": "hummel",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/618XR5JEA0L._AC_UL320_.jpg",
-    "carbon": 16.16,
-    "price": 1799
-  },
-  {
-    "asin": "B0DPJ35KPF",
-    "category": "sneakers",
-    "title": "Legwork",
-    "score": 22,
-    "imgUrl": "https://m.media-amazon.com/images/I/41mjbe8MlLL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1349
-  },
-  {
-    "asin": "B0DD1TX7J5",
-    "category": "sneakers",
-    "title": "tresmode",
-    "score": 13,
-    "imgUrl": "https://m.media-amazon.com/images/I/61RabeqGrtL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 3899
-  },
-  {
-    "asin": "B0D8LBRQS8",
-    "category": "sneakers",
-    "title": "YOHO",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/71jEu+y7t5L._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2439
   }
 ]

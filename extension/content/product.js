@@ -221,6 +221,30 @@ function insertGreenerButton() {
   titleEl.parentElement.appendChild(btn);
 }
 
+// Deduplicate products by removing color variants
+function deduplicateProducts(products) {
+  const seen = new Map();
+  const uniqueProducts = [];
+  
+  products.forEach(product => {
+    // Create a base name without color/size variants
+    const baseName = product.title
+      .replace(/\([^)]*\)/g, '') // Remove parentheses content
+      .replace(/\b(black|blue|beige|orange|white|red|green|small|medium|large|xl|xxl)\b/gi, '')
+      .replace(/\s\s+/g, ' ') // Collapse multiple spaces
+      .trim()
+      .toLowerCase();
+    
+    // Skip exact duplicates
+    if (!seen.has(baseName)) {
+      seen.set(baseName, true);
+      uniqueProducts.push(product);
+    }
+  });
+  
+  return uniqueProducts;
+}
+
 // Main click handler
 async function onGreenerClick() {
   if (document.getElementById('greener-panel')) return;
@@ -303,8 +327,11 @@ async function onGreenerClick() {
     // Sort by score descending
     categoryAlts.sort((a, b) => b.score - a.score);
     
+    // Remove color variants
+    const dedupedRecommendations = deduplicateProducts(categoryAlts);
+    
     // Always show top recommendations
-    const topRecommendations = categoryAlts.slice(0, 5);
+    const topRecommendations = dedupedRecommendations.slice(0, 5);
     
     // Display recommendations with current carbon
     displayRecommendations(topRecommendations, pageScore, currentCarbon);
@@ -324,6 +351,11 @@ async function onGreenerClick() {
 function displayRecommendations(items, currentScore, currentCarbon) {
   const existingPanel = document.getElementById('greener-panel');
   if (existingPanel) existingPanel.remove();
+  
+  // Don't show if no recommendations
+  if (items.length === 0) {
+    return alert('No unique alternatives found after removing color variants');
+  }
   
   const panel = document.createElement('div');
   panel.id = 'greener-panel';

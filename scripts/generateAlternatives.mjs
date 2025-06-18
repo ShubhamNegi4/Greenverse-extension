@@ -130,12 +130,7 @@ async function processProduct(el, categoryKey) {
     // Technical details
     const detailsTable = Array.from(
       detailDom.window.document.querySelectorAll('#productDetails_techSpec_section_1 tr, .techD, #productDetails_detailBullets_sections1 tr')
-    ).map(tr => {
-      const cells = tr.querySelectorAll('th, td');
-      return cells.length >= 2 
-        ? `${cells[0].textContent.trim()}: ${cells[1].textContent.trim()}`
-        : tr.textContent.replace(/\s+/g, ' ').trim();
-    }).join(' ');
+    ).map(tr => tr.textContent.replace(/\s+/g, ' ').trim()).join(' ');
     
     // Brand information
     const brandEl = detailDom.window.document.querySelector('#bylineInfo') || 
@@ -203,6 +198,30 @@ async function scrapeCategory(categoryKey, query) {
   return Array.from(uniqueProducts.values());
 }
 
+// Deduplicate products by removing color variants
+function deduplicateProducts(products) {
+  const seen = new Map();
+  const uniqueProducts = [];
+  
+  products.forEach(product => {
+    // Create a base name without color/size variants
+    const baseName = product.title
+      .replace(/\([^)]*\)/g, '') // Remove parentheses content
+      .replace(/\b(black|blue|beige|orange|white|red|green|small|medium|large|xl|xxl)\b/gi, '')
+      .replace(/\s\s+/g, ' ') // Collapse multiple spaces
+      .trim()
+      .toLowerCase();
+    
+    // Skip exact duplicates
+    if (!seen.has(baseName)) {
+      seen.set(baseName, true);
+      uniqueProducts.push(product);
+    }
+  });
+  
+  return uniqueProducts;
+}
+
 (async () => {
   const allProducts = [];
   
@@ -221,7 +240,7 @@ async function scrapeCategory(categoryKey, query) {
     try {
       const items = await scrapeCategory(key, query);
       allProducts.push(...items);
-      console.log(`Found ${items.length} unique products for ${key}`);
+      console.log(`Found ${items.length} products for ${key}`);
     } catch (e) {
       console.error(`Error scraping ${key}:`, e.message);
     }
@@ -231,17 +250,21 @@ async function scrapeCategory(categoryKey, query) {
     console.error('⚠️ No products scraped; check selectors or network');
     process.exit(1);
   }
+  
+  // Remove color variants
+  const dedupedProducts = deduplicateProducts(allProducts);
+  console.log(`Total unique products after deduplication: ${dedupedProducts.length}`);
 
   // Compute price bounds per category
   const priceBounds = {};
-  allProducts.forEach(p => {
+  dedupedProducts.forEach(p => {
     const bounds = priceBounds[p.categoryKey] ||= { min: Infinity, max: 0 };
     bounds.min = Math.min(bounds.min, p.price);
     bounds.max = Math.max(bounds.max, p.price);
   });
 
   // Score each product
-  const alternatives = allProducts.map(p => {
+  const alternatives = dedupedProducts.map(p => {
     const category = categoryData[p.categoryKey];
     if (!category) {
       console.warn(`No category data for ${p.categoryKey}, skipping ${p.asin}`);
@@ -281,5 +304,5 @@ async function scrapeCategory(categoryKey, query) {
 
   const outPath = path.resolve(__dirname, '../extension/data/alternatives.json');
   fs.writeFileSync(outPath, JSON.stringify(alternatives, null, 2), 'utf-8');
-  console.log(`\n✅ Written ${alternatives.length} items to alternatives.json`);
+  console.log(`\n✅ Written ${alternatives.length} unique items to alternatives.json`);
 })();
