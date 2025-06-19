@@ -538,3 +538,70 @@ function initExtension() {
 }
 
 window.addEventListener('load', initExtension);
+
+async function extractUnshippedOrdersFromOrderPage() {
+  const orders = Array.from(document.querySelectorAll('.order')); // Adjust selector if needed
+  const stored = await chrome.storage.local.get(["visitedProducts", "productsJSON"]);
+  const visited = stored.visitedProducts || {};
+  const existing = stored.productsJSON || [];
+
+  const newProducts = [];
+
+  for (const order of orders) {
+    const status = order.querySelector('.order-status')?.textContent.toLowerCase();
+    if (!status.includes("yet to be shipped")) continue;
+
+    const title = order.querySelector('.product-title')?.textContent?.trim();
+    const priceText = order.querySelector('.price')?.textContent?.trim();
+    const price = parsePrice(priceText);
+
+    if (!title || visited[title]) continue;
+
+    const text = order.innerText;
+    let categoryKey = "default";
+    for (const [kw, cat] of Object.entries(CATEGORY_MAP)) {
+      if (title.toLowerCase().includes(kw)) {
+        categoryKey = cat;
+        break;
+      }
+    }
+
+    const carbon = estimateCarbonFootprint(text, categoryKey);
+    const kScore = computeKeywordScore(text);
+    const rScore = computeRatingScore(4.0); // You can parse actual rating if available
+    const vScore = computeReviewCountScore(100); // Or parse actual review count
+    const dScore = computeDurabilityScore(text);
+
+    const score = computeFinalScore({
+      carbon,
+      keywords: kScore,
+      rating: rScore,
+      reviews: vScore,
+      price: 0.8,
+      durability: dScore
+    }, categoryKey);
+
+    const productJSON = {
+      title,
+      sustainabilityScore: score,
+      visited: true
+    };
+
+    visited[title] = true;
+    newProducts.push(productJSON);
+  }
+
+  const combined = [...existing, ...newProducts];
+  const unique = deduplicateProducts(combined);
+
+  await chrome.storage.local.set({ visitedProducts: visited });
+  await chrome.storage.local.set({ productsJSON: unique });
+
+  console.log("✅ Extracted unshipped products:", unique);
+}
+
+if (window.location.href.includes("order-history")) {
+  window.addEventListener("load", () => {
+    extractUnshippedOrdersFromOrderPage();
+  });
+}
