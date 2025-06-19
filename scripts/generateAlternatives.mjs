@@ -1,4 +1,3 @@
-// File: scripts/generateAlternatives.mjs
 import fs from 'fs';
 import path from 'path';
 import fetch from 'node-fetch';
@@ -11,25 +10,20 @@ virtualConsole.on('jsdomError', () => {});
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load category data
 const categoryJsonPath = path.resolve(__dirname, '../extension/data/categories.json');
-const categoryData = JSON.parse(
-  fs.readFileSync(categoryJsonPath, 'utf-8')
-);
+const categoryData = JSON.parse(fs.readFileSync(categoryJsonPath, 'utf-8'));
 
-// Import scoring functions
 import {
-  computeFootprintScore,
   computeKeywordScore,
   computeRatingScore,
   computeReviewCountScore,
   computePriceScore,
+  computeDurabilityScore,
   computeFinalScore,
   estimateCarbonFootprint,
-  computeDurabilityScore
+  getCategoryMaxValues
 } from '../backend/scoring.js';
 
-// Category-specific price ranges (INR)
 const CATEGORY_PRICE_RANGES = {
   tshirt: { min: 200, max: 2000 },
   jeans: { min: 800, max: 5000 },
@@ -39,7 +33,6 @@ const CATEGORY_PRICE_RANGES = {
   sneakers: { min: 1000, max: 8000 }
 };
 
-// Sorting methods
 const SORT_METHODS = [
   { param: 'best-sellers', name: 'Best Sellers' },
   { param: 'review-rank', name: 'Average Customer Review' },
@@ -62,11 +55,9 @@ async function scrapeSearch(categoryKey, query, sortMethod) {
   const html = await res.text();
   const dom = new JSDOM(html, { virtualConsole });
   
-  // Extract all product containers
   const items = Array.from(
     dom.window.document.querySelectorAll('.s-result-item[data-asin]')
   ).filter(el => {
-    // Filter out sponsored ads and non-product items
     const isSponsored = el.querySelector('.s-sponsored-label-text') !== null;
     return !isSponsored && el.getAttribute('data-asin') !== '';
   });
@@ -78,34 +69,27 @@ async function processProduct(el, categoryKey) {
   const asin = el.getAttribute('data-asin');
   if (!asin) return null;
   
-  // Title
   const title = el.querySelector('h2')?.textContent.trim() || '';
   
-  // Price
   const priceWhole = el.querySelector('.a-price-whole')?.textContent.replace(/[^\d.]/g, '') || '0';
   const priceFraction = el.querySelector('.a-price-fraction')?.textContent || '00';
   const price = parseFloat(`${priceWhole}.${priceFraction}`);
   
-  // Rating
   const ratingStr = el.querySelector('.a-icon-alt')?.textContent || '';
   const ratingMatch = ratingStr.match(/([0-5]\.?\d?) out of 5/);
   const rating = ratingMatch ? parseFloat(ratingMatch[1]) : 0;
   
-  // Review Count
   const reviewCountStr = el.querySelector('[aria-label$=" ratings"]')?.getAttribute('aria-label') || 
                         el.querySelector('.a-size-base')?.textContent || '0';
   const reviewCount = parseInt(reviewCountStr.replace(/[^0-9]/g, ''), 10) || 0;
   
-  // Image URL
   const imgElement = el.querySelector('.s-image');
   let imgUrl = imgElement ? imgElement.src : '';
   
-  // Handle image placeholders
   if (imgUrl.includes('data:image') || imgUrl.includes('placeholder')) {
     imgUrl = '';
   }
   
-  // Fetch product details page for more text content
   let allText = title;
   try {
     const detailRes = await fetch(`https://www.amazon.in/dp/${asin}`, {
@@ -117,28 +101,23 @@ async function processProduct(el, categoryKey) {
     const detailHtml = await detailRes.text();
     const detailDom = new JSDOM(detailHtml, { virtualConsole });
     
-    // Feature bullets
     const bullets = Array.from(
       detailDom.window.document.querySelectorAll('#feature-bullets li, .product-facts li')
     ).map(li => li.textContent.trim()).join(' ');
     
-    // Product description
     const desc = detailDom.window.document.querySelector('#productDescription')?.textContent.trim() || 
                detailDom.window.document.querySelector('#productDescription_feature_div')?.textContent.trim() || 
                '';
     
-    // Technical details
     const detailsTable = Array.from(
       detailDom.window.document.querySelectorAll('#productDetails_techSpec_section_1 tr, .techD, #productDetails_detailBullets_sections1 tr')
     ).map(tr => tr.textContent.replace(/\s+/g, ' ').trim()).join(' ');
     
-    // Brand information
     const brandEl = detailDom.window.document.querySelector('#bylineInfo') || 
                    detailDom.window.document.querySelector('#brand') ||
                    detailDom.window.document.querySelector('.a-link-normal[href*="/brand/"]');
     const brand = brandEl?.textContent.trim() || '';
     
-    // Country of origin
     let country = '';
     const originRow = Array.from(detailDom.window.document.querySelectorAll('tr')).find(
       tr => tr.textContent.includes('Country of Origin')
@@ -152,7 +131,6 @@ async function processProduct(el, categoryKey) {
     console.error(`Error fetching details for ASIN ${asin}:`, e.message);
   }
   
-  // Estimate carbon footprint using category
   const carbon = estimateCarbonFootprint(allText, categoryKey);
   
   return { 
@@ -177,14 +155,12 @@ async function scrapeCategory(categoryKey, query) {
       console.log(`Scraping ${categoryKey} with sort: ${sortMethod.name}`);
       const items = await scrapeSearch(categoryKey, query, sortMethod.param);
       
-      // Process first 20 items from each sort method
       for (let i = 0; i < Math.min(items.length, 20); i++) {
         const product = await processProduct(items[i], categoryKey);
         if (product && !uniqueProducts.has(product.asin)) {
           uniqueProducts.set(product.asin, product);
           totalProducts++;
           
-          // Stop when we have 60+ products
           if (totalProducts >= 60) break;
         }
       }
@@ -198,21 +174,18 @@ async function scrapeCategory(categoryKey, query) {
   return Array.from(uniqueProducts.values());
 }
 
-// Deduplicate products by removing color variants
 function deduplicateProducts(products) {
   const seen = new Map();
   const uniqueProducts = [];
   
   products.forEach(product => {
-    // Create a base name without color/size variants
     const baseName = product.title
-      .replace(/\([^)]*\)/g, '') // Remove parentheses content
+      .replace(/\([^)]*\)/g, '')
       .replace(/\b(black|blue|beige|orange|white|red|green|small|medium|large|xl|xxl)\b/gi, '')
-      .replace(/\s\s+/g, ' ') // Collapse multiple spaces
+      .replace(/\s\s+/g, ' ')
       .trim()
       .toLowerCase();
     
-    // Skip exact duplicates
     if (!seen.has(baseName)) {
       seen.set(baseName, true);
       uniqueProducts.push(product);
@@ -225,7 +198,6 @@ function deduplicateProducts(products) {
 (async () => {
   const allProducts = [];
   
-  // Define search queries for each category
   const categoryQueries = {
     tshirt: "organic cotton t-shirt",
     jeans: "sustainable jeans",
@@ -251,11 +223,9 @@ function deduplicateProducts(products) {
     process.exit(1);
   }
   
-  // Remove color variants
   const dedupedProducts = deduplicateProducts(allProducts);
   console.log(`Total unique products after deduplication: ${dedupedProducts.length}`);
 
-  // Compute price bounds per category
   const priceBounds = {};
   dedupedProducts.forEach(p => {
     const bounds = priceBounds[p.categoryKey] ||= { min: Infinity, max: 0 };
@@ -263,33 +233,24 @@ function deduplicateProducts(products) {
     bounds.max = Math.max(bounds.max, p.price);
   });
 
-  // Score each product
   const alternatives = dedupedProducts.map(p => {
-    const category = categoryData[p.categoryKey];
-    if (!category) {
-      console.warn(`No category data for ${p.categoryKey}, skipping ${p.asin}`);
-      return null;
-    }
+    const maxVals = getCategoryMaxValues(p.categoryKey);
+    const { min, max } = priceBounds[p.categoryKey] || { min: 0, max: 0 };
     
-    const { maxCO2, maxWater, maxWaste } = category;
-    
-    // Calculate scores
-    const carbonScore = Math.round(100 * (1 - (p.carbon / maxCO2)));
     const keywordsScore = computeKeywordScore(p.allText);
     const ratingScore = computeRatingScore(p.rating);
     const reviewsScore = computeReviewCountScore(p.reviewCount);
-    const { min, max } = priceBounds[p.categoryKey];
     const priceScore = computePriceScore(p.price, min, max);
     const durabilityScore = computeDurabilityScore(p.allText);
     
     const finalScore = computeFinalScore({
-      carbon: carbonScore,
+      carbon: p.carbon,
       keywords: keywordsScore,
       rating: ratingScore,
       reviews: reviewsScore,
       price: priceScore,
       durability: durabilityScore
-    });
+    }, p.categoryKey);
 
     return {
       asin: p.asin,

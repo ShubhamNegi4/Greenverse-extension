@@ -3,34 +3,34 @@
     "asin": "B0D4PZXPRS",
     "category": "tshirt",
     "title": "Not Funny",
-    "score": 33,
+    "score": 50,
     "imgUrl": "https://m.media-amazon.com/images/I/51RR-f9xFdL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 449
   },
   {
-    "asin": "B0CR4BQD9R",
-    "category": "tshirt",
-    "title": "NOBERO",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/61Uh+N4IubL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 999
-  },
-  {
     "asin": "B0BKP7SRJM",
     "category": "tshirt",
     "title": "F A S O",
-    "score": 42,
+    "score": 57,
     "imgUrl": "https://m.media-amazon.com/images/I/61tPp-Qb0iL._AC_UL320_.jpg",
     "carbon": 6.52,
     "price": 749
   },
   {
+    "asin": "B0939ZCB5V",
+    "category": "tshirt",
+    "title": "Woodwose Organic Clothing",
+    "score": 59,
+    "imgUrl": "https://m.media-amazon.com/images/I/71pi4KHLwrS._AC_UL320_.jpg",
+    "carbon": 6.52,
+    "price": 239
+  },
+  {
     "asin": "B0D95VCCF2",
     "category": "tshirt",
     "title": "Freecultr",
-    "score": 30,
+    "score": 48,
     "imgUrl": "https://m.media-amazon.com/images/I/71gUa+dVMuL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 399
@@ -39,7 +39,7 @@
     "asin": "B012GDG30Y",
     "category": "tshirt",
     "title": "Scott International",
-    "score": 35,
+    "score": 52,
     "imgUrl": "https://m.media-amazon.com/images/I/51ixUe8uhRL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 549
@@ -48,106 +48,88 @@
     "asin": "B0DK5JFTDH",
     "category": "tshirt",
     "title": "DOMIN8",
-    "score": 46,
+    "score": 61,
     "imgUrl": "https://m.media-amazon.com/images/I/71IAQtoKi2L._AC_UL320_.jpg",
     "carbon": 6.04,
-    "price": 673
+    "price": 605
   },
   {
     "asin": "B0C4PVBJ76",
     "category": "tshirt",
     "title": "Sleepynuts",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/41x+tARL6bL._AC_UL320_.jpg",
+    "score": 50,
+    "imgUrl": "https://m.media-amazon.com/images/I/4128gYsLyoL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 1371
   },
   {
-    "asin": "B0919TCH5N",
+    "asin": "B0CR4BQD9R",
     "category": "tshirt",
-    "title": "Woodwose Organic Clothing",
-    "score": 44,
-    "imgUrl": "https://m.media-amazon.com/images/I/61nrZvoukTL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 499
-  },
-  {
-    "asin": "B0C7ZM9CKY",
-    "category": "tshirt",
-    "title": "Allen Solly",
-    "score": 33,
-    "imgUrl": "https://m.media-amazon.com/images/I/61PlZsWFU5L._AC_UL320_.jpg",
+    "title": "NOBERO",
+    "score": 50,
+    "imgUrl": "https://m.media-amazon.com/images/I/61Uh+N4IubL._AC_UL320_.jpg",
     "carbon": 8.2,
-    "price": 749
-  },
-  {
-    "asin": "B0B6WTLHDR",
-    "category": "tshirt",
-    "title": "DAMENSCH",
-    "score": 33,
-    "imgUrl": "https://m.media-amazon.com/images/I/71PXL-cxSuL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 801
-  },
-  {
-    "asin": "B08Q3PSNR1",
-    "category": "tshirt",
-    "title": "BABY GO",
-    "score": 38,
-    "imgUrl": "https://m.media-amazon.com/images/I/61xbuqpqLOL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 419
-  },
-  {
-    "asin": "B0D361P477",
-    "category": "tshirt",
-    "title": "Tinchuk",
-    "score": 39,
-    "imgUrl": "https://m.media-amazon.com/images/I/711FESGEDzL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 349
+    "price": 1109
   },
   {
     "asin": "B0CWL8RGFS",
     "category": "tshirt",
     "title": "LUDIC",
-    "score": 35,
+    "score": 52,
     "imgUrl": "https://m.media-amazon.com/images/I/31uiMKhj0TL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 599
   },
   {
+    "asin": "B0F4QXH2WJ",
+    "category": "tshirt",
+    "title": "The Boo Boo Club",
+    "score": 40,
+    "imgUrl": "https://m.media-amazon.com/images/I/51TR9btg5HL._AC_UL320_.jpg",
+    "carbon": 8.2,
+    "price": 599
+  },
+  {
+    "asin": "B0D361P477",
+    "category": "tshirt",
+    "title": "Tinchuk",
+    "score": 53,
+    "imgUrl": "https://m.media-amazon.com/images/I/711FESGEDzL._AC_UL320_.jpg",
+    "carbon": 8.2,
+    "price": 387
+  },
+  {
+    "asin": "B0DYL24TGX",
+    "category": "tshirt",
+    "title": "Kuku Kids",
+    "score": 51,
+    "imgUrl": "https://m.media-amazon.com/images/I/413r+ED4bML._AC_UL320_.jpg",
+    "carbon": 8.2,
+    "price": 474
+  },
+  {
     "asin": "B0CBBDWQH2",
     "category": "tshirt",
     "title": "XYXX",
-    "score": 39,
+    "score": 53,
     "imgUrl": "https://m.media-amazon.com/images/I/61upMWQ1qLL._AC_UL320_.jpg",
     "carbon": 8.2,
-    "price": 349
+    "price": 368
   },
   {
-    "asin": "B012STPJMY",
+    "asin": "B0DSPDNHP2",
     "category": "tshirt",
-    "title": "Jockey",
-    "score": 38,
-    "imgUrl": "https://m.media-amazon.com/images/I/61u6Qz-GLKL._AC_UL320_.jpg",
+    "title": "Kidbea",
+    "score": 49,
+    "imgUrl": "https://m.media-amazon.com/images/I/71PGrzS7clL._AC_UL320_.jpg",
     "carbon": 8.2,
-    "price": 579
-  },
-  {
-    "asin": "B07NF4CD53",
-    "category": "tshirt",
-    "title": "Amazon Brand - Symbol",
-    "score": 37,
-    "imgUrl": "https://m.media-amazon.com/images/I/71rbbm-LIAL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 799
+    "price": 699
   },
   {
     "asin": "B0F2M7L4Z8",
     "category": "tshirt",
     "title": "LITZO",
-    "score": 37,
+    "score": 53,
     "imgUrl": "https://m.media-amazon.com/images/I/61l8eSvCoFL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 399
@@ -156,25 +138,16 @@
     "asin": "B09PYZ4L69",
     "category": "tshirt",
     "title": "FastB",
-    "score": 46,
+    "score": 59,
     "imgUrl": "https://m.media-amazon.com/images/I/61sC7We-kgL._AC_UL320_.jpg",
     "carbon": 6.52,
     "price": 799
   },
   {
-    "asin": "B0D1VS9XRN",
-    "category": "tshirt",
-    "title": "XENOVAURBAN",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/41LHbRYD7PL._AC_UL320_.jpg",
-    "carbon": 8.2,
-    "price": 679
-  },
-  {
     "asin": "B0CYHP1P1V",
     "category": "tshirt",
     "title": "SUBTRACT",
-    "score": 30,
+    "score": 50,
     "imgUrl": "https://m.media-amazon.com/images/I/41qZv10kPKL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 1113
@@ -183,7 +156,7 @@
     "asin": "B0DVQY44NH",
     "category": "tshirt",
     "title": "Sattired",
-    "score": 32,
+    "score": 50,
     "imgUrl": "https://m.media-amazon.com/images/I/61drgHlh8FL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 699
@@ -192,16 +165,25 @@
     "asin": "B0CK2TRRFH",
     "category": "tshirt",
     "title": "Van Heusen",
-    "score": 36,
+    "score": 52,
     "imgUrl": "https://m.media-amazon.com/images/I/61mkNrOCZtL._AC_UL320_.jpg",
     "carbon": 8.2,
-    "price": 499
+    "price": 676
+  },
+  {
+    "asin": "B0B6WTLHDR",
+    "category": "tshirt",
+    "title": "DAMENSCH",
+    "score": 51,
+    "imgUrl": "https://m.media-amazon.com/images/I/71PXL-cxSuL._AC_UL320_.jpg",
+    "carbon": 8.2,
+    "price": 988
   },
   {
     "asin": "B08P91YQNW",
     "category": "tshirt",
     "title": "Workshop",
-    "score": 33,
+    "score": 50,
     "imgUrl": "https://m.media-amazon.com/images/I/41Ft8NJYpvL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 499
@@ -210,7 +192,7 @@
     "asin": "B0CVRWCFQK",
     "category": "tshirt",
     "title": "Veirdo",
-    "score": 31,
+    "score": 49,
     "imgUrl": "https://m.media-amazon.com/images/I/61CeTT-bJtL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 399
@@ -219,16 +201,25 @@
     "asin": "B08R9SR657",
     "category": "tshirt",
     "title": "InnerClan",
-    "score": 59,
+    "score": 67,
     "imgUrl": "https://m.media-amazon.com/images/I/71I50mxS+NL._AC_UL320_.jpg",
     "carbon": 6.21,
     "price": 0
   },
   {
+    "asin": "B0F4RJXWTN",
+    "category": "tshirt",
+    "title": "HONESTER",
+    "score": 50,
+    "imgUrl": "https://m.media-amazon.com/images/I/6171MhsIFuL._AC_UL320_.jpg",
+    "carbon": 8.2,
+    "price": 979
+  },
+  {
     "asin": "B0DKFWG9S8",
     "category": "tshirt",
     "title": "ECOTONIQUE",
-    "score": 34,
+    "score": 51,
     "imgUrl": "https://m.media-amazon.com/images/I/51RJcrw5ybL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 849
@@ -237,25 +228,25 @@
     "asin": "B08X178S73",
     "category": "tshirt",
     "title": "Zest 4 Toyz",
-    "score": 33,
+    "score": 50,
     "imgUrl": "https://m.media-amazon.com/images/I/8120ccEtxuL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 549
   },
   {
-    "asin": "B0FDG9DN56",
+    "asin": "B0FDL29344",
     "category": "tshirt",
     "title": "Generic",
-    "score": 47,
-    "imgUrl": "https://m.media-amazon.com/images/I/31h+bZcJAEL._AC_UL320_.jpg",
+    "score": 59,
+    "imgUrl": "https://m.media-amazon.com/images/I/41vrZb7FLDL._AC_UL320_.jpg",
     "carbon": 4.09,
-    "price": 0
+    "price": 1399
   },
   {
     "asin": "B0FD8N6GBM",
     "category": "tshirt",
     "title": "Afon Teifi",
-    "score": 15,
+    "score": 40,
     "imgUrl": "https://m.media-amazon.com/images/I/7145Hk4LaYL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 749
@@ -264,7 +255,7 @@
     "asin": "B0FCTPHL73",
     "category": "tshirt",
     "title": "Lyonardo",
-    "score": 17,
+    "score": 41,
     "imgUrl": "https://m.media-amazon.com/images/I/51NbBhmFglL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 399
@@ -273,7 +264,7 @@
     "asin": "B0F21KDFLC",
     "category": "tshirt",
     "title": "Tommy Hilfiger",
-    "score": 9,
+    "score": 38,
     "imgUrl": "https://m.media-amazon.com/images/I/51Yo6A9tPfL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 1799
@@ -282,7 +273,7 @@
     "asin": "B0FCCD8GDK",
     "category": "tshirt",
     "title": "Spleonckzy",
-    "score": 19,
+    "score": 42,
     "imgUrl": "https://m.media-amazon.com/images/I/71rNm2JXJfL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 499
@@ -291,7 +282,7 @@
     "asin": "B0F9YRXYR1",
     "category": "tshirt",
     "title": "Javelin Tiger",
-    "score": 37,
+    "score": 55,
     "imgUrl": "https://m.media-amazon.com/images/I/51o5RPuvLPL._AC_UL320_.jpg",
     "carbon": 6.21,
     "price": 499
@@ -300,7 +291,7 @@
     "asin": "B0DLH43RG8",
     "category": "tshirt",
     "title": "Calvin Klein",
-    "score": 25,
+    "score": 48,
     "imgUrl": "https://m.media-amazon.com/images/I/61BVK3UtwpL._AC_UL320_.jpg",
     "carbon": 8.2,
     "price": 1799
@@ -309,25 +300,16 @@
     "asin": "B0F3CT2MX1",
     "category": "tshirt",
     "title": "GAP",
-    "score": 28,
+    "score": 49,
     "imgUrl": "https://m.media-amazon.com/images/I/51MXmIFpQGL._AC_UL320_.jpg",
     "carbon": 6.52,
     "price": 1259
   },
   {
-    "asin": "B0FBML5NTG",
-    "category": "tshirt",
-    "title": "SeekBuyLove",
-    "score": 27,
-    "imgUrl": "https://m.media-amazon.com/images/I/71sdonSJnZL._AC_UL320_.jpg",
-    "carbon": 6.52,
-    "price": 499
-  },
-  {
     "asin": "B0DSQ4TBHB",
     "category": "jeans",
     "title": "Numero Uno",
-    "score": 18,
+    "score": 45,
     "imgUrl": "https://m.media-amazon.com/images/I/61s6v56aSAL._AC_UL320_.jpg",
     "carbon": 12.5,
     "price": 1199
@@ -336,7 +318,7 @@
     "asin": "B0C5JVFTTH",
     "category": "jeans",
     "title": "LOUIS STITCH",
-    "score": 28,
+    "score": 52,
     "imgUrl": "https://m.media-amazon.com/images/I/61GRrLeLFBL._AC_UL320_.jpg",
     "carbon": 12.5,
     "price": 2499
@@ -345,52 +327,61 @@
     "asin": "B0BT7S963Y",
     "category": "jeans",
     "title": "Pepe Jeans",
-    "score": 29,
+    "score": 53,
     "imgUrl": "https://m.media-amazon.com/images/I/71rhw8mERBL._AC_UL320_.jpg",
     "carbon": 12.5,
-    "price": 2969
+    "price": 2804
   },
   {
     "asin": "B0BRB1SVCC",
     "category": "jeans",
     "title": "Awack",
-    "score": 29,
+    "score": 52,
     "imgUrl": "https://m.media-amazon.com/images/I/51ClLtoSrtL._AC_UL320_.jpg",
     "carbon": 12.5,
     "price": 1899
   },
   {
-    "asin": "B0D35SQVTP",
+    "asin": "B07VGL2SVC",
     "category": "jeans",
     "title": "Urbano Fashion",
-    "score": 46,
-    "imgUrl": "https://m.media-amazon.com/images/I/516lCOF55DL._AC_UL320_.jpg",
-    "carbon": 12.03,
-    "price": 1049
+    "score": 56,
+    "imgUrl": "https://m.media-amazon.com/images/I/61heErs06BL._AC_UL320_.jpg",
+    "carbon": 12.5,
+    "price": 887
   },
   {
     "asin": "B0C66147R5",
     "category": "jeans",
     "title": "RAGZO",
-    "score": 33,
+    "score": 54,
     "imgUrl": "https://m.media-amazon.com/images/I/61VQpxbl9HL._AC_UL320_.jpg",
     "carbon": 12.5,
     "price": 899
   },
   {
-    "asin": "B0D35T3D3B",
+    "asin": "B0D35VBNYP",
     "category": "jeans",
     "title": "Urbano Plus",
-    "score": 46,
-    "imgUrl": "https://m.media-amazon.com/images/I/61CJtsL1yQL._AC_UL320_.jpg",
+    "score": 61,
+    "imgUrl": "https://m.media-amazon.com/images/I/51QnIkLrW9L._AC_UL320_.jpg",
     "carbon": 12.03,
-    "price": 960
+    "price": 1299
+  },
+  {
+    "asin": "B08D7QBZCL",
+    "category": "jeans",
+    "title": "BRUTUS",
+    "score": 53,
+    "imgUrl": "https://m.media-amazon.com/images/I/61UMUhGmRmL._AC_UL320_.jpg",
+    "carbon": 12.5,
+    "price": 890
   },
   {
     "asin": "B0F5BGJYWF",
     "category": "jeans",
     "title": "American Eagle",
-    "score": 29,
+    "score": 55,
     "imgUrl": "https://m.media-amazon.com/images/I/61yYczIkh5L._AC_UL320_.jpg",
     "carbon": 8.8,
     "price": 4599
@@ -399,7 +390,7 @@
     "asin": "B0BXJ93M67",
     "category": "plastic_bottle",
     "title": "MERCAPE® - 100% Pure Copper Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free Bottles | Eco Friendly Water Bottle (900 ml) (Pack of 1)",
-    "score": 43,
+    "score": 80,
     "imgUrl": "https://m.media-amazon.com/images/I/71cRT-d2YCL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 828
@@ -408,25 +399,16 @@
     "asin": "B01BYBU24W",
     "category": "plastic_bottle",
     "title": "CELLO H2O Water Bottles Set of 3, 1000ml Each | Airtight & Leakproof Lid | Unbreakable, BPA-Free, Food Grade Bottle For Kitchen | Reusable Set of Fridge Bottles for Home, Office, Gym, Gifting",
-    "score": 44,
+    "score": 78,
     "imgUrl": "https://m.media-amazon.com/images/I/61+nyAaYETL._AC_UL320_.jpg",
     "carbon": 0.18,
     "price": 349
   },
   {
-    "asin": "B0BQRTJ8H2",
-    "category": "plastic_bottle",
-    "title": "The Better Home Stainless Steel Water Bottle 1 Litre | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free Steel Bottles 1+ Litre | Eco Friendly Stainless Steel Bottle | Pack of 3",
-    "score": 47,
-    "imgUrl": "https://m.media-amazon.com/images/I/61qjK5IKrdL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 819
-  },
-  {
     "asin": "B0D7VR6X46",
     "category": "plastic_bottle",
     "title": "ATTRO Eiffel 1000ml Stainless Steel Single Wall Water Bottle Sleek & Stylish BPA-Free Leak-Proof Ideal for School, Office & Outdoor - Set of 2 White",
-    "score": 29,
+    "score": 72,
     "imgUrl": "https://m.media-amazon.com/images/I/41721q-AWsL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 539
@@ -435,160 +417,160 @@
     "asin": "B0BYNB8KVC",
     "category": "plastic_bottle",
     "title": "The Better Home Copper Water Bottle | Copper Water Bottle 950ml | With Anti Oxidant Properities | Provides Health Benefits | Pure Tamba | Teal",
-    "score": 49,
+    "score": 82,
     "imgUrl": "https://m.media-amazon.com/images/I/71xoyR0-VEL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 799
   },
   {
-    "asin": "B092R6DLGS",
-    "category": "plastic_bottle",
-    "title": "CELLO H2O Glass Fridge Water Bottle with Plastic Cap 920ml, Clear | Leakproof & Durable | Wide Mouth, Easy To Clean | Easy Grip Glass Water Bottle For Kitchen, Home, Office, Gym, Travel",
-    "score": 51,
-    "imgUrl": "https://m.media-amazon.com/images/I/616vX7yV8cS._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 139
-  },
-  {
-    "asin": "B0DW8SWWHQ",
-    "category": "plastic_bottle",
-    "title": "Pigeon Blitz Stainless Steel Water Bottle With Sipper Cap | Eco friendly | BPA Free | Water Bottle for Office, Gym, School, Yoga, Trekking, Adults & Kids| 975 ML, Blue",
-    "score": 40,
-    "imgUrl": "https://m.media-amazon.com/images/I/71hs9yGgWML._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 249
-  },
-  {
-    "asin": "B0D73X8PDY",
-    "category": "plastic_bottle",
-    "title": "Eha Earth Friendly Insulated Sipper bottle for adults | Water Bottle for Office and Gym | Made with Rice Husk Biocomposite| Water Bottle for kids | 1 Unit, 600 ml | Celeste",
-    "score": 49,
-    "imgUrl": "https://m.media-amazon.com/images/I/71S5Ob6DhBL._AC_UL320_.jpg",
-    "carbon": 0.13,
-    "price": 875
-  },
-  {
     "asin": "B0DRH1658N",
     "category": "plastic_bottle",
     "title": "Your Name Customised Eco Friendly Bamboo Stainless Steel Wooden Bamboo Bottle 24 Hours Vacuum Flask, 500ml, Silver 12 Hours Hot & Cold Stainless Steel Flask Water Thermos with Double Wall Hot & Cold",
-    "score": 43,
+    "score": 79,
     "imgUrl": "https://m.media-amazon.com/images/I/31pvaM0rfBL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 699
   },
   {
-    "asin": "B0DXFPKDNN",
-    "category": "plastic_bottle",
-    "title": "REFULGIX 2L Motivational Sipper Water Bottle with Straw & Time Marker | BPA-Free Leakproof Sports Bottle for Gym, Fitness, Office, School, Home & Outdoor Hydration (Black) Plastic",
-    "score": 40,
-    "imgUrl": "https://m.media-amazon.com/images/I/61Zr-wWZwqL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 299
-  },
-  {
-    "asin": "B0DRCVZ7H9",
-    "category": "plastic_bottle",
-    "title": "PEXPO Craft Pro 1000, 950 ml ISI Certified Stainless Steel Sports/Fridge Water Bottle with Sipper Cap, 950ml, Purple-Green Ombre |Eco friendly | BPA Free | Water Bottle for Office, Gym, School, Yoga",
-    "score": 51,
-    "imgUrl": "https://m.media-amazon.com/images/I/51fbkkR9WzL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 299
-  },
-  {
-    "asin": "B0CXDV45V5",
-    "category": "plastic_bottle",
-    "title": "Tosaa Stainless Steel Sleek Design Sports/Fridge Wide Mouth Water Bottle 900 ml, Rose Gold| Eco Friendly | BPA Free | Water Bottle for Office, Gym, School, Yoga, Trekking, Men, Women and Kids",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/61CfNFs9xNL._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 219
-  },
-  {
     "asin": "B09B2KLMCQ",
     "category": "plastic_bottle",
     "title": "IRIDA NATURALS Unbreakable Water Bottle Pack 1-300ml Wheat Straw Slim Sipper Bottle for Adults, Women & Kids, BPA Free Water Bottles, Lightweight Eco Friendly Water Bottle for Gym & Office -Mint Green",
-    "score": 44,
+    "score": 79,
     "imgUrl": "https://m.media-amazon.com/images/I/51nmYMP-isL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 420
   },
   {
-    "asin": "B098KGQC7M",
+    "asin": "B0BQRTJ8H2",
     "category": "plastic_bottle",
-    "title": "MILTON Helix 1000 Pet Water Bottle 1 Litre Each BPA Free, Leak Proof, Office Bottle Home Kitchen Travel Bottle, Set of 4, Assorted",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/818EOU7f4PS._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 375
-  },
-  {
-    "asin": "B085JCPCRG",
-    "category": "plastic_bottle",
-    "title": "MILTON Hector 1000 Water Bottle, 1 Litre, Reusable Plastic Fridge Bottle, BPA Free and Leak Proof Bottles for Travel, Work, Pack of 1, Brown",
-    "score": 44,
-    "imgUrl": "https://m.media-amazon.com/images/I/612jYXKgg7L._AC_UL320_.jpg",
+    "title": "The Better Home Stainless Steel Water Bottle 1 Litre | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free Steel Bottles 1+ Litre | Eco Friendly Stainless Steel Bottle | Pack of 3",
+    "score": 81,
+    "imgUrl": "https://m.media-amazon.com/images/I/61qjK5IKrdL._AC_UL320_.jpg",
     "carbon": 0.17,
-    "price": 210
+    "price": 819
   },
   {
-    "asin": "B0BN3WW27P",
+    "asin": "B0D73X8PDY",
     "category": "plastic_bottle",
-    "title": "Zandu Copper Bottle (950ml): 100% Pure BPA-Free Water Bottle | Copper-Infused Water | Leak Proof | Office Use | Boosts Immunity | Supports Digestive & Liver Health | Ayurveda Inspired",
-    "score": 32,
-    "imgUrl": "https://m.media-amazon.com/images/I/61GSGJcR5XL._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 720
+    "title": "Eha Earth Friendly Insulated Sipper bottle for adults | Water Bottle for Office and Gym | Made with Rice Husk Biocomposite| Water Bottle for kids | 1 Unit, 600 ml | Celeste",
+    "score": 78,
+    "imgUrl": "https://m.media-amazon.com/images/I/71S5Ob6DhBL._AC_UL320_.jpg",
+    "carbon": 0.13,
+    "price": 875
   },
   {
-    "asin": "B0B4RX7ZXK",
+    "asin": "B092R6DLGS",
     "category": "plastic_bottle",
-    "title": "Milton Aura 1000 Thermosteel Water Bottle 1050 ml, 24 Hr Hot and Cold I Leak Proof Lid, ISI Certified I Vacuum Insulated I for Office, Gym, School I Black",
-    "score": 43,
-    "imgUrl": "https://m.media-amazon.com/images/I/51-NKrTs99L._AC_UL320_.jpg",
+    "title": "CELLO H2O Glass Fridge Water Bottle with Plastic Cap 920ml, Clear | Leakproof & Durable | Wide Mouth, Easy To Clean | Easy Grip Glass Water Bottle For Kitchen, Home, Office, Gym, Travel",
+    "score": 82,
+    "imgUrl": "https://m.media-amazon.com/images/I/616vX7yV8cS._AC_UL320_.jpg",
     "carbon": 0.17,
-    "price": 956
+    "price": 189
+  },
+  {
+    "asin": "B0DW8SWWHQ",
+    "category": "plastic_bottle",
+    "title": "Pigeon Blitz Stainless Steel Water Bottle With Sipper Cap | Eco friendly | BPA Free | Water Bottle for Office, Gym, School, Yoga, Trekking, Adults & Kids| 975 ML, Blue",
+    "score": 76,
+    "imgUrl": "https://m.media-amazon.com/images/I/71hs9yGgWML._AC_UL320_.jpg",
+    "carbon": 0.18,
+    "price": 249
+  },
+  {
+    "asin": "B0DXFPKDNN",
+    "category": "plastic_bottle",
+    "title": "REFULGIX 2L Motivational Sipper Water Bottle with Straw & Time Marker | BPA-Free Leakproof Sports Bottle for Gym, Fitness, Office, School, Home & Outdoor Hydration (Black) Plastic",
+    "score": 77,
+    "imgUrl": "https://m.media-amazon.com/images/I/61Zr-wWZwqL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 299
+  },
+  {
+    "asin": "B0DRCYP93L",
+    "category": "plastic_bottle",
+    "title": "PEXPO Craft Pro 1000 ISI Certified Stainless Steel Sports/Fridge Water Bottle with Sipper Cap, 950ml, Purple-Pink Ombre |Eco Friendly | BPA Free | Water Bottle for Office, Gym, School, Yoga",
+    "score": 82,
+    "imgUrl": "https://m.media-amazon.com/images/I/51KoFtDZxLL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 299
   },
   {
     "asin": "B0F2J6LX2Y",
     "category": "plastic_bottle",
     "title": "ATTRO Crystal 1000ml Plastic Water Bottle BPA Free Leakproof, Fridge Safe with Time Marker to Track Hydration, Encourages Water Intake Set of 4- MultiColors",
-    "score": 36,
+    "score": 75,
     "imgUrl": "https://m.media-amazon.com/images/I/717W9MRdqcL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 349
   },
   {
-    "asin": "B0CQNYVC2Y",
+    "asin": "B0D4V1HCQS",
     "category": "plastic_bottle",
-    "title": "Frenchware Water Bottle (1 Litre, Premium Stainless Steel, Plum Delight) Bottle for Fridge, School, Outdoor, Gym, Home and Office, Scratch-Resistant, Rust Free, Non-Toxic, Easy-to-Clean",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/61E2Eh-7dcL._AC_UL320_.jpg",
+    "title": "Eco-Friendly Bamboo Water Bottle, Stainless Steel Flask Water Bottle/Thermos with Tea Strainer | Double Wall Vacuum Insulated | Hot & Cold",
+    "score": 77,
+    "imgUrl": "https://m.media-amazon.com/images/I/81HrZmVmmiL._AC_UL320_.jpg",
     "carbon": 0.18,
-    "price": 329
+    "price": 649
   },
   {
-    "asin": "B0BH4VZMHG",
+    "asin": "B098KGQC7M",
     "category": "plastic_bottle",
-    "title": "The Better Home 1000 Stainless Steel Water Bottle 1 Litre | Rust-Proof, Lightweight, Leak-Proof & Durable | Eco-Friendly, Non-Toxic & BPA Free Water Bottles 1+ Litre | Black (Pack of 1)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/51jCjNHPOYL._AC_UL320_.jpg",
+    "title": "MILTON Helix 1000 Pet Water Bottle 1 Litre Each BPA Free, Leak Proof, Office Bottle Home Kitchen Travel Bottle, Set of 4, Assorted",
+    "score": 75,
+    "imgUrl": "https://m.media-amazon.com/images/I/818EOU7f4PS._AC_UL320_.jpg",
+    "carbon": 0.18,
+    "price": 375
+  },
+  {
+    "asin": "B0CXDV45V5",
+    "category": "plastic_bottle",
+    "title": "Tosaa Stainless Steel Sleek Design Sports/Fridge Wide Mouth Water Bottle 900 ml, Rose Gold| Eco Friendly | BPA Free | Water Bottle for Office, Gym, School, Yoga, Trekking, Men, Women and Kids",
+    "score": 74,
+    "imgUrl": "https://m.media-amazon.com/images/I/61CfNFs9xNL._AC_UL320_.jpg",
+    "carbon": 0.18,
+    "price": 219
+  },
+  {
+    "asin": "B0DBLWYF49",
+    "category": "plastic_bottle",
+    "title": "ATTRO Ultra Pro 2 Motivational 2L BPA-Free Water Bottle with Leak-Proof Flip-Top Cap, Nylon Strap and Stylish Blue Color for Daily Hydration, Plastic",
+    "score": 79,
+    "imgUrl": "https://m.media-amazon.com/images/I/61XVGHJ3sDL._AC_UL320_.jpg",
     "carbon": 0.17,
-    "price": 339
+    "price": 199
   },
   {
     "asin": "B0F275QMYZ",
     "category": "plastic_bottle",
     "title": "Glass Water Bottle with Stainless Steel Leak-Proof Lid | Set Of 4-750ml | BPA-Free, Reusable, Eco-Friendly & Durable | Clear Transparent Bottle for Office, Gym, Travel, Sports, Yoga, School & Home",
-    "score": 54,
+    "score": 85,
     "imgUrl": "https://m.media-amazon.com/images/I/719iMG9S8eL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 594
   },
   {
+    "asin": "B0BXNZ17V4",
+    "category": "plastic_bottle",
+    "title": "The Better Home Stainless Steel Water Bottle 1 Litre | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free Steel Bottles 1+ Litre | Eco Friendly Stainless Steel Water Bottle (Pack of 1) (Lush)",
+    "score": 83,
+    "imgUrl": "https://m.media-amazon.com/images/I/51OmgRLaTcL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 329
+  },
+  {
+    "asin": "B0DYD4VQ9G",
+    "category": "plastic_bottle",
+    "title": "Caspian Hike Stainless Steel Sipper Water Bottle 1 Ltr (Litre) for School, Fridge, Office, Gym, Home-Ideal for Adults, Men, Women, Kids, Boys, Girls-1000ml Leakproof, Rust free, Eco-Friendly, K Black",
+    "score": 80,
+    "imgUrl": "https://m.media-amazon.com/images/I/41Xn7Dmby0L._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 298
+  },
+  {
     "asin": "B0DNMHGTYB",
     "category": "plastic_bottle",
     "title": "SuperGeneriX Motivational Water Bottle 1 Litre, Durable BPA-Free Leakproof Bottle with Time Marker for Office, Gym, Outdoor, Fitness, Hydration Goals, and Ideal for Gifting (Glossy Green)",
-    "score": 49,
+    "score": 81,
     "imgUrl": "https://m.media-amazon.com/images/I/61njdAHsvqL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 348
@@ -597,7 +579,7 @@
     "asin": "B0CKS5918G",
     "category": "plastic_bottle",
     "title": "CamelBak Chute Mag BPA Free Water Bottle with Tritan Renew - Magnetic Cap Stows While Drinking, 20oz, Purple Sky",
-    "score": 60,
+    "score": 86,
     "imgUrl": "https://m.media-amazon.com/images/I/61Fq7EFcl0L._AC_UL320_.jpg",
     "carbon": 0.12,
     "price": 1499
@@ -606,7 +588,7 @@
     "asin": "B0D9HD83GB",
     "category": "plastic_bottle",
     "title": "SAND DUNE Glass Water Bottle Set of 1, 1000 ml, Ayodhya Mandir Printed, Clip Top Cap, Leak-Proof Bottle for Water, Milk, Gangajal, Panchamrit, Spiritual, Decor & Gifting",
-    "score": 45,
+    "score": 78,
     "imgUrl": "https://m.media-amazon.com/images/I/61CkiRMVuXL._AC_UL320_.jpg",
     "carbon": 0.18,
     "price": 188
@@ -615,7 +597,7 @@
     "asin": "B0DG8KZZP7",
     "category": "plastic_bottle",
     "title": "ACROWN Milk Water Bottle 750 ml transparent Portable Milk Container Reusable Cute Plastic Milk Bottles for Juice Tea Jug Travel Camping Climbing Sports Outdoor Activities Drinking pack of 1",
-    "score": 51,
+    "score": 82,
     "imgUrl": "https://m.media-amazon.com/images/I/41KeZlm6sdL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 349
@@ -624,7 +606,7 @@
     "asin": "B097SDP3R4",
     "category": "plastic_bottle",
     "title": "DOTCOM 32 OZ Water Bottle with Times to Drink and Straw, Leakproof BPA & Toxic Free, Drinking Water Bottle with Carrying Strap,",
-    "score": 32,
+    "score": 76,
     "imgUrl": "https://m.media-amazon.com/images/I/71ZGNPBApJL._AC_UL320_.jpg",
     "carbon": 0.22,
     "price": 389
@@ -633,25 +615,16 @@
     "asin": "B0F9FJQD5M",
     "category": "plastic_bottle",
     "title": "KROTEL Premium Crank Glass Water Bottle-400ml Borosilicate Glass | Leak-Proof Lid, BPA-Free & Eco-Friendly, Durable, Reusable Bottle For Office, Gym, Travel, And Home Use | Stylish Minimalist Design",
-    "score": 41,
+    "score": 77,
     "imgUrl": "https://m.media-amazon.com/images/I/41TwhS3XJQL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 229
   },
   {
-    "asin": "B0F6TBGVMZ",
-    "category": "plastic_bottle",
-    "title": "Raawan Glass Water Bottles, Glass Fridge Water Bottle with Steel Cap, Wide mouth Leak proof & detox water bottle glass, water bottle for fridge, fridge bottle -750 ML (6 Bottle)",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/61s6mhX8+ML._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 699
-  },
-  {
     "asin": "B0D4P8WPJF",
     "category": "plastic_bottle",
     "title": "Enerbone 24 oz Water Bottle, Leakproof BPA & Toxic Free, Motivational Water Bottle with Times to Drink and Straw, Fitness Sports Water Bottle with Strap for Office, Gym, Outdoor Sports",
-    "score": 30,
+    "score": 75,
     "imgUrl": "https://m.media-amazon.com/images/I/71zj-ApYCyL._AC_UL320_.jpg",
     "carbon": 0.22,
     "price": 295
@@ -660,25 +633,34 @@
     "asin": "B0D3VDY2QX",
     "category": "plastic_bottle",
     "title": "castanea Glass Water Bottle With Leak-Proof Airtight Stainless Steel Lid For Water, Smoothie, Juices - Reusable Travel Drinking Fridge Bottles 1000Ml (1)",
-    "score": 42,
+    "score": 77,
     "imgUrl": "https://m.media-amazon.com/images/I/51b2P0VYD-L._AC_UL320_.jpg",
     "carbon": 0.18,
     "price": 299
   },
   {
-    "asin": "B0CN1JQZJ4",
+    "asin": "B0F6TBGVMZ",
     "category": "plastic_bottle",
-    "title": "The Better Home 750ml Insulated Stainless Steel Water Bottle | 8 Hrs Insulation Cork Cap | Hot & Cold Office | Leakproof | Insulated Water Bottle | (Algae Design)",
-    "score": 42,
-    "imgUrl": "https://m.media-amazon.com/images/I/61-FFMFbd-L._AC_UL320_.jpg",
+    "title": "Raawan Glass Water Bottles, Glass Fridge Water Bottle with Steel Cap, Wide mouth Leak proof & detox water bottle glass, water bottle for fridge, fridge bottle -750 ML (6 Bottle)",
+    "score": 74,
+    "imgUrl": "https://m.media-amazon.com/images/I/61s6mhX8+ML._AC_UL320_.jpg",
+    "carbon": 0.18,
+    "price": 699
+  },
+  {
+    "asin": "B0CN1HFR73",
+    "category": "plastic_bottle",
+    "title": "The Better Home 750ml Insulated Stainless Steel Water Bottle | 8 Hrs Insulation Cork Cap | Hot & Cold Office | Leakproof | Insulated Water Bottle | (Motivational Quote)",
+    "score": 79,
+    "imgUrl": "https://m.media-amazon.com/images/I/61oIlXUjl9L._AC_UL320_.jpg",
     "carbon": 0.17,
-    "price": 889
+    "price": 749
   },
   {
     "asin": "B0DF6NST3J",
     "category": "plastic_bottle",
     "title": "Glass Water Bottle For Refrigerator 750ml, Glass bottles set- Perfect for Home, Travel, Juicing, Water, Smoothie - Reusable Glass Drinking Bottles - (Transparent, Pack of 2)",
-    "score": 44,
+    "score": 79,
     "imgUrl": "https://m.media-amazon.com/images/I/71wrm-N9DDL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 429
@@ -687,7 +669,7 @@
     "asin": "B0C46ZYMWH",
     "category": "plastic_bottle",
     "title": "ANDRD Stainless Steel Water Bottle for Men & Women for Keeping Water Hot Or Cold 1000 ml Bottle (Pack of 1, Silver, Steel)",
-    "score": 28,
+    "score": 71,
     "imgUrl": "https://m.media-amazon.com/images/I/61tphu37FxL._AC_UL320_.jpg",
     "carbon": 0.18,
     "price": 799
@@ -696,25 +678,25 @@
     "asin": "B0F3VV1RY7",
     "category": "plastic_bottle",
     "title": "READAEER Collapsible Water bottle for Travel Cycling Gym Camping Sports,Leakproof Lid,Food Grade BPA-Free Silicone Travel Bottles 610ml -Portable,Wide Mouth,Durable,Foldable Bottle-Multicolour",
-    "score": 39,
+    "score": 77,
     "imgUrl": "https://m.media-amazon.com/images/I/51vz7bUW6IL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 399
   },
   {
-    "asin": "B0BLQTXSDX",
+    "asin": "B08Y1LD4T7",
     "category": "plastic_bottle",
-    "title": "SOLARA Sipper Water Bottle 1 Litre, Leakproof, BPA-Free & Durable Tritan, Water Bottle for Adults, Gym, Kids, School, Gifts & Office, Motivational Time Marker, 1Ltr Sipper Bottle, Dark Intentions",
-    "score": 47,
-    "imgUrl": "https://m.media-amazon.com/images/I/71+6TZsqLGL._AC_UL320_.jpg",
-    "carbon": 0.17,
+    "title": "SOLARA Unbreakable Water Bottle 1 L with Motivational Time Marker, Leakproof Durable BPA Free Non-Toxic Water bottle for office,Water bottle for gym | Blue Fuchsia(1Pk)",
+    "score": 76,
+    "imgUrl": "https://m.media-amazon.com/images/I/81awGP1q9vL._AC_UL320_.jpg",
+    "carbon": 0.22,
     "price": 699
   },
   {
     "asin": "B09YXWVP8R",
     "category": "plastic_bottle",
     "title": "Kuber Industries BPA-Free Plastic Water Bottle | Leak Proof, Firm Grip, 100% Food Grade Plastic Bottles | For Home, Office, School & Gym|Unbreakable, Freezer Proof, Water Bottle|Pack of 6-Multicolour",
-    "score": 43,
+    "score": 80,
     "imgUrl": "https://m.media-amazon.com/images/I/71rWoRB8FJL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 597
@@ -723,340 +705,358 @@
     "asin": "B09T9HY37G",
     "category": "plastic_bottle",
     "title": "SOLARA Insulated Water Bottle 1 Litre, Hot Water Bottle, 1000ml Thermosteel Water Bottles for Travel, Home, Office, School, Gym, Adults, Water Bottle Hot and Cold, Sipper Bottle, Elegant Marble",
-    "score": 47,
+    "score": 82,
     "imgUrl": "https://m.media-amazon.com/images/I/61Z-RCZiPnL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 1399
   },
   {
-    "asin": "B08JMF5WQ6",
+    "asin": "B08X285MHY",
     "category": "plastic_bottle",
-    "title": "MACHAK Milk, Water and Juice Glass Bottle with Air Tight Lid, Leak-Proof, Reusable & BPA-Free, Transparent Milk bottle 200ml (Set of 6)",
-    "score": 49,
-    "imgUrl": "https://m.media-amazon.com/images/I/31yViUrYxNL._AC_UL320_.jpg",
+    "title": "MACHAK Milk, Water and Juice Glass Bottle with Air Tight Lid, Leak-Proof, Reusable & BPA-Free, Transparent Milk bottle 200ml (Set of 24)",
+    "score": 80,
+    "imgUrl": "https://m.media-amazon.com/images/I/51N6DtrCKRL._AC_UL320_.jpg",
     "carbon": 0.17,
-    "price": 436
+    "price": 1234
   },
   {
     "asin": "B0DPXDW2JR",
     "category": "plastic_bottle",
     "title": "Glass Juice Bottles 4 Pack 16 oz - Wide Mouth Glass Water Bottles with Lids - for Juicing, Protein, Smoothie, Milk, Reusable, BPA Free, Stainless Steel Lids, Blender, Shaker Bottle (16oz/500ml)",
-    "score": 47,
+    "score": 80,
     "imgUrl": "https://m.media-amazon.com/images/I/81hjrxaLxDL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 499
   },
   {
-    "asin": "B0DXVNKNKP",
+    "asin": "B0F9L88TRQ",
     "category": "plastic_bottle",
-    "title": "ANCIENTIMPEX Eco-Friendly Pure Copper Water Bottle Set with 2 Tumblers, Ayurvedic Health Benefits, Gift Packaging (Yellow)",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/61jbcESTtRL._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 1400
-  },
-  {
-    "asin": "B0FDH6FVL7",
-    "category": "plastic_bottle",
-    "title": "SmartMaison Stainless Steel Water Bottle | 1000ml | BPA-Free | Leak-Proof | Wide Mouth | Lightweight Single Wall Bottle | Eco-Friendly | Odorless | Food Grade Steel for Home, Office, Travel Pack of 1",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/51BRCc5mXgL._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 199
-  },
-  {
-    "asin": "B0FDGVLW3T",
-    "category": "plastic_bottle",
-    "title": "WIGNET 1 Liter Plastic Water Bottle for Home & Office - Transparent, Unbreakable, Leak-Proof Design (Pack of 1)",
-    "score": 39,
-    "imgUrl": "https://m.media-amazon.com/images/I/410+7uMZgSL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 499
-  },
-  {
-    "asin": "B0FDGMYK57",
-    "category": "plastic_bottle",
-    "title": "M/S R.N. METAL Hammered Copper Water Bottle - 1000ml | Leak-Proof & Durable | Ayurvedic Health Benefits | Handcrafted Design | Portable & Eco-Friendly | Copper Flask-A1 (Hammer Bottle)",
-    "score": 40,
-    "imgUrl": "https://m.media-amazon.com/images/I/61Jcpe9GoEL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 699
-  },
-  {
-    "asin": "B0FDGKWSPM",
-    "category": "plastic_bottle",
-    "title": "Glass Water Bottle 400ml | Leakproof Flask for Tea, Coffee, and Water | Creative Design, Portable and Eco-Friendly Bottle (Nice Bottle 400ML,Multi-Color,PACK-1)",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/61uLf1s+1hL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 499
-  },
-  {
-    "asin": "B0FDB7N2C4",
-    "category": "plastic_bottle",
-    "title": "NUVIRA Nice Water Bottle 400ml – Leakproof Portable Flask for Tea, Coffee & Water | Stylish BPA-Free, Eco-Friendly Mini Bottle for Office, Travel, School | Multicolor Compact Design – Pack of 1",
-    "score": 23,
-    "imgUrl": "https://m.media-amazon.com/images/I/51xcmb6FpnL._AC_UL320_.jpg",
+    "title": "ATTRO Glassox Aqura High Borosilicate Glass Water Bottle with Sleeve & Stainless Steel Lid – Leakproof & Durable – Ideal for Office, Travel, and Daily Use Color- Green – 750ml",
+    "score": 77,
+    "imgUrl": "https://m.media-amazon.com/images/I/51D1vh-tJAL._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 299
   },
   {
-    "asin": "B0FDG64PR6",
+    "asin": "B0FDL7DSZS",
     "category": "plastic_bottle",
-    "title": "SOLVAINE Motivational Water Bottle with Time Markings - Daily Hydration Tracker with Inspirational Quotes for Fitness, Sports, and Gym, BPA-Free and Leak-Proof [ PACK OF 1 ]",
-    "score": 24,
-    "imgUrl": "https://m.media-amazon.com/images/I/51N7blCCMkL._AC_UL320_.jpg",
-    "carbon": 0.18,
+    "title": "Chipra Traditional Handmade Terracotta Clay Water Bottle for Drinking Mitti Ke Bottle Surahi for Natural Cooling | Eco-Friendly,Leak-Proof&Organic Earthen Water Bottle | 1000 ml | Pack of 1 (Design-3)",
+    "score": 76,
+    "imgUrl": "https://m.media-amazon.com/images/I/31bS9UQr48L._AC_UL320_.jpg",
+    "carbon": 0.14,
+    "price": 299
+  },
+  {
+    "asin": "B0FD8LHDCW",
+    "category": "plastic_bottle",
+    "title": "Nayak Gym Motivational Water Bottle, BPA-Free Bottles with Straw & Time Marker, Sipper Bottle For Adults, Kids, Fitness Unbreakable Reminder Bottle Set – 3 Pack (2L, 900ml, 300ml) (Black)",
+    "score": 71,
+    "imgUrl": "https://m.media-amazon.com/images/I/51dcxn8A1SL._AC_UL320_.jpg",
+    "carbon": 0.22,
     "price": 399
   },
   {
-    "asin": "B0FD8L4Y88",
+    "asin": "B0FD79G3QH",
     "category": "plastic_bottle",
-    "title": "The ShopTree Motivational Water Bottle Set of 3 – 2000ml, 900ml & 300ml | Time Marker, Straw, Leakproof, BPA-Free | Sipper Bottle for Gym, Office, School, Travel | Unbreakable | Black",
-    "score": 21,
-    "imgUrl": "https://m.media-amazon.com/images/I/71rO4YpI0-L._AC_UL320_.jpg",
-    "carbon": 0.22,
-    "price": 449
-  },
-  {
-    "asin": "B0FDFVTGJ7",
-    "category": "plastic_bottle",
-    "title": "MAHITEK Stainless Steel Water Bottle with Grooved Grip Design – 1000 ml Capacity – Leak-Proof, Lightweight & Reusable Bottle for Office, Gym, Travel, School & Outdoor Use – Silver Finish(Pack of 2)",
-    "score": 28,
-    "imgUrl": "https://m.media-amazon.com/images/I/61Xwq-iV1XL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 640
-  },
-  {
-    "asin": "B0FDFXRTCD",
-    "category": "plastic_bottle",
-    "title": "DLDCOMPANY 1000ml Reusable Plastic Water Bottles Set of 6 | BPA-Free, Leak-Proof, Unbreakable | Hanging Loop, Lightweight | Gym, School, Travel, Home & Office Use",
-    "score": 31,
-    "imgUrl": "https://m.media-amazon.com/images/I/61jgyW+FOaL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 489
-  },
-  {
-    "asin": "B0FDFRLPG8",
-    "category": "plastic_bottle",
-    "title": "RACQUE Hello-Master Borosilicate Water Bottle Transparent Water Bottle for Home, Office, Gym, Picnic and Travelling Stylish Glass Bottle Multicolor",
-    "score": 28,
-    "imgUrl": "https://m.media-amazon.com/images/I/41NcwUWsUXL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 499
-  },
-  {
-    "asin": "B0FDFK66SH",
-    "category": "plastic_bottle",
-    "title": "PIXNA 370ml Cute Glass Water Bottle – Leak-Proof, BPA-Free, Portable Sipper for Kids & Adults (Multicolor, 1 Pc",
-    "score": 43,
-    "imgUrl": "https://m.media-amazon.com/images/I/61JKF8T0TgL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 248
-  },
-  {
-    "asin": "B0FDFSWQ3Q",
-    "category": "plastic_bottle",
-    "title": "KAPI ENTERPRISE WITH K Small Glass Water Bottle, Leakproof Travel Bottle for Kids, Girls,Boys Bottle for Baby,Coffee,Office,School,Picnic (Multicolor)",
-    "score": 43,
-    "imgUrl": "https://m.media-amazon.com/images/I/41KRnp85V5L._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 249
-  },
-  {
-    "asin": "B0FDBCNPNL",
-    "category": "plastic_bottle",
-    "title": "YUNBING Cute Bunny Glass Water Bottle with Straw – 350ml Leak-Proof Fruit Infuser Juice Cup with Lid – Reusable Borosilicate Glass Tumbler – BPA-Free",
-    "score": 30,
-    "imgUrl": "https://m.media-amazon.com/images/I/51Ld6NV4T9L._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 249
-  },
-  {
-    "asin": "B0FDC7ZKDW",
-    "category": "plastic_bottle",
-    "title": "Cylindrical Glass Water Bottle – 500ml Leak-Proof Bottle with Airtight Lid | BPA-Free, Eco-Friendly, Reusable & Odor-Free | Ideal for Home, Office, Travel, Gym | Easy to Clean & Refill",
-    "score": 42,
-    "imgUrl": "https://m.media-amazon.com/images/I/51wZ-JlI1vL._AC_UL320_.jpg",
-    "carbon": 0.17,
-    "price": 230
-  },
-  {
-    "asin": "B0FDC2LMQR",
-    "category": "plastic_bottle",
-    "title": "ATIRDA Pure Clay Water Bottle – Handcrafted Terracotta for Healthy Living & Healthy Drinking Water Bottle (Pack of 1 Terracotta Bottle)",
-    "score": 40,
-    "imgUrl": "https://m.media-amazon.com/images/I/31IKZOeHqfL._AC_UL320_.jpg",
+    "title": "Ziya's Home Glass Water Bottle, 400ml Capacity Sport Flask with Leak-Proof Cap - BPA-Free for Hot and Cold Beverages - Travel-Friendly with Daily Hydration Markings",
+    "score": 76,
+    "imgUrl": "https://m.media-amazon.com/images/I/61DzmCu9D5L._AC_UL320_.jpg",
     "carbon": 0.17,
     "price": 299
   },
   {
-    "asin": "B0FDB4234Q",
+    "asin": "B0FDM5CWBW",
     "category": "plastic_bottle",
-    "title": "PrintingZone Indian Flag Theme Water Bottle 750ml",
-    "score": 39,
-    "imgUrl": "https://m.media-amazon.com/images/I/4116R1L8L8L._AC_UL320_.jpg",
+    "title": "SmartMaison Stainless Steel Sipper Water Bottle 900ML | BPA Free Leak Proof | Lightweight | Easy to Carry | Rust Free | Eco Friendly | Office, Gym, School, Travel | Steel Bottle Pack of 1",
+    "score": 73,
+    "imgUrl": "https://m.media-amazon.com/images/I/41dicIGCg6L._AC_UL320_.jpg",
     "carbon": 0.17,
-    "price": 499
+    "price": 199
+  },
+  {
+    "asin": "B0FDM3DD3Y",
+    "category": "plastic_bottle",
+    "title": "SmartMaison Stainless Steel Sipper Water Bottle 900ML | BPA Free Leak Proof | Lightweight | Easy to Carry | Rust Free | Eco Friendly | Office, Gym, School, Travel | Steel Bottle Pack of 2",
+    "score": 73,
+    "imgUrl": "https://m.media-amazon.com/images/I/41dicIGCg6L._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 299
+  },
+  {
+    "asin": "B0FDGQ9Z64",
+    "category": "plastic_bottle",
+    "title": "KHODAL Villa Glass Water Bottle 400ml | Leakproof Flask for Tea, Coffee, and Water | Creative Design, Portable and Eco-Friendly Bottle (Nice Bottle 400ML,Multi-Color,Pack-1)",
+    "score": 69,
+    "imgUrl": "https://m.media-amazon.com/images/I/41EhnKPDCKL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 0
+  },
+  {
+    "asin": "B0CRHDFTM9",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 4 [Bery Cool 1000ml & Ozone 1000ml]",
+    "score": 73,
+    "imgUrl": "https://m.media-amazon.com/images/I/81YxuQiidFL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 880
+  },
+  {
+    "asin": "B0CRHGRRPF",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 4 [Polo Sport Flip 1000ml & Summer Cool 1000ml]",
+    "score": 75,
+    "imgUrl": "https://m.media-amazon.com/images/I/71IQ0YAd6QL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 890
+  },
+  {
+    "asin": "B0CRHC7XR5",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 4 [Ocean Cool 1000ml & Summer Cool 1000ml]",
+    "score": 75,
+    "imgUrl": "https://m.media-amazon.com/images/I/71mxiAtvQ7L._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 830
+  },
+  {
+    "asin": "B0CRDXZ78X",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 2 [Neo 650ml & Thirst Cool 1000ml]",
+    "score": 77,
+    "imgUrl": "https://m.media-amazon.com/images/I/71e8UkSU3qL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 510
+  },
+  {
+    "asin": "B0CRHFGQFC",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 6 [Ocean Cool 1000ml & Summer Cool 1000ml]",
+    "score": 74,
+    "imgUrl": "https://m.media-amazon.com/images/I/71kJ0BlIhSL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 1240
+  },
+  {
+    "asin": "B0CRDYXCC5",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 2 [Bery Cool 1000ml & Ozone 1000ml]",
+    "score": 74,
+    "imgUrl": "https://m.media-amazon.com/images/I/71jn2tV2eOL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 440
+  },
+  {
+    "asin": "B0CRHDX77B",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 6 [Bery Cool 1000ml & Ozone 1000ml]",
+    "score": 73,
+    "imgUrl": "https://m.media-amazon.com/images/I/71A0N7c-IHL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 1320
+  },
+  {
+    "asin": "B0CRDXSCDT",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 2 [Polo Sport Flip 1000ml & Summer Cool 1000ml]",
+    "score": 75,
+    "imgUrl": "https://m.media-amazon.com/images/I/71d+0OduqHL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 450
+  },
+  {
+    "asin": "B0CRHDTJ8Z",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 6 [Polo Sport Flip 1000ml & Summer Cool 1000ml]",
+    "score": 74,
+    "imgUrl": "https://m.media-amazon.com/images/I/71Xgx+N3i7L._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 1330
+  },
+  {
+    "asin": "B0CRDY3ZVC",
+    "category": "plastic_bottle",
+    "title": "NIRLON Stainless Steel Water Bottle | Leak Proof, Durable & Rust Proof | Non-Toxic & BPA Free | Eco Friendly Water Bottle|Set of 2 [Ocean Cool 1000ml & Summer Cool 1000ml]",
+    "score": 77,
+    "imgUrl": "https://m.media-amazon.com/images/I/71tHrRZSuOL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 420
+  },
+  {
+    "asin": "B0FDL63SX6",
+    "category": "plastic_bottle",
+    "title": "Chipra Clay Water Bottle, Earthen Water Cooling Drinking Storage, Leak Proof Bottle Self Cooling Natural organic clay water bottle Water Bottle Organic Clay Eco-Friendly Bottle",
+    "score": 79,
+    "imgUrl": "https://m.media-amazon.com/images/I/61DunS0c4ZL._AC_UL320_.jpg",
+    "carbon": 0.14,
+    "price": 299
+  },
+  {
+    "asin": "B0FDL3L3QH",
+    "category": "plastic_bottle",
+    "title": "Shrux Tea Infuser Bottle for Loose Leaf Tea – 350ml Borosilicate Glass Flask with Dual-Chamber Design, Stainless Steel Strainer & Leak-Proof Lid – Eco-Friendly Travel Tumbler for Detox Water – 1Pcs",
+    "score": 77,
+    "imgUrl": "https://m.media-amazon.com/images/I/51Sna9EJcEL._AC_UL320_.jpg",
+    "carbon": 0.17,
+    "price": 649
+  },
+  {
+    "asin": "B08VRGH6NM",
+    "category": "phone_charger",
+    "title": "Bajaj Pygmy Mini Fan 110MM | USB Charging | Multi-Clip Function | Rechargeable | 4-Hr Back-up | Silent Operation | Longer Battery Life | Energy Efficient | Portable【White】",
+    "score": 71,
+    "imgUrl": "https://m.media-amazon.com/images/I/71QKvLOpH8L._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 965
   },
   {
     "asin": "B0D2R2MXXJ",
     "category": "phone_charger",
     "title": "Samsung Original 25W Type-C Travel Adaptor Without Cable, White",
-    "score": 54,
+    "score": 69,
     "imgUrl": "https://m.media-amazon.com/images/I/512UVkoMMEL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 999
   },
   {
-    "asin": "B08NK4P62Q",
-    "category": "phone_charger",
-    "title": "Eveready 9W Emergency Inverter LED Bulb, Cool Day Light (6500K), Rechargeable Bulb with 3 Hours Backup, Ideal for Powercuts, Energy Efficient, B22 Base, Pack of 1",
-    "score": 56,
-    "imgUrl": "https://m.media-amazon.com/images/I/71epxJnmjML._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 241
-  },
-  {
-    "asin": "B075DB1F13",
-    "category": "phone_charger",
-    "title": "Panasonic Eneloop CC55N Smart and Quick Charger for AA & AAA Rechargeable Batteries,Input AC100V‐240V 50‐60HZ,Charging Output AA×2 1500mA AAA×2 550mA,Timer Control Charging-on,Full Charged-off.",
-    "score": 51,
-    "imgUrl": "https://m.media-amazon.com/images/I/61T4iebGjrL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 1490
-  },
-  {
-    "asin": "B0B919D52V",
-    "category": "phone_charger",
-    "title": "WEIRD WOLF 3 Colour Mode LED Study/Table/Desk Lamp with Pen Holder, 6 Month Warranty(Plastic, White, Pack of 1)",
-    "score": 61,
-    "imgUrl": "https://m.media-amazon.com/images/I/81FsiUBcq1L._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 499
-  },
-  {
     "asin": "B09NPVCHXC",
     "category": "phone_charger",
     "title": "Eveready 12W Emergency Inverter LED Bulb, Cool Day Light (6500K), Rechargeable Bulb with 3 Hours Backup, Ideal for Powercuts, Energy Efficient, B22 Base, Pack of 1",
-    "score": 57,
+    "score": 69,
     "imgUrl": "https://m.media-amazon.com/images/I/71ISgAd-E0L._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 280
+    "price": 289
   },
   {
-    "asin": "B0B3HZF9T8",
+    "asin": "B09X75ZYS5",
     "category": "phone_charger",
-    "title": "DIGITEK 25W USB-C PD & QC Power Delivery PD3.0 Dual Port Fast Wall Charger for Lightning and Type-C Devices DMQC PD25W",
-    "score": 50,
-    "imgUrl": "https://m.media-amazon.com/images/I/31WtqU8YLTL._AC_UY218_.jpg",
+    "title": "Orient Electric 12W Rechargeable Emergency LED bulb| Inverter Bulb for home with 2 hours battery backup| Up to 4 kV surge protection| 6500K, Cool White, B22d base| Over charging Protection| Pack of 1",
+    "score": 68,
+    "imgUrl": "https://m.media-amazon.com/images/I/71FtylfhT+L._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 349
+    "price": 244
   },
   {
     "asin": "B0F3D1XN2S",
     "category": "phone_charger",
     "title": "Motorola 68W Gan Turbo Power Fast C-Type Charger for Motorola Edge 60 Fusion/Edge 50 Fusion/Edge 50 Ultra/50 Pro/Razr 50 Ultra/Moto G45/G54/G64/Moto E40/Moto G35 & Support Other USB C Devise by Zybux",
-    "score": 58,
+    "score": 73,
     "imgUrl": "https://m.media-amazon.com/images/I/51isRnRDvxL._AC_UY218_.jpg",
     "carbon": 0.14,
     "price": 1349
   },
   {
-    "asin": "B0CNM4V6Q5",
+    "asin": "B0DGQMTCMR",
     "category": "phone_charger",
-    "title": "Dr Vaku® 20W Fast Charger Adapter for iPhone 16/16 Plus/16 Pro/16 Pro Max, 15/15 Plus/15Pro/15 Pro Max & Other Type C Devices with 1 Meter Nylon Braided USB C to Type C Data Cable PD(Adapter+Cable)",
-    "score": 54,
-    "imgUrl": "https://m.media-amazon.com/images/I/61XksjdQgqL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 748
+    "title": "URBN 10000 mAh Stand Magsafe Power Bank with Stand | 15W Fast Wireless Charging |Strong Magnetic Hold | Type C Input/Output | Pass Through Charging | MagTag Ring Included | (Black) -USB Type C",
+    "score": 71,
+    "imgUrl": "https://m.media-amazon.com/images/I/71VZi+R4nwL._AC_UY218_.jpg",
+    "carbon": 0.14,
+    "price": 1399
   },
   {
     "asin": "B0D8Q3Z8QL",
     "category": "phone_charger",
     "title": "WEIRD WOLF LED Study/Table/Desk Lamp with 3 Colour Mode, Lithium Battery, 6 Month Warranty (Plastic, White, Pack of 1)",
-    "score": 58,
+    "score": 70,
     "imgUrl": "https://m.media-amazon.com/images/I/61C6-GZ8HBL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 375
   },
   {
+    "asin": "B0C33H81PK",
+    "category": "phone_charger",
+    "title": "25W Type C Charger for Samsung USB-C Super Fast Adapter for Galaxy M05/M15/F15/A15/M35/A35/A55/M55 | M34/M14/F34/F14/F54/A14/S24/S23/S21 Fe/S23 Fe/Z Fold/Flip/6/5/4/3/Tab 25 w Charging Adaptor, White",
+    "score": 66,
+    "imgUrl": "https://m.media-amazon.com/images/I/51DC5JY1YiL._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 598
+  },
+  {
+    "asin": "B0DR8QTD8Y",
+    "category": "phone_charger",
+    "title": "boAt Energyshroom PB401 20000mAh Power Bank| Micro USB and Type C (2-Way Input Ports), 22.5W, 3X Output Ports, Compatible with Tablets, Smartphones, Earbuds, Smartwatch (Carbon Black)",
+    "score": 71,
+    "imgUrl": "https://m.media-amazon.com/images/I/71vL-pb3o1L._AC_UY218_.jpg",
+    "carbon": 0.14,
+    "price": 1749
+  },
+  {
     "asin": "B0D45GMSFZ",
     "category": "phone_charger",
     "title": "Portronics Luxcell MagClick 10k 10000 mAh 15W Magnetic Wireless Fast Charging Power Bank Premium Finish, 22.5 Wired Output Compatible with iPhone 12 & Above,Type C Smartphones,Tablets(Dark Grey)",
-    "score": 49,
+    "score": 67,
     "imgUrl": "https://m.media-amazon.com/images/I/51BsxOdN0xL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 1399
   },
   {
-    "asin": "B00GC0BF9C",
+    "asin": "B0CTJ1VMTR",
     "category": "phone_charger",
-    "title": "ENVIE® (ECR 20 MC+4xAA3200) Rechargeable Battery Charger for AA & AAA Ni-mh/Ni-Cd with AA3200 Infinite Plus 4PL Rechargeable Batteries",
-    "score": 46,
-    "imgUrl": "https://m.media-amazon.com/images/I/61PhiDy44qL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 1099
-  },
-  {
-    "asin": "B0DPSVVX69",
-    "category": "phone_charger",
-    "title": "PLIGHT 12V Battery Charger – Fast Charging for UPS, Car, SUV & Kids' Ride-on Bike | Reliable & Efficient Power Supply",
-    "score": 55,
-    "imgUrl": "https://m.media-amazon.com/images/I/51sL8ir8rFL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 600
-  },
-  {
-    "asin": "B0DFH4FBRM",
-    "category": "phone_charger",
-    "title": "boAt Energyshroom PB400 Pro 20000mAh | Pocket Size, Compact Power Bank w/Type-C Input (2-Way Port), 3X Output Ports, Compatible with Tablets, Smartphones, Earbuds, Smartwatch(Emerald Green)",
-    "score": 54,
-    "imgUrl": "https://m.media-amazon.com/images/I/71HCCp+h3FL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 1999
-  },
-  {
-    "asin": "B0D7W83YMN",
-    "category": "phone_charger",
-    "title": "GM G+ 20W Dual-Port Charger - Compact Design with High Power Delivery, Combined Output of Dual Port 24W | 2-in-1 PD QC 3.0 Charger, Type C and USB A Adaptor for iPhones and Android Phones",
-    "score": 37,
-    "imgUrl": "https://m.media-amazon.com/images/I/51uzu-MopaL._AC_UY218_.jpg",
-    "carbon": 0.2,
-    "price": 399
-  },
-  {
-    "asin": "B0CTJ1NTRG",
-    "category": "phone_charger",
-    "title": "pTron Newly Launched Dynamo Nergy 10000mAh 22.5W Fast Charging Power Bank, Supports VOOC/Wrap/Dash USB Charging, 20W PD Fast Charging, 3 Outputs, 1 Input & Multiple Layers of Protection (Blue)",
-    "score": 52,
-    "imgUrl": "https://m.media-amazon.com/images/I/614RfJAfL3L._AC_UY218_.jpg",
+    "title": "pTron Newly Launched Dynamo Nergy 10000mAh 22.5W Fast Charging Power Bank, Supports VOOC/Wrap/Dash USB Charging, 20W PD Fast Charging, 3 Outputs, 1 Input & Multiple Layers of Protection (Black)",
+    "score": 68,
+    "imgUrl": "https://m.media-amazon.com/images/I/61EgsLc2IwL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 699
   },
   {
-    "asin": "B0CQK23MSN",
+    "asin": "B07GVGTSLN",
     "category": "phone_charger",
-    "title": "Portronics Luxcell B 10K 10000 mAh 22.5W Fast Charging Power Bank, Ultra Slim Power Bank with Mach USB-A Output, Type C PD Output, Type C Input, Wake Up Button(Yellow)",
-    "score": 50,
-    "imgUrl": "https://m.media-amazon.com/images/I/610b8CUauXL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 1099
+    "title": "Wayona USB A to Type C 65W Fast Charger 480 Mbps Data Cable Compatible for iPhone 15, 15 Pro, 15 Pro Max, 15 Plus, Apple CarPlay, Galaxy S25 Ultra,S24, S23,S20, S21, S22 (3 FT Pack of 1, Grey)",
+    "score": 75,
+    "imgUrl": "https://m.media-amazon.com/images/I/51ljcNLVdWL._AC_UY218_.jpg",
+    "carbon": 0.14,
+    "price": 289
   },
   {
-    "asin": "B0DYPFNH6Z",
+    "asin": "B0D72VGS6Q",
     "category": "phone_charger",
-    "title": "Kratos 65W Fast Charger Adapter & USB-A to Type C Cable Combo, Compatible with OnePlus, Realme, Xiaomi, Redmi, Oppo, Vivo & Other Smartphones, Type C Charger Supports Dash, Warp, Vooc,SuperVooc",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/51WaJLCa2FL._AC_UY218_.jpg",
+    "title": "HAVELLS 8.5w LED Emergency Bulb | Shatter Resistant |Cool Day White (6500K) | B22 LED Bulb Base | Inverter Bulb for home,4 Hours battery back up| Li-ion Battery | Over charging Protection",
+    "score": 70,
+    "imgUrl": "https://m.media-amazon.com/images/I/51wC6AO6wOL._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 499
+    "price": 219
+  },
+  {
+    "asin": "B0CSZ3S1KV",
+    "category": "phone_charger",
+    "title": "SaleOn USB Rechargeable LED Desk Lamp with Mobile Stand & 6 Month Warranty | Flexible Gooseneck Study Light | 3 Color Modes | Eye Protection | Touch Button Control | Home & Office Use",
+    "score": 71,
+    "imgUrl": "https://m.media-amazon.com/images/I/61nuHzVm9yL._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 298
+  },
+  {
+    "asin": "B0D22M58MR",
+    "category": "phone_charger",
+    "title": "ZEBRONICS MB10000S6 Power Bank, 10000 mAh, 12W, 5 x Outputs - Dual USB A | Type C | Micro USB | Lightning, Built in I/O Cables, Percentage Display, Carry Loop, Made in India (Lavender)",
+    "score": 65,
+    "imgUrl": "https://m.media-amazon.com/images/I/61rYwwPPxVL._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 649
+  },
+  {
+    "asin": "B07VQ1VT1P",
+    "category": "phone_charger",
+    "title": "WOSCHER 2003 High Power Auto Car Vacuum Cleaner for Deep Cleaning, Hand Held Portable Cars Vacuum for car Cleaning with DC 12V, 140W Vacuum Motor & 5000 PA Powerful Suction, Black",
+    "score": 60,
+    "imgUrl": "https://m.media-amazon.com/images/I/71op6mKBraL._AC_UY218_.jpg",
+    "carbon": 0.2,
+    "price": 1430
+  },
+  {
+    "asin": "B0DCGCWD9M",
+    "category": "phone_charger",
+    "title": "AILKIN SUPERVOOC 100W Ultra Fast Charger Adapter Only- True 100W PD Charging, Unleash True Power for OnePlus 12/12R/11/11R/10/10R, Nord CE 3 Lite 5G, Nord 2T 5G, Nord CE 2 Lite 5G, Nord 5G",
+    "score": 67,
+    "imgUrl": "https://m.media-amazon.com/images/I/51bOmKta1PL._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 798
   },
   {
     "asin": "B0DW7W4QG3",
     "category": "phone_charger",
     "title": "Costar 22.5W GaN Dual Port Charger Combo PD and QC3.0 Fast Charging, Compatible for Mobile,White (Adapter + 1.5m Type C Cable)",
-    "score": 50,
+    "score": 66,
     "imgUrl": "https://m.media-amazon.com/images/I/612S0BIivqL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 599
@@ -1065,7 +1065,7 @@
     "asin": "B0F53JMS13",
     "category": "phone_charger",
     "title": "AILKIN 25W GaN USB-C Superfast Charger Adapter Compatible with Samsung Galaxy S/A/M/F/Z Series-Compatible with S25/S24/S23/S22 Ultra/S21/21FE/S20/Note/M54/M53 5G/M33/M23/A34/A54 5G/A13 & More(Black)",
-    "score": 54,
+    "score": 69,
     "imgUrl": "https://m.media-amazon.com/images/I/61NCSJBgNAL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 749
@@ -1074,16 +1074,16 @@
     "asin": "B0DSZQV112",
     "category": "phone_charger",
     "title": "Nextech 20W PD 3.0 Type-C Power Adapter | Fast Charging for iPhone 16/16 Pro/16 Pro Max, 15, 14,One Plus, iPad Pro, AirPods Pro, Pixel 3 | Universal Charger Adapter | Fast Charging Adapter",
-    "score": 56,
+    "score": 71,
     "imgUrl": "https://m.media-amazon.com/images/I/514KpD3yU+L._AC_UY218_.jpg",
     "carbon": 0.14,
-    "price": 499
+    "price": 469
   },
   {
     "asin": "B0D5Y12KTH",
     "category": "phone_charger",
     "title": "URBN 65W Ultra Fast GaN Laptop Adapter 50% Charge in 30 Mins | iPhone Charger | Dual Output | Universal Compatibility for MacBook Pro, iPad & Android Mobiles (White)",
-    "score": 44,
+    "score": 65,
     "imgUrl": "https://m.media-amazon.com/images/I/61-8yu9ZtOL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 2199
@@ -1092,52 +1092,16 @@
     "asin": "B0D269NF1S",
     "category": "phone_charger",
     "title": "Auklet 65W GaN Fast Wall Charger, with PD & PPS Support, USB 2C, 1A Port, BIS Certified, Compatible with All iPhones, iPads, MacBooks, laptops, and All Android mobiles (White)",
-    "score": 41,
+    "score": 63,
     "imgUrl": "https://m.media-amazon.com/images/I/61NUREVUfuL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 2499
   },
   {
-    "asin": "B0F1YX5P79",
-    "category": "phone_charger",
-    "title": "Samsung 25W Gan Fast Charging Adapter with 1M Type C to C Cable Compatible with Galaxy S25, A56, A16, A06,M05,M06, M16,F16,F05,F06 & Other 25 watt USB C Devices, Superfast Mobile Phone Charger, White",
-    "score": 59,
-    "imgUrl": "https://m.media-amazon.com/images/I/51H4nia99XL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 799
-  },
-  {
-    "asin": "B0FBK3LWYP",
-    "category": "phone_charger",
-    "title": "45W Type-C Fast Charger Adapter for Dell/Hp/infinix/MSI/Lenovo/Galaxy/ASUS Laptop/ChromeBook/Pad/Tablet, Nothing Phone 3a/3a Pro/Samsung S25/S24 (Edge|Ultra|Plus), 45-Watt USB-C PD 3.0 Charge, White",
-    "score": 50,
-    "imgUrl": "https://m.media-amazon.com/images/I/51Pb9NVEOuL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 999
-  },
-  {
-    "asin": "B0F9T99M2N",
-    "category": "phone_charger",
-    "title": "45W Type-C Fast Charger Adapter for Nothing Phone 3a/3a Pro/CMF Phone 2 Pro/Samsung S25/S24(Edge|Ultra|Plus|Fe) iPhone 16/15/Moto Edge 60/50/iQOO/Dell/Hp Laptop/Tablet 45-Watt USB-C GaN Charge, White",
-    "score": 50,
-    "imgUrl": "https://m.media-amazon.com/images/I/51pbQi6ybKL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 999
-  },
-  {
-    "asin": "B0FBK3RY16",
-    "category": "phone_charger",
-    "title": "45W USB-C Fast Charger Adapter for Dell/Hp/infinix/MSI/Lenovo/Galaxy/ASUS Laptop/ChromeBook/Pad/Tablet, Nothing Phone 3a/3a Pro/Samsung S25/S24 (Edge|Ultra|Plus), 45-Watt USB-C PD 3.0 Charge, Black",
-    "score": 50,
-    "imgUrl": "https://m.media-amazon.com/images/I/41yaDflOZ6L._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 999
-  },
-  {
     "asin": "B0F9B7QNZ2",
     "category": "phone_charger",
     "title": "Cintlug Eकlota Charger foriPhone 20W Adapter, Super-Fast Charging for iPhone 16e/16Plus/16Pro/16Promax/14/14Plus/14Pro/14Promax 13/13Pro/13Promax 12/12Pro/12/11/X/XR Series, Mfi-Certified",
-    "score": 53,
+    "score": 67,
     "imgUrl": "https://m.media-amazon.com/images/I/41aQ7tuZELL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 399
@@ -1146,52 +1110,133 @@
     "asin": "B0F9P3HDM5",
     "category": "phone_charger",
     "title": "Original 68W Gan Turbo Power Fast C-Type Charger, Compatible with Motorola Edge 50 Ultra, Moto G54, Razr 40, Moto E30, and More USB-C Devices – Black",
-    "score": 39,
+    "score": 61,
     "imgUrl": "https://m.media-amazon.com/images/I/51qWXMbieUL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 1299
   },
   {
+    "asin": "B0B3HZF9T8",
+    "category": "phone_charger",
+    "title": "DIGITEK 25W USB-C PD & QC Power Delivery PD3.0 Dual Port Fast Wall Charger for Lightning and Type-C Devices DMQC PD25W",
+    "score": 66,
+    "imgUrl": "https://m.media-amazon.com/images/I/31WtqU8YLTL._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 349
+  },
+  {
     "asin": "B0F9P555R7",
     "category": "phone_charger",
     "title": "Original 68W GaN Turbo Power USB C Fast Charger Compatible with Motorola | Edge 60 Pro/Fusion/Edge 50 Ultra / G54 / G45 / E40 / G35, Super-Fast Wall Charger for USB-C Devices, Black | with Cable",
-    "score": 47,
+    "score": 65,
     "imgUrl": "https://m.media-amazon.com/images/I/61KOHMkHIjL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 1299
   },
   {
-    "asin": "B0D5YQWKYL",
+    "asin": "B0F9P266KF",
     "category": "phone_charger",
-    "title": "Charger Adapter 20W Original Type C for 16/16 Plus/16 Pro/16 Pro Max, 15/i Phone 14/13/12/11 Series with PD 3.0 USB-C Fast Charging Adaptor BIS Certified",
-    "score": 54,
-    "imgUrl": "https://m.media-amazon.com/images/I/51sPyZDiRwL._AC_UY218_.jpg",
+    "title": "Original 68W Gan Turbo Power Fast C-Type Charger, Compatible with Motorola Edge 60 Pro, Moto G45, Moto E40, Razr 50 Ultra, and More USB-C Devices – Black",
+    "score": 65,
+    "imgUrl": "https://m.media-amazon.com/images/I/31J8YL0D45L._AC_UY218_.jpg",
     "carbon": 0.15,
-    "price": 598
+    "price": 1299
+  },
+  {
+    "asin": "B0DX26VG8L",
+    "category": "phone_charger",
+    "title": "GZT 30W Charger Type C Adapter for iPhone, Samsung & Google 16,16 Plus,16 Pro,16 Pro Max,15,15 Pro,15 Pro Max,14,14 Pro,14 Pro Max,Galaxy S24,9Pro/9/8 Pro/8/8a,Pixel 7 Pro/7/7A,Pixel 6 Pro/6/6A(White)",
+    "score": 66,
+    "imgUrl": "https://m.media-amazon.com/images/I/61XdJHnT2DL._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 436
+  },
+  {
+    "asin": "B0DW8TW9C5",
+    "category": "phone_charger",
+    "title": "Monrix 25W Fast Charger – Stylish Black USB-C Power Adapter for Quick Charging Compatible with Samsung Galaxy S23, S22, Note 20, S20 FE, S20+, S21, S21+, S21 FE, S21 Ultra, M14 5G, M15, M32",
+    "score": 66,
+    "imgUrl": "https://m.media-amazon.com/images/I/41RQKlK0G4L._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 394
+  },
+  {
+    "asin": "B0F1YX5P79",
+    "category": "phone_charger",
+    "title": "Samsung 25W Gan Fast Charging Adapter with 1M Type C to C Cable Compatible with Galaxy S25, A56, A16, A06,M05,M06, M16,F16,F05,F06 & Other 25 watt USB C Devices, Superfast Mobile Phone Charger, White",
+    "score": 72,
+    "imgUrl": "https://m.media-amazon.com/images/I/51H4nia99XL._AC_UY218_.jpg",
+    "carbon": 0.14,
+    "price": 799
+  },
+  {
+    "asin": "B0FBK3LWYP",
+    "category": "phone_charger",
+    "title": "45W Type-C Fast Charger Adapter for Dell/Hp/infinix/MSI/Lenovo/Galaxy/ASUS Laptop/ChromeBook/Pad/Tablet, Nothing Phone 3a/3a Pro/Samsung S25/S24 (Edge|Ultra|Plus), 45-Watt USB-C PD 3.0 Charge, White",
+    "score": 67,
+    "imgUrl": "https://m.media-amazon.com/images/I/51Pb9NVEOuL._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 999
   },
   {
     "asin": "B0D4TS9B97",
     "category": "phone_charger",
     "title": "Ambrane 10000mAh MagSafe Powerbank with Stand 22.5W Wired & 15W Wireless Fast Charging Dual Input (Type-C & Lightning) | Triple Output | for iPhone 16/15/14/13/12 & Android Devices (PB11, Black)",
-    "score": 47,
+    "score": 65,
     "imgUrl": "https://m.media-amazon.com/images/I/71r-Wg4tXWL._AC_UY218_.jpg",
     "carbon": 0.15,
     "price": 1499
   },
   {
+    "asin": "B0DB5RP32Y",
+    "category": "phone_charger",
+    "title": "Ambrane MagSafe Wireless 10000mAh Fast Charging Power Bank with Mobile Stand, Strong Magnet, 22.5W Output for iPhone 12 & Above, Android & Other Qi Enabled Device + Magnetic Ring (Mount, Blue)",
+    "score": 69,
+    "imgUrl": "https://m.media-amazon.com/images/I/71ZnBPo1syL._AC_UY218_.jpg",
+    "carbon": 0.14,
+    "price": 1699
+  },
+  {
+    "asin": "B0FDQ3BRK7",
+    "category": "phone_charger",
+    "title": "Motorola 68W Gan Turbo Power Fast C-Type Charger for Motorola Edge 60 Pro/Fusion/Edge 50 Fusion/Edge 50 Ultra/50 Pro/Razr 50 Ultra/Moto G45/G54/Moto E40/Moto G35 & Support Other USB C Devise, Black",
+    "score": 62,
+    "imgUrl": "https://m.media-amazon.com/images/I/51x0liukL3L._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 1299
+  },
+  {
+    "asin": "B0FDL21PHM",
+    "category": "phone_charger",
+    "title": "Original Energy-Efficient 25W Charger with Cable, Black Compatible with Samsung Galaxy Series (Adapter & Cable)",
+    "score": 63,
+    "imgUrl": "https://m.media-amazon.com/images/I/51EPhUPkT1L._AC_UY218_.jpg",
+    "carbon": 0.14,
+    "price": 1299
+  },
+  {
+    "asin": "B0FDKVXNFW",
+    "category": "phone_charger",
+    "title": "Original 65w Charger | Energy-Efficient Power Output | USB-C Power Charger with Type C to C Cable | Compatible with Nothing 2 Phone 2a 1 CMF Phone Pro",
+    "score": 61,
+    "imgUrl": "https://m.media-amazon.com/images/I/41TNoAmK84L._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 1599
+  },
+  {
     "asin": "B0FDG7SK1Y",
     "category": "phone_charger",
     "title": "30W Car Charger for Oppo A5 Energy Dual USB Port Car Charger High Speed Quick Rapid Fast Turbo Charge QC 3.0 Smart with 1.2m 3-in-1 Multi Cable Micro USB Android iOS Type-C USB Cable (Black, ST.N2)",
-    "score": 48,
+    "score": 62,
     "imgUrl": "https://m.media-amazon.com/images/I/51KiK17HTwL._AC_UY218_.jpg",
-    "carbon": 0.14,
+    "carbon": 0.15,
     "price": 499
   },
   {
     "asin": "B0FDG7MFDW",
     "category": "phone_charger",
     "title": "65W Car Charger for Oppo A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Charging & Sync Cable (Black, ST.N)",
-    "score": 46,
+    "score": 65,
     "imgUrl": "https://m.media-amazon.com/images/I/51WKR-UE9fL._AC_UY218_.jpg",
     "carbon": 0.14,
     "price": 999
@@ -1200,277 +1245,79 @@
     "asin": "B0FDG4SMPX",
     "category": "phone_charger",
     "title": "65W Car Charger for Oppo A5 Energy Dual USB Port USB+PD Charger High Speed Fast Turbo Charge QC 3.0 Smart with 1.2m 3-in-1 Multi Cable Micro USB Android iOS Type-C USB Cable (Black, ST.N)",
-    "score": 46,
+    "score": 61,
     "imgUrl": "https://m.media-amazon.com/images/I/51+HCFDzv0L._AC_UY218_.jpg",
-    "carbon": 0.14,
+    "carbon": 0.15,
     "price": 999
   },
   {
     "asin": "B0FDG8JD5D",
     "category": "phone_charger",
     "title": "30W Car Charger for Oppo A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart SinglePort with 1m Type-C Red Charging & Sync Cable (White, ST.N)",
-    "score": 48,
+    "score": 62,
     "imgUrl": "https://m.media-amazon.com/images/I/61Nuni7o3pL._AC_UY218_.jpg",
-    "carbon": 0.14,
+    "carbon": 0.15,
     "price": 499
   },
   {
     "asin": "B0FDG7LQ2D",
     "category": "phone_charger",
     "title": "30W Car Charger for Oppo A5 Energy Single USB Port High Speed Turbo Charge QC 3.0 Smart with 1.2m 3-in-1 Multi Cable Micro USB Android iOS Type-C USB Cable (White, ST.N)",
-    "score": 48,
+    "score": 62,
     "imgUrl": "https://m.media-amazon.com/images/I/51077rd-sfL._AC_UY218_.jpg",
-    "carbon": 0.14,
+    "carbon": 0.15,
     "price": 499
   },
   {
     "asin": "B0FDBBYHHG",
     "category": "phone_charger",
     "title": "30W Car Charger for Op-po A5 Energy Original QC Adapter Type C 3.0A High Speed Fast Turbo Charge QC 3.0 Smart Dualport with 1m Type-C Red Charging & Sync Cable (Black, SE.M7)",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/51-iKCEz0FL._AC_UY218_.jpg",
-    "carbon": 0.14,
-    "price": 499
-  },
-  {
-    "asin": "B0D7W1FKPF",
-    "category": "phone_charger",
-    "title": "COSTAR 65W GaN Fast Charger Type C with 1.2m 3A Fast Charging Type C Cable, Qc/Pd Dual Port USB A + Type C, Power Adapter Plug Wall Charger for iPhone, Samsung, Realme, Xiaomi and Vivio Oppo(White)",
-    "score": 47,
-    "imgUrl": "https://m.media-amazon.com/images/I/61PMmFC4eyL._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 1599
-  },
-  {
-    "asin": "B0DVTCYWRM",
-    "category": "phone_charger",
-    "title": "DR VAKU® 65W Charger Type C Fast Adapter with Multi Port Dual PD Charging GaN Technology for Laptop,iPhone 16/16 Plus/16 Pro/16 Pro Max,iPhone 15/14/13/12 Series, Samsung and Android Devices-Black",
-    "score": 48,
-    "imgUrl": "https://m.media-amazon.com/images/I/614rJMCVxML._AC_UY218_.jpg",
-    "carbon": 0.15,
-    "price": 1899
-  },
-  {
-    "asin": "B0D66YVCQB",
-    "category": "coffee_mug",
-    "title": "Sleepy Owl Coffee Mug with Lid | Crafted from Used Coffee Grounds | Eco-Friendly & Sustainable Cup | Microwave Safe | Spill Proof | Travel Friendly | Office | Home | Premium Gift | 370ml 1 Piece",
-    "score": 63,
-    "imgUrl": "https://m.media-amazon.com/images/I/61qkm65hJOL._AC_UL320_.jpg",
-    "carbon": 0.26,
-    "price": 349
-  },
-  {
-    "asin": "B0DF2WB258",
-    "category": "coffee_mug",
-    "title": "Sleepy Owl French Vanilla Coffee Gift Set | 100% Arabica Instant Coffee (100g) with Sustainable Coffee Mug | Includes Coffee with Mug | Premium Corporate Gifts, Coffee Kit, Coffee Hamper Gift Set",
     "score": 62,
-    "imgUrl": "https://m.media-amazon.com/images/I/61t+l6kQC8L._AC_UL320_.jpg",
-    "carbon": 0.26,
-    "price": 649
-  },
-  {
-    "asin": "B0BVKDXNXS",
-    "category": "coffee_mug",
-    "title": "Eha Earth Friendly Retro Coffee Mug with Lid | Tea Cup Set | 250 ml | Made with Rice Husk | Microwave Safe Mugs for Gifting | 1 Unit | Charcoal",
-    "score": 38,
-    "imgUrl": "https://m.media-amazon.com/images/I/813xXiRA9HL._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 285
+    "imgUrl": "https://m.media-amazon.com/images/I/51-iKCEz0FL._AC_UY218_.jpg",
+    "carbon": 0.15,
+    "price": 499
   },
   {
     "asin": "B0BVVP7Q1L",
     "category": "coffee_mug",
     "title": "Irida Naturals Unbreakable Coffee Mug - Eco-Friendly & Microwave Safe Mugs for Tea or Coffee, Rice Husk Milk & Tea Coffee Cups for Hot and Cold, Matte Finish Mugs for Gift, 300 ML (Mint Green)",
-    "score": 66,
+    "score": 76,
     "imgUrl": "https://m.media-amazon.com/images/I/41pHWgRzTlL._AC_UL320_.jpg",
-    "carbon": 0.23,
-    "price": 299
-  },
-  {
-    "asin": "B0CVDXGQDH",
-    "category": "coffee_mug",
-    "title": "MAE Coffee Mug with Lid | 370 ML | Crafted from Used Coffee Grounds | Eco Friendly & Sustainable Cup | Insulated | Microwave Safe | Travel Friendly | Spill Proof | Office | Home | Gift | Mug | 1 pc",
-    "score": 71,
-    "imgUrl": "https://m.media-amazon.com/images/I/81AtpjSqQsL._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 359
-  },
-  {
-    "asin": "B0DH4GCTHF",
-    "category": "coffee_mug",
-    "title": "Eha Earth- Friendly Mugs for Diwali | Hot and Cold Coffee Mug | Gift Items for Friends | Set of 1 | 300 ml | Coffee Mug | Made with Rice Husk| Sand Castle",
-    "score": 57,
-    "imgUrl": "https://m.media-amazon.com/images/I/81GhKmgrlZL._AC_UL320_.jpg",
-    "carbon": 0.25,
-    "price": 379
-  },
-  {
-    "asin": "B0DMVMMSXJ",
-    "category": "coffee_mug",
-    "title": "Eha Earth Friendly Statement Coffee Mug Set | Coffee Mugs Set of 2 | 350 ml | Cups and Mugs Made with Rice Husk Biocomposite | Microwave Safe Mugs for Coffee (Reheat Only) | Mugs for Gift | Azure",
-    "score": 35,
-    "imgUrl": "https://m.media-amazon.com/images/I/71abOhnOnDL._AC_UL320_.jpg",
     "carbon": 0.35,
-    "price": 469
-  },
-  {
-    "asin": "B0F1MMG4J2",
-    "category": "coffee_mug",
-    "title": "Eha Earth Friendly Icon Coffee Mug | Mugs for Gift Made with Rice Husk Biocomposite | Coffee Mugs Set of 2, 400ml | Microwave Safe Mugs for Coffee (Reheat Only) | Coffee Cups and Mugs | Charcoal",
-    "score": 40,
-    "imgUrl": "https://m.media-amazon.com/images/I/81W2STAL7qL._AC_UL320_.jpg",
-    "carbon": 0.34,
-    "price": 466
-  },
-  {
-    "asin": "B0BYYZ649G",
-    "category": "coffee_mug",
-    "title": "MAE Coffee Mug with Lid | 370 ML | Made with Rice Husk | Eco Friendly & Sustainable Cup | Insulated | Microwave Safe | Travel Friendly | Spill Proof | Office | Home | Gift | Mug | Cup with lid |1 pc",
-    "score": 72,
-    "imgUrl": "https://m.media-amazon.com/images/I/71dWa9VdyqL._AC_UL320_.jpg",
-    "carbon": 0.18,
-    "price": 359
-  },
-  {
-    "asin": "B0CNH4Y84W",
-    "category": "coffee_mug",
-    "title": "MAE Coffee Mug with Lid | 370 ML | Crafted from Used Bamboo Fibre | Eco Friendly & Sustainable Cup | Insulated | Microwave Safe | Travel Friendly | Spill Proof | Office | Home | Gift | Mug | 1 Piece",
-    "score": 55,
-    "imgUrl": "https://m.media-amazon.com/images/I/61XvkKI4E5L._AC_UL320_.jpg",
-    "carbon": 0.34,
-    "price": 379
-  },
-  {
-    "asin": "B0DGYF77WN",
-    "category": "coffee_mug",
-    "title": "Eha Earth-Friendly Gifts for Anniversary Gift for Couple Special | Birthday Gift for Men |Mugs for Coffee for Wife | Set of 1 | 300 ml | Coffee Mug | Made with Rice Husk| Sand Castle",
-    "score": 56,
-    "imgUrl": "https://m.media-amazon.com/images/I/81gvUr5SRFL._AC_UL320_.jpg",
-    "carbon": 0.25,
-    "price": 399
-  },
-  {
-    "asin": "B0CRTHYY3H",
-    "category": "coffee_mug",
-    "title": "Eha Earth-Friendly Comfy Coffee Cup Set of 4 | 200 ml | Made with Rice Husk & Bamboo Fibers | Microwave Safe | for Hot & Cold Coffee Mug, Tea & Milk | Natural Matte Finish | Multi-Dark",
-    "score": 56,
-    "imgUrl": "https://m.media-amazon.com/images/I/71xAJqoGojL._AC_UL320_.jpg",
-    "carbon": 0.25,
-    "price": 619
-  },
-  {
-    "asin": "B09CGGYFSL",
-    "category": "coffee_mug",
-    "title": "Baskety Reusable Coffee Cup, Sustainable Travel Coffee Mug with Lid and Silicone Sleeve, 350ml Portable Drinking Cup, Dishwasher and Microwave Safe (Green, Pack of 1)",
-    "score": 54,
-    "imgUrl": "https://m.media-amazon.com/images/I/41Ju+RQQgeL._AC_UL320_.jpg",
-    "carbon": 0.34,
-    "price": 549
-  },
-  {
-    "asin": "B0C9Q7HHT6",
-    "category": "coffee_mug",
-    "title": "Eha Earth-Friendly Comfy Coffee Cup Set of 6 | 200 ml | Made with Rice Husk & Bamboo Fibers | Microwave Safe | for Hot & Cold Coffee Mug, Tea & Milk | Natural Matte Finish | Coffee",
-    "score": 54,
-    "imgUrl": "https://m.media-amazon.com/images/I/81igiXfehML._AC_UL320_.jpg",
-    "carbon": 0.25,
-    "price": 778
-  },
-  {
-    "asin": "B0C5HMT94C",
-    "category": "coffee_mug",
-    "title": "Irida Naturals Rice Husk Classic Travel Mug Set of 1- Eco Friendly Portable Hot & Cold Coffee Mug for Tea, Shakes and Cold Drinks, Microwave & Dishwasher Safe Coffee Mug for Travel, 250 ML(Sky Blue)",
-    "score": 63,
-    "imgUrl": "https://m.media-amazon.com/images/I/51I9slLy5zL._AC_UL320_.jpg",
-    "carbon": 0.26,
     "price": 299
-  },
-  {
-    "asin": "B0CRTC69XG",
-    "category": "coffee_mug",
-    "title": "Eha Earth-Friendly Comfy Coffee Cup Set of 4 | 200 ml | Made with Rice Husk & Bamboo Fibers | Microwave Safe | for Hot & Cold Coffee Mug, Tea & Milk | Natural Matte Finish | Multi-Light",
-    "score": 56,
-    "imgUrl": "https://m.media-amazon.com/images/I/71abwp5kghL._AC_UL320_.jpg",
-    "carbon": 0.25,
-    "price": 588
-  },
-  {
-    "asin": "B0DG2MBPBQ",
-    "category": "coffee_mug",
-    "title": "Eha Earth Friendly Duo Coffee Mug | Set of 4, 300 ml | Made with Rice Husk Biocomposite| Microwave Safe Coffee Mugs for Kids (Reheat Only) | Mugs for Coffee | for Hot & Cold Beverages | Multi Dark",
-    "score": 35,
-    "imgUrl": "https://m.media-amazon.com/images/I/81ouHZgv+ZL._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 634
-  },
-  {
-    "asin": "B0CSSKRKMJ",
-    "category": "coffee_mug",
-    "title": "Eha Earth-Friendly Mother's Day Gifts for Women | Gifts for Men | Birthday Gift for Girl | Wedding Gift for Couples | Set of 2 | 375 ml| Coffee Mug | Made with Rice Husk | Inno-Sand",
-    "score": 57,
-    "imgUrl": "https://m.media-amazon.com/images/I/81nLlC47O-L._AC_UL320_.jpg",
-    "carbon": 0.25,
-    "price": 490
-  },
-  {
-    "asin": "B0C9QWJYQM",
-    "category": "coffee_mug",
-    "title": "Eha Set of 2 Earth-Friendly Classic Coffee Mug | 300 ml | Made with Rice Husk & Bamboo Fibers | Microwave Safe | for Hot & Cold Coffee, Milk & Tea Cup | Matte Finish Mugs | Coral",
-    "score": 58,
-    "imgUrl": "https://m.media-amazon.com/images/I/81cpCFT1ZcL._AC_UL320_.jpg",
-    "carbon": 0.25,
-    "price": 429
-  },
-  {
-    "asin": "B09N74VQPS",
-    "category": "coffee_mug",
-    "title": "Irida Naturals Wheat Straw Coffee Mug Set of 4-350 ml Unbreakable Travel Mug, Reusable, Lightweight, Eco-Friendly,Microwave, Freezer & Dishwasher Safe Milk Mug (Multicolour)",
-    "score": 54,
-    "imgUrl": "https://m.media-amazon.com/images/I/510gDJ-MQVL._AC_UL320_.jpg",
-    "carbon": 0.26,
-    "price": 490
   },
   {
     "asin": "B01DRM37NE",
     "category": "coffee_mug",
     "title": "Indigifts Coffee Mug 325 ML | Sustainable Tea Cup Floral Doodle Print Mug | Gift for Mother, Mom, Maa, Mother in Law (Multi)",
-    "score": 46,
+    "score": 71,
     "imgUrl": "https://m.media-amazon.com/images/I/51FyvY557oL._AC_UL320_.jpg",
-    "carbon": 0.34,
+    "carbon": 0.35,
     "price": 299
   },
   {
     "asin": "B0968WKSMM",
     "category": "coffee_mug",
     "title": "Anwaliya Fortuna Series Coffee Cup | Microwave and Dishwasher Safe Coffee and Tea Mugs, Tea Cup | Chip Resistant, Tea Cups Set Ideal for Home and Office Daily Use, Set of 2 (Black, 280 ml)",
-    "score": 48,
+    "score": 70,
     "imgUrl": "https://m.media-amazon.com/images/I/71AW8AAmXJL._AC_UL320_.jpg",
-    "carbon": 0.34,
+    "carbon": 0.35,
     "price": 299
   },
   {
     "asin": "B0917NC3NW",
     "category": "coffee_mug",
     "title": "Lexiwells Glass Mugs with Handle Sipper Cup with Straw and Lid for Coffee Milk Juice, Random Design, 350ml (Pack of 1)",
-    "score": 52,
+    "score": 70,
     "imgUrl": "https://m.media-amazon.com/images/I/614Ao34HPtL._AC_UL320_.jpg",
-    "carbon": 0.34,
+    "carbon": 0.35,
     "price": 299
-  },
-  {
-    "asin": "B0DGY6TNND",
-    "category": "coffee_mug",
-    "title": "Eha Earth-Friendly Mr & Mrs Cofffee Mugs for Couple | Wedding Gift for Couples| Gift idea for Man | Gifts for Girlfriend| Set of 2 | 300 ml | Coffee Mug | Made with Rice Husk| Sand Castle",
-    "score": 55,
-    "imgUrl": "https://m.media-amazon.com/images/I/813Yt+-YZyL._AC_UL320_.jpg",
-    "carbon": 0.25,
-    "price": 549
   },
   {
     "asin": "B0F196F4N5",
     "category": "coffee_mug",
     "title": "HuskMade Coffee Mug Set Made with Rice Husk & Bio Composite Material | TurtleBrew Coffee Mug Travel | Microwave & Dishwasher Safe (Desert Sand, 200 ml Pack of 4)",
-    "score": 50,
+    "score": 73,
     "imgUrl": "https://m.media-amazon.com/images/I/51Mx8mI4-TL._AC_UL320_.jpg",
     "carbon": 0.34,
     "price": 399
@@ -1479,7 +1326,7 @@
     "asin": "B0DYJ8NN18",
     "category": "coffee_mug",
     "title": "Eha Earth-Friendly Cutting Chai Cups with Holi Gulal 3 x 50g |100 ml | Coffee Cup Set of 4 Made with Rice Husk & Bamboo Fibers| Holi Gift Pack | Hot & Cold Coffee Mug | Multi-Light",
-    "score": 32,
+    "score": 63,
     "imgUrl": "https://m.media-amazon.com/images/I/819wAZgmSnL._AC_UL320_.jpg",
     "carbon": 0.35,
     "price": 486
@@ -1488,16 +1335,16 @@
     "asin": "B07TLNSVBM",
     "category": "coffee_mug",
     "title": "Savri Personalized Stainless Steel Coffee Mug World's Best Sister Word with Name Engraved on it. Best for Sister for Best Sis Rakshabandhan Present for Sisters, Rakhi, or Any Occasion.",
-    "score": 46,
+    "score": 69,
     "imgUrl": "https://m.media-amazon.com/images/I/41xK8vGwWBL._AC_UL320_.jpg",
-    "carbon": 0.34,
+    "carbon": 0.35,
     "price": 499
   },
   {
     "asin": "B08HWMW8GY",
     "category": "coffee_mug",
     "title": "Anwaliya Matte Series Coffee Cup | Microwave and Dishwasher Safe Coffee and Tea Mugs, Tea Cup | Chip Resistant, Tea Cups Set Ideal for Home and Office Daily Use,Pack of 1 (Green, 280 ml)",
-    "score": 52,
+    "score": 74,
     "imgUrl": "https://m.media-amazon.com/images/I/81m52nCKHlS._AC_UL320_.jpg",
     "carbon": 0.34,
     "price": 199
@@ -1506,7 +1353,7 @@
     "asin": "B0CBQBV5JP",
     "category": "coffee_mug",
     "title": "eha Set of 6 Earth-Friendly Cutting Chai Cups | 100 ml | Coffee Cup Made with Rice Husk & Bamboo Fibers | Microwave Safe Tea Set |Hot & Cold Coffee Mug, Milk & Tea Cup Set| Cora Color",
-    "score": 30,
+    "score": 64,
     "imgUrl": "https://m.media-amazon.com/images/I/919FpeSAT2L._AC_UL320_.jpg",
     "carbon": 0.35,
     "price": 502
@@ -1515,295 +1362,160 @@
     "asin": "B0CPVQMTW5",
     "category": "coffee_mug",
     "title": "Cloudsell Glass Coffee Cup With Straw, Travel Mug, Drinking Glass, Sipper, Mason Jar (Lining 01), 480 ML",
-    "score": 53,
+    "score": 70,
     "imgUrl": "https://m.media-amazon.com/images/I/71MqxJqZzWL._AC_UL320_.jpg",
-    "carbon": 0.34,
+    "carbon": 0.35,
     "price": 249
   },
   {
     "asin": "B096ZYWCJN",
     "category": "coffee_mug",
     "title": "Anwaliya Matte Series Ceramic Coffee Cup | Microwave and Dishwasher Safe Coffee and Tea Mugs, Tea Cup | Chip Resistant, Ceramic Tea Cups Set Ideal for Home and Office Daily Use,Pac of 1 (Blue, 280 ml)",
-    "score": 53,
+    "score": 71,
     "imgUrl": "https://m.media-amazon.com/images/I/71zSJa6JR-L._AC_UL320_.jpg",
-    "carbon": 0.34,
+    "carbon": 0.35,
     "price": 199
+  },
+  {
+    "asin": "B09CGGYFSL",
+    "category": "coffee_mug",
+    "title": "Baskety Reusable Coffee Cup, Sustainable Travel Coffee Mug with Lid and Silicone Sleeve, 350ml Portable Drinking Cup, Dishwasher and Microwave Safe (Green, Pack of 1)",
+    "score": 73,
+    "imgUrl": "https://m.media-amazon.com/images/I/41Ju+RQQgeL._AC_UL320_.jpg",
+    "carbon": 0.35,
+    "price": 549
+  },
+  {
+    "asin": "B0BYYZ649G",
+    "category": "coffee_mug",
+    "title": "MAE Coffee Mug with Lid | 370 ML | Made with Rice Husk | Eco Friendly & Sustainable Cup | Insulated | Microwave Safe | Travel Friendly | Spill Proof | Office | Home | Gift | Mug | Cup with lid |1 pc",
+    "score": 74,
+    "imgUrl": "https://m.media-amazon.com/images/I/71dWa9VdyqL._AC_UL320_.jpg",
+    "carbon": 0.35,
+    "price": 359
   },
   {
     "asin": "B00X03D7B8",
     "category": "coffee_mug",
     "title": "Indigifts Coffee Mug 330 ML |Set of 2 Coffee Mugs| Sustainable Tea Cup | I Love You Grandma | Gift for Grand Mother, Grandma, Dadi Maa (Pink)",
-    "score": 50,
+    "score": 72,
     "imgUrl": "https://m.media-amazon.com/images/I/61YodCrAzqL._AC_UL320_.jpg",
     "carbon": 0.34,
     "price": 499
   },
   {
-    "asin": "B0DGY6YSTP",
+    "asin": "B0D66YVCQB",
     "category": "coffee_mug",
-    "title": "Eha Earth-Friendly Best Dad Ever Coffee Mug | Best Gift for Father's Birthday | Gift for Father | Set of 1 | 300 ml | Coffee Mug | Made with Rice Husk| Sand Castle",
-    "score": 56,
-    "imgUrl": "https://m.media-amazon.com/images/I/81kyLn7t73L._AC_UL320_.jpg",
-    "carbon": 0.25,
-    "price": 399
+    "title": "Sleepy Owl Coffee Mug with Lid | Crafted from Used Coffee Grounds | Eco-Friendly & Sustainable Cup | Microwave Safe | Spill Proof | Travel Friendly | Office | Home | Premium Gift | 370ml 1 Piece",
+    "score": 80,
+    "imgUrl": "https://m.media-amazon.com/images/I/61qkm65hJOL._AC_UL320_.jpg",
+    "carbon": 0.26,
+    "price": 349
+  },
+  {
+    "asin": "B0DGY85Q8K",
+    "category": "coffee_mug",
+    "title": "Eha Earth-Friendly Best Mom Coffee Mug | Gift for Birthday and Women's Day | Set of 1 | 300 ml | Made With Rice Husk | Sand Castle",
+    "score": 70,
+    "imgUrl": "https://m.media-amazon.com/images/I/81HU8BmANnL._AC_UL320_.jpg",
+    "carbon": 0.35,
+    "price": 379
+  },
+  {
+    "asin": "B0DGY6TNND",
+    "category": "coffee_mug",
+    "title": "Eha Earth-Friendly Mr & Mrs Cofffee Mugs for Couple | Wedding Gift for Couples| Gift idea for Man | Gifts for Girlfriend| Set of 2 | 300 ml | Coffee Mug | Made with Rice Husk| Sand Castle",
+    "score": 69,
+    "imgUrl": "https://m.media-amazon.com/images/I/813Yt+-YZyL._AC_UL320_.jpg",
+    "carbon": 0.35,
+    "price": 549
   },
   {
     "asin": "B0C5M72842",
     "category": "coffee_mug",
     "title": "Irida Naturals Rice Husk Mighty Mugs - Eco-Friendly & Microwave Safe Mugs for Tea or Coffee, Rice Husk Milk & Tea Coffee Cups for Hot and Cold, Matte Finish Mugs for Gift, Set 1, 400 ML (Sky Blue)",
-    "score": 59,
+    "score": 73,
     "imgUrl": "https://m.media-amazon.com/images/I/41EYtiscXkL._AC_UL320_.jpg",
-    "carbon": 0.23,
+    "carbon": 0.35,
     "price": 399
   },
   {
     "asin": "B0CRHLTZHF",
     "category": "coffee_mug",
     "title": "WALKN Stainless Steel Double Wall Deepline Tea/Coffee Cups/Mugs for Home, Office | Set of 6, 80ml Capacity | Lightweight, Portable, Reusable, Easy to Clean | Hot & Cold Beverage | Silver",
-    "score": 51,
+    "score": 70,
     "imgUrl": "https://m.media-amazon.com/images/I/71QHfflyNbL._AC_UL320_.jpg",
-    "carbon": 0.34,
+    "carbon": 0.35,
     "price": 499
   },
   {
-    "asin": "B0CBMB4FZZ",
+    "asin": "B0CBMBHBVQ",
     "category": "coffee_mug",
-    "title": "Eha Earth-Friendly Majestic Coffee Mug Set of 4 |375 ml|Made with Rice Husk & Bamboo Fibers|Microwave Safe|Hot & Cold Coffee Cup, Milk & Tea Cup |Matte Finish Mugs for Coffee |Multi-Dark",
-    "score": 49,
-    "imgUrl": "https://m.media-amazon.com/images/I/91Ztb9CHsfL._AC_UL320_.jpg",
-    "carbon": 0.25,
+    "title": "Eha Earth-Friendly Majestic Coffee Mug Set of 4 |375 ml|Made with Rice Husk & Bamboo Fibers|Microwave Safe|Hot & Cold Coffee Cup, Milk & Tea Cup |Matte Finish Mugs for Coffee |Multi-Light",
+    "score": 68,
+    "imgUrl": "https://m.media-amazon.com/images/I/819JKHE2yKL._AC_UL320_.jpg",
+    "carbon": 0.35,
     "price": 875
   },
   {
-    "asin": "B0FD9RDN17",
-    "category": "coffee_mug",
-    "title": "Vekiz Glass Can with Wooden Lid Tumbler and Straw Reusable Coffee Sipper Mug Clear Drinking Cup for Juice, Tumbler Sipper for Mojito Soda Smoothies Whiskey Iced Coffee Iced Tea Adults & Girls",
-    "score": 32,
-    "imgUrl": "https://m.media-amazon.com/images/I/41EIyxbSQGL._AC_UL320_.jpg",
-    "carbon": 0.34,
-    "price": 419
-  },
-  {
-    "asin": "B0FD7LHJ5Y",
-    "category": "coffee_mug",
-    "title": "SRUJAMEE Eco-Friendly Reusable Coffee Cup with Lid & Silicone Sleeve – BPA-Free, Heat-Resistant Travel Mug for Hot & Cold Drinks – Stylish & Sustainable to-Go Cup (3)",
-    "score": 41,
-    "imgUrl": "https://m.media-amazon.com/images/I/418wVmCGgfL._AC_UL320_.jpg",
-    "carbon": 0.26,
-    "price": 599
-  },
-  {
-    "asin": "B0FCSGSPX8",
-    "category": "coffee_mug",
-    "title": "2Unique Coffee Mugs Online – Find Your Perfect Sip Companion",
-    "score": 26,
-    "imgUrl": "https://m.media-amazon.com/images/I/71xTehcYL5L._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 349
-  },
-  {
-    "asin": "B0FCXYK52T",
-    "category": "coffee_mug",
-    "title": "SH - SOFTHEAVEN Collapsible Silicone Coffee Cup with Lid, 350ml, Portable Travel Mug, Grey and White",
-    "score": 24,
-    "imgUrl": "https://m.media-amazon.com/images/I/41IKtmuAc1L._AC_UL320_.jpg",
-    "carbon": 0.34,
-    "price": 249
-  },
-  {
-    "asin": "B0FD3Y6N8S",
-    "category": "coffee_mug",
-    "title": "Bamboo Coffee Mug with lid - 350ml Eco-Friendly Insulated Coffee Mug for Hot & Cold Drinks, Portable Travel Mug with Lid, Sustainable Wooden Mugs for Coffee | Mugs for Gift",
-    "score": 38,
-    "imgUrl": "https://m.media-amazon.com/images/I/31kgqFoO8yL._AC_UL320_.jpg",
-    "carbon": 0.34,
-    "price": 350
-  },
-  {
-    "asin": "B0FD36B39F",
-    "category": "coffee_mug",
-    "title": "Navneetpriya Glass Coffee Sipper Cup with Leather Grip & Straw | 500ml Reusable Tumbler with Spill-Proof Lid | Anti-Skid Sleeve for Hot & Cold Beverages, Tea, Smoothies, Juice, Travel Mug",
-    "score": 39,
-    "imgUrl": "https://m.media-amazon.com/images/I/612G1nB8EvL._AC_UL320_.jpg",
-    "carbon": 0.34,
-    "price": 279
-  },
-  {
-    "asin": "B0FCYQZCN4",
-    "category": "coffee_mug",
-    "title": "Kaapi Solutions Gift Box – French Press & Coffee Husk Mug Set for Coffee Lovers",
-    "score": 50,
-    "imgUrl": "https://m.media-amazon.com/images/I/61Ufddfb19L._AC_UL320_.jpg",
-    "carbon": 0.23,
-    "price": 1499
-  },
-  {
-    "asin": "B0FCYM6N95",
-    "category": "coffee_mug",
-    "title": "Premium Double Wall Glass Tumbler with Bamboo Lid & Straw | 400ml Leak-Proof Mug with Handle | Eco-Friendly Iced Coffee Cup | Stylish Reusable Smoothie Juice Glass for Home, Office & Gifting",
-    "score": 36,
-    "imgUrl": "https://m.media-amazon.com/images/I/61II-5pjieL._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 399
-  },
-  {
-    "asin": "B0FCY2XWXS",
-    "category": "coffee_mug",
-    "title": "COZYKITCH Glass Tumbler with Bamboo Lid and Glass Straw Reusable Coffee Sipper Mug Clear Drinking Cup for Juice, Iced Tea Adults & Girls",
-    "score": 34,
-    "imgUrl": "https://m.media-amazon.com/images/I/31JA+d6JtUL._AC_UL320_.jpg",
-    "carbon": 0.34,
-    "price": 399
-  },
-  {
-    "asin": "B0FCSFHM22",
-    "category": "coffee_mug",
-    "title": "KALIDHAR Funny Agricultural Engineer Coffee Mug, Engineer Gifts, Sustainable Farming Christmas and Valentines Gift idea, Look no Further",
-    "score": 29,
-    "imgUrl": "https://m.media-amazon.com/images/I/51w74vin1KS._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 397
-  },
-  {
-    "asin": "B0FCSKBFNY",
-    "category": "coffee_mug",
-    "title": "KALIDHAR Funny Agricultural Engineer Coffee Mug, Engineer Gifts, Sustainable Farming Christmas and Valentines Gift idea, Keep Calm",
-    "score": 29,
-    "imgUrl": "https://m.media-amazon.com/images/I/51imWaJVpQS._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 397
-  },
-  {
-    "asin": "B0FCSHVVG6",
-    "category": "coffee_mug",
-    "title": "KALIDHAR Funny Agricultural Engineer Coffee Mug, Engineer Gifts, Sustainable Farming Christmas and Valentines Gift idea, Caution",
-    "score": 29,
-    "imgUrl": "https://m.media-amazon.com/images/I/51lCNOR3I5S._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 397
-  },
-  {
-    "asin": "B0FCSDMCYZ",
-    "category": "coffee_mug",
-    "title": "KALIDHAR Funny Agricultural Engineer Coffee Mug, Engineer Gifts, Sustainable Farming Christmas and Valentines Gift idea, Search is Over",
-    "score": 29,
-    "imgUrl": "https://m.media-amazon.com/images/I/51jmxHGl19S._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 397
-  },
-  {
-    "asin": "B0FCLKJ4KL",
-    "category": "coffee_mug",
-    "title": "Velmora Glass Coffee Sipper Cup with Leather Grip & Straw | 450ml Borosilicate Tumbler for Hot & Cold Drinks | Reusable Eco-Friendly Mug | Spill-Proof Travel Lid with Straw Slot | Pack of 2",
-    "score": 35,
-    "imgUrl": "https://m.media-amazon.com/images/I/51+1jbxfDIL._AC_UL320_.jpg",
-    "carbon": 0.34,
-    "price": 329
-  },
-  {
-    "asin": "B0FCFKZ26T",
-    "category": "coffee_mug",
-    "title": "T42 Mug with Handle | Coffee Cup Made of Bamboo Tumbler for Coffee,Milk, Water | for Office Home Kitchen | Eco Friendly Bamboo Cup",
-    "score": 41,
-    "imgUrl": "https://m.media-amazon.com/images/I/51fLNVGQCyL._AC_UL320_.jpg",
-    "carbon": 0.27,
-    "price": 897
-  },
-  {
-    "asin": "B0FCFDCVHB",
-    "category": "coffee_mug",
-    "title": "Handcrafted Terracotta Clay Mug with Handle – Eco-Friendly Traditional Kulhad Style Cup for Tea & Coffee (300 ml Approx) (6)",
-    "score": 28,
-    "imgUrl": "https://m.media-amazon.com/images/I/61xaydV5xHL._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 900
-  },
-  {
-    "asin": "B0FBS3NX2P",
-    "category": "coffee_mug",
-    "title": "PAPITA Bamboo Fiber Travel Mug, Milk Drinking Cup with Silicone Lid & Sleeve, Coffee Mug for Office, Home, Car. (Grey)",
-    "score": 46,
-    "imgUrl": "https://m.media-amazon.com/images/I/51RbaQ+Hs7L._AC_UL320_.jpg",
-    "carbon": 0.26,
-    "price": 359
-  },
-  {
-    "asin": "B0FC6DZYNX",
-    "category": "coffee_mug",
-    "title": "uniqx Funny Agricultural Engineer Coffee Mug, Engineer Gifts, Sustainable Farming Christmas and Valentines Gift idea, Look no Further",
-    "score": 26,
-    "imgUrl": "https://m.media-amazon.com/images/I/51w74vin1KS._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 397
-  },
-  {
-    "asin": "B0FC69T4LM",
-    "category": "coffee_mug",
-    "title": "uniqx Funny Agricultural Engineer Coffee Mug, Engineer Gifts, Sustainable Farming Christmas and Valentines Gift idea, Caution",
-    "score": 26,
-    "imgUrl": "https://m.media-amazon.com/images/I/51lCNOR3I5S._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 397
-  },
-  {
-    "asin": "B0FC6C9V22",
-    "category": "coffee_mug",
-    "title": "uniqx Funny Agricultural Engineer Coffee Mug, Engineer Gifts, Sustainable Farming Christmas and Valentines Gift idea, Search is Over",
-    "score": 26,
-    "imgUrl": "https://m.media-amazon.com/images/I/51jmxHGl19S._AC_UL320_.jpg",
-    "carbon": 0.35,
-    "price": 397
-  },
-  {
-    "asin": "B0F5BJ99S4",
+    "asin": "B0BYZRB5RJ",
     "category": "sneakers",
     "title": "Neeman's",
-    "score": 43,
-    "imgUrl": "https://m.media-amazon.com/images/I/61vIP6905mL._AC_UL320_.jpg",
-    "carbon": 11.83,
-    "price": 1899
+    "score": 49,
+    "imgUrl": "https://m.media-amazon.com/images/I/51gDtKUTN3L._AC_UL320_.jpg",
+    "carbon": 16.8,
+    "price": 2499
   },
   {
-    "asin": "B0DRD7HR5C",
+    "asin": "B0DRD9CQKT",
     "category": "sneakers",
     "title": "hummel",
-    "score": 37,
+    "score": 48,
     "imgUrl": "https://m.media-amazon.com/images/I/61JZPZ4fCOL._AC_UL320_.jpg",
-    "carbon": 16.16,
+    "carbon": 16.8,
     "price": 1799
   },
   {
     "asin": "B0CCPF5CHJ",
     "category": "sneakers",
     "title": "GLOBAL RICH",
-    "score": 22,
+    "score": 40,
     "imgUrl": "https://m.media-amazon.com/images/I/713SiQ+Mt4L._AC_UL320_.jpg",
-    "carbon": 16.32,
+    "carbon": 16.8,
     "price": 1599
   },
   {
-    "asin": "B0DTTNSKK6",
+    "asin": "B0DR921DHJ",
     "category": "sneakers",
     "title": "YOHO",
-    "score": 35,
-    "imgUrl": "https://m.media-amazon.com/images/I/71N9zON5z4L._AC_UL320_.jpg",
+    "score": 48,
+    "imgUrl": "https://m.media-amazon.com/images/I/71zEfQ57jWL._AC_UL320_.jpg",
     "carbon": 16.8,
-    "price": 1598
+    "price": 1690
   },
   {
     "asin": "B0DPG8YXNJ",
     "category": "sneakers",
     "title": "Plaeto",
-    "score": 34,
+    "score": 49,
     "imgUrl": "https://m.media-amazon.com/images/I/71t5ZS3HN7L._AC_UL320_.jpg",
     "carbon": 16.8,
-    "price": 2299
+    "price": 2129
   },
   {
-    "asin": "B0DRPDBT5N",
+    "asin": "B0DM8BSDX8",
+    "category": "sneakers",
+    "title": "SOLETHREADS",
+    "score": 38,
+    "imgUrl": "https://m.media-amazon.com/images/I/517ddQzo7bL._AC_UL320_.jpg",
+    "carbon": 16.8,
+    "price": 2999
+  },
+  {
+    "asin": "B0DRPD8XFN",
     "category": "sneakers",
     "title": "SEVEN - TEN",
-    "score": 16,
+    "score": 37,
     "imgUrl": "https://m.media-amazon.com/images/I/61ZepwrnqZL._AC_UL320_.jpg",
     "carbon": 16.8,
     "price": 3799
@@ -1812,63 +1524,9 @@
     "asin": "B0F7FH987Q",
     "category": "sneakers",
     "title": "GreenSole",
-    "score": 20,
+    "score": 40,
     "imgUrl": "https://m.media-amazon.com/images/I/31qfKYQp65L._AC_UL320_.jpg",
     "carbon": 16.8,
     "price": 2467
-  },
-  {
-    "asin": "B0DM8BSDX8",
-    "category": "sneakers",
-    "title": "SOLETHREADS",
-    "score": 16,
-    "imgUrl": "https://m.media-amazon.com/images/I/517ddQzo7bL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2999
-  },
-  {
-    "asin": "B09SWZR6GM",
-    "category": "sneakers",
-    "title": "Shanrya",
-    "score": 20,
-    "imgUrl": "https://m.media-amazon.com/images/I/41G+SbopAbL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1701
-  },
-  {
-    "asin": "B0C7P37P4K",
-    "category": "sneakers",
-    "title": "Mon ami",
-    "score": 35,
-    "imgUrl": "https://m.media-amazon.com/images/I/51GG69zWTDL._AC_UL320_.jpg",
-    "carbon": 15.18,
-    "price": 4336
-  },
-  {
-    "asin": "B0DPJ24DQC",
-    "category": "sneakers",
-    "title": "Legwork",
-    "score": 37,
-    "imgUrl": "https://m.media-amazon.com/images/I/41IuoZzTqOL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 1349
-  },
-  {
-    "asin": "B0DLSCW8T9",
-    "category": "sneakers",
-    "title": "tresmode",
-    "score": 11,
-    "imgUrl": "https://m.media-amazon.com/images/I/61mBHk-WsoL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 4749
-  },
-  {
-    "asin": "B0DDTHLZVL",
-    "category": "sneakers",
-    "title": "Earthen Tunes",
-    "score": 16,
-    "imgUrl": "https://m.media-amazon.com/images/I/71xHwYfEATL._AC_UL320_.jpg",
-    "carbon": 16.8,
-    "price": 2999
   }
 ]

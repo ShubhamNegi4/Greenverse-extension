@@ -1,6 +1,5 @@
 // File: extension/content/product.js
 
-// Updated keyword lists
 const POS_TERMS = [
   "organic", "certified organic", "gots", "recycled", "sustainable", "eco-friendly", "eco friendly",
   "biodegradable", "compostable", "fair trade", "energy efficient", "renewable", "low impact", "vegan",
@@ -22,7 +21,16 @@ const NEG_TERMS = [
   "high footprint", "landfill", "incineration", "imported", "long distance transport", "air freighted"
 ];
 
-// Enhanced scoring functions
+const CATEGORY_MAX_VALUES = {
+  tshirt: { maxCO2: 15, maxWater: 2500, maxWaste: 0.5, maxPrice: 2000 },
+  jeans: { maxCO2: 25, maxWater: 8000, maxWaste: 1.2, maxPrice: 5000 },
+  plastic_bottle: { maxCO2: 1.0, maxWater: 10, maxWaste: 0.2, maxPrice: 1500 },
+  phone_charger: { maxCO2: 0.5, maxWater: 50, maxWaste: 0.3, maxPrice: 2500 },
+  coffee_mug: { maxCO2: 1.5, maxWater: 100, maxWaste: 0.4, maxPrice: 2000 },
+  sneakers: { maxCO2: 30, maxWater: 4000, maxWaste: 1.5, maxPrice: 8000 },
+  default: { maxCO2: 20, maxWater: 5000, maxWaste: 1.0, maxPrice: 5000 }
+};
+
 function computeKeywordScore(text = "") {
   const lower = text.toLowerCase();
   let s = 50;
@@ -40,16 +48,16 @@ function computeKeywordScore(text = "") {
       if (lower.includes(t)) s -= 15;
     }
   });
-  return Math.max(0, Math.min(s, 100));
+  return Math.max(0, Math.min(s, 100)) / 100;
 }
 
 function computeRatingScore(r = 0) { 
-  return Math.round((r/5)*100); 
+  return r / 5;
 }
 
 function computeReviewCountScore(c = 0) {
-  const lg = Math.min(Math.log10(c+1), 4);
-  return Math.round((lg/4)*100);
+  const lg = Math.min(Math.log10(c + 1), 4);
+  return lg / 4;
 }
 
 function computeDurabilityScore(text = '') {
@@ -62,15 +70,28 @@ function computeDurabilityScore(text = '') {
   if (/\bhard to repair\b/.test(lower)) score -= 20;
   if (/\bplanned obsolescence\b/.test(lower)) score -= 25;
   
-  return Math.min(Math.max(score, 0), 100);
+  return Math.min(Math.max(score, 0), 100) / 100;
 }
 
-function computeFinalScore(vals) {
-  const {keywords, rating, reviews, durability = 50} = vals;
-  return Math.round(keywords*0.4 + rating*0.3 + reviews*0.2 + durability*0.1);
+function computeFinalScore(vals, categoryKey) {
+  const maxVals = CATEGORY_MAX_VALUES[categoryKey] || CATEGORY_MAX_VALUES.default;
+  
+  const carbonScore = Math.max(0, 1 - (vals.carbon / maxVals.maxCO2));
+  const envScore = 0.6 * carbonScore;
+  
+  const socioEcoScore = 0.3 * (
+    0.4 * vals.keywords +
+    0.3 * vals.rating +
+    0.2 * vals.reviews +
+    0.1 * vals.price
+  );
+  
+  const qualityScore = 0.1 * vals.durability;
+  
+  const totalScore = (envScore + socioEcoScore + qualityScore) * 100;
+  return Math.min(Math.round(totalScore), 100);
 }
 
-// Hybrid Carbon Estimation with corrected weights
 const CARBON_BASE = {
   tshirt: 8.2,
   jeans: 12.5,
@@ -173,7 +194,6 @@ function estimateCarbonFootprint(text = '', categoryKey) {
   return Math.max(0.1, parseFloat(adjustedFootprint.toFixed(2)));
 }
 
-// Page scraping helpers
 function getText(sel) {
   const el = document.querySelector(sel);
   return el?.textContent?.trim() || "";
@@ -190,7 +210,6 @@ function getNumber(sel, re) {
   return m ? parseFloat(m[1].replace(/,/g, '')) : 0;
 }
 
-// Category mapping
 const CATEGORY_MAP = {
   "t-shirt": "tshirt", "t shirt": "tshirt", "tee": "tshirt", 
   "jeans": "jeans", "pants": "jeans", 
@@ -200,7 +219,6 @@ const CATEGORY_MAP = {
   "sneaker": "sneakers", "shoe": "sneakers", "footwear": "sneakers"
 };
 
-// Insert button
 function insertGreenerButton() {
   const titleEl = document.querySelector('#productTitle') || 
                  document.querySelector('#title');
@@ -221,21 +239,18 @@ function insertGreenerButton() {
   titleEl.parentElement.appendChild(btn);
 }
 
-// Deduplicate products by removing color variants
 function deduplicateProducts(products) {
   const seen = new Map();
   const uniqueProducts = [];
   
   products.forEach(product => {
-    // Create a base name without color/size variants
     const baseName = product.title
-      .replace(/\([^)]*\)/g, '') // Remove parentheses content
+      .replace(/\([^)]*\)/g, '')
       .replace(/\b(black|blue|beige|orange|white|red|green|small|medium|large|xl|xxl)\b/gi, '')
-      .replace(/\s\s+/g, ' ') // Collapse multiple spaces
+      .replace(/\s\s+/g, ' ')
       .trim()
       .toLowerCase();
     
-    // Skip exact duplicates
     if (!seen.has(baseName)) {
       seen.set(baseName, true);
       uniqueProducts.push(product);
@@ -245,11 +260,9 @@ function deduplicateProducts(products) {
   return uniqueProducts;
 }
 
-// Main click handler
 async function onGreenerClick() {
   if (document.getElementById('greener-panel')) return;
 
-  // Show loading state
   const btn = document.getElementById('greener-btn');
   if (btn) {
     btn.disabled = true;
@@ -257,7 +270,6 @@ async function onGreenerClick() {
   }
 
   try {
-    // Scrape basic product info
     const rawTitle = getText('#productTitle') || getText('#title') || '';
     const priceText = getText('#priceblock_ourprice') || 
                      getText('#priceblock_dealprice') || 
@@ -272,13 +284,11 @@ async function onGreenerClick() {
     const rating = getNumber('.a-icon-alt', /([0-5]\.?\d?) out of 5/);
     const reviewCount = getNumber('#acrCustomerReviewText', /([\d,]+)/);
     
-    // Get product description text
     const bullets = Array.from(document.querySelectorAll('#feature-bullets li'))
                        .map(li => li.textContent.trim()).join(' ');
     const desc = getText('#productDescription');
     const allText = [rawTitle, bullets, desc].join(' ');
 
-    // Determine category
     const lowerTitle = rawTitle.toLowerCase();
     let categoryKey = null;
     for (const [kw, cat] of Object.entries(CATEGORY_MAP)) {
@@ -292,22 +302,23 @@ async function onGreenerClick() {
       return alert('Could not determine product category.');
     }
 
-    // Calculate current product carbon
     const currentCarbon = estimateCarbonFootprint(allText, categoryKey);
+    const maxVals = CATEGORY_MAX_VALUES[categoryKey] || CATEGORY_MAX_VALUES.default;
     
-    // Calculate current product score
     const kScore = computeKeywordScore(allText);
     const rScore = computeRatingScore(rating);
     const vScore = computeReviewCountScore(reviewCount);
     const dScore = computeDurabilityScore(allText);
+    
     const pageScore = computeFinalScore({
+      carbon: currentCarbon,
       keywords: kScore,
       rating: rScore,
       reviews: vScore,
+      price: 0.8, // Default value since we don't have price range context
       durability: dScore
-    });
+    }, categoryKey);
 
-    // Load alternatives
     let alts;
     try {
       const response = await fetch(chrome.runtime.getURL('data/alternatives.json'));
@@ -317,29 +328,21 @@ async function onGreenerClick() {
       return alert('Failed to load alternatives.');
     }
 
-    // Find alternatives in the same category
     const categoryAlts = alts.filter(a => a.category === categoryKey);
     
     if (categoryAlts.length === 0) {
       return alert('No alternatives found for this category.');
     }
 
-    // Sort by score descending
     categoryAlts.sort((a, b) => b.score - a.score);
-    
-    // Remove color variants
     const dedupedRecommendations = deduplicateProducts(categoryAlts);
-    
-    // Always show top recommendations
     const topRecommendations = dedupedRecommendations.slice(0, 5);
     
-    // Display recommendations with current carbon
     displayRecommendations(topRecommendations, pageScore, currentCarbon);
   } catch (error) {
     console.error('Error:', error);
     alert('An error occurred. Please try again.');
   } finally {
-    // Restore button state
     if (btn) {
       btn.disabled = false;
       btn.innerText = 'Show greener alternatives';
@@ -347,12 +350,10 @@ async function onGreenerClick() {
   }
 }
 
-// Display recommendations with carbon info
 function displayRecommendations(items, currentScore, currentCarbon) {
   const existingPanel = document.getElementById('greener-panel');
   if (existingPanel) existingPanel.remove();
   
-  // Don't show if no recommendations
   if (items.length === 0) {
     return alert('No unique alternatives found after removing color variants');
   }
@@ -443,7 +444,6 @@ function displayRecommendations(items, currentScore, currentCarbon) {
                        item.score > 50 ? '#FF9800' : '#F44336';
     itemDiv.appendChild(score);
     
-    // Add carbon footprint display
     if (item.carbon) {
       const savings = currentCarbon - item.carbon;
       const absSavings = Math.abs(savings).toFixed(2);
@@ -491,7 +491,6 @@ function displayRecommendations(items, currentScore, currentCarbon) {
     
     itemDiv.appendChild(link);
     
-    // Add click handler to entire card
     itemDiv.onclick = (e) => {
       if (e.target.tagName !== 'A') {
         window.open(link.href, '_blank');
@@ -513,7 +512,6 @@ function displayRecommendations(items, currentScore, currentCarbon) {
 
   document.body.appendChild(panel);
   
-  // Add overlay
   const overlay = document.createElement('div');
   overlay.style.position = 'fixed';
   overlay.style.top = '0';
@@ -529,11 +527,9 @@ function displayRecommendations(items, currentScore, currentCarbon) {
   document.body.appendChild(overlay);
 }
 
-// Initialize with retry
 function initExtension() {
   insertGreenerButton();
   
-  // Retry after delay if button not inserted
   setTimeout(() => {
     if (!document.getElementById('greener-btn')) {
       insertGreenerButton();

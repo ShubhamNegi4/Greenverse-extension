@@ -24,7 +24,7 @@ const NEGATIVE_TERMS = [
   "high footprint", "landfill", "incineration", "imported", "long distance transport", "air freighted"
 ];
 
-// Scientific base values (kg CO₂e per unit) - from peer-reviewed studies
+// Scientific base values (kg CO₂e per unit)
 const SCIENTIFIC_BASE = {
   tshirt: 8.2,
   jeans: 12.5,
@@ -34,7 +34,18 @@ const SCIENTIFIC_BASE = {
   sneakers: 16.8
 };
 
-// Pre-trained ML model weights (updated to prevent over-correction)
+// Category-specific maximum values (based on industry benchmarks)
+const CATEGORY_MAX_VALUES = {
+  tshirt: { maxCO2: 15, maxWater: 2500, maxWaste: 0.5, maxPrice: 2000 },
+  jeans: { maxCO2: 25, maxWater: 8000, maxWaste: 1.2, maxPrice: 5000 },
+  plastic_bottle: { maxCO2: 1.0, maxWater: 10, maxWaste: 0.2, maxPrice: 1500 },
+  phone_charger: { maxCO2: 0.5, maxWater: 50, maxWaste: 0.3, maxPrice: 2500 },
+  coffee_mug: { maxCO2: 1.5, maxWater: 100, maxWaste: 0.4, maxPrice: 2000 },
+  sneakers: { maxCO2: 30, maxWater: 4000, maxWaste: 1.5, maxPrice: 8000 },
+  default: { maxCO2: 20, maxWater: 5000, maxWaste: 1.0, maxPrice: 5000 }
+};
+
+// Pre-trained ML model weights
 class CarbonModel {
   constructor() {
     this.weights = {
@@ -53,7 +64,6 @@ class CarbonModel {
     };
   }
 
-  // Predict correction factor (no longer capped)
   predict(features) {
     let correction = 0;
     for (const [feature, value] of Object.entries(features)) {
@@ -65,7 +75,6 @@ class CarbonModel {
   }
 }
 
-// Enhanced feature extraction
 function extractFeatures(text, categoryKey) {
   const lower = text.toLowerCase();
   const features = {
@@ -83,7 +92,6 @@ function extractFeatures(text, categoryKey) {
     energyStar: 0
   };
   
-  // Material composition
   if (/\borganic\b/.test(lower)) features.organic = 1;
   
   const recycledMatch = lower.match(/(\d+)% recycled/);
@@ -97,67 +105,39 @@ function extractFeatures(text, categoryKey) {
   
   if (/\bpolyester\b/.test(lower)) features.polyester = 1;
   
-  // Manufacturing and transportation
   if (/\bimported\b(?! from)/.test(lower)) features.imported = 1;
   if (/\bair freight\b/.test(lower)) features.airFreight = 1;
   if (/\bfast fashion\b/.test(lower)) features.fastFashion = 1;
   
-  // Brand reputation
   const SUSTAINABLE_BRANDS = ['patagonia', 'tentree', 'allbirds', 'reformation', 
                              'ecofriendly', 'ecoalf', 'thought', 'people tree'];
   if (SUSTAINABLE_BRANDS.some(b => new RegExp(`\\b${b}\\b`).test(lower))) {
     features.sustainableBrand = 1;
   }
   
-  // Location-based distance
   if (/\bmade in china\b/.test(lower)) features.distance = 5000;
   else if (/\bmade in bangladesh\b/.test(lower)) features.distance = 3000;
   else if (/\bmade in india\b/.test(lower)) features.distance = 0;
   else if (/\bimported\b/.test(lower)) features.distance = 4000;
   
-  // Durability
   if (/\bdurable\b/.test(lower)) features.durability += 0.4;
   if (/\blong lasting\b/.test(lower)) features.durability += 0.3;
   if (/\bhigh quality\b/.test(lower)) features.durability += 0.3;
   features.durability = Math.min(features.durability, 1.0);
   
-  // Efficiency certifications
   if (/\bwater efficient\b/.test(lower)) features.waterEfficient = 1;
   if (/\benergy star\b/.test(lower)) features.energyStar = 1;
   
   return features;
 }
 
-// Main carbon estimation function
 export function estimateCarbonFootprint(text = '', categoryKey) {
-  // Get scientific base for category
   const base = SCIENTIFIC_BASE[categoryKey] || 8.0;
-  
-  // Extract features from text
   const features = extractFeatures(text, categoryKey);
-  
-  // Get ML-based correction
   const model = new CarbonModel();
   const correction = model.predict(features);
-  
-  // Apply correction
   const adjustedFootprint = base * (1 + correction);
-  
   return Math.max(0.1, parseFloat(adjustedFootprint.toFixed(2)));
-}
-
-export function computeFootprintScore(
-  { co2, water, waste },
-  { maxCO2, maxWater, maxWaste }
-) {
-  const α = 0.5,
-    β = 0.3,
-    γ = 0.2;
-  const nCo2 = co2 / maxCO2;
-  const nWater = water / maxWater;
-  const nWaste = waste / maxWaste;
-  const footprintIndex = α * nCo2 + β * nWater + γ * nWaste;
-  return Math.round(100 * (1 - footprintIndex));
 }
 
 export function computeKeywordScore(text = '') {
@@ -180,21 +160,21 @@ export function computeKeywordScore(text = '') {
     }
   });
   
-  return Math.min(Math.max(score, 0), 100);
+  return Math.min(Math.max(score, 0), 100) / 100;
 }
 
 export function computeRatingScore(rating = 0) {
-  return Math.round((rating / 5) * 100);
+  return rating / 5;
 }
 
 export function computeReviewCountScore(count = 0) {
   const logCount = Math.min(Math.log10(count + 1), 4);
-  return Math.round((logCount / 4) * 100);
+  return logCount / 4;
 }
 
 export function computePriceScore(price, minPrice, maxPrice) {
-  const norm = normalize(price, minPrice, maxPrice);
-  return Math.round((1 - norm) * 100);
+  if (minPrice === maxPrice) return 1;
+  return Math.max(0, 1 - ((price - minPrice) / (maxPrice - minPrice)));
 }
 
 export function computeDurabilityScore(text = '') {
@@ -207,23 +187,32 @@ export function computeDurabilityScore(text = '') {
   if (/\bhard to repair\b/.test(lower)) score -= 20;
   if (/\bplanned obsolescence\b/.test(lower)) score -= 25;
   
-  return Math.min(Math.max(score, 0), 100);
+  return Math.min(Math.max(score, 0), 100) / 100;
 }
 
 export function computeFinalScore(
   { carbon, keywords, rating, reviews, price, durability },
-  weights = { wCarbon: 0.35, wKey: 0.25, wRate: 0.15, wRev: 0.10, wPrice: 0.10, wDurability: 0.05 }
+  categoryKey
 ) {
-  const { wCarbon, wKey, wRate, wRev, wPrice, wDurability } = weights;
-  const total =
-    carbon * wCarbon +
-    keywords * wKey +
-    rating * wRate +
-    reviews * wRev +
-    price * wPrice +
-    durability * wDurability;
-    
-  return Math.round(total);
+  const maxVals = CATEGORY_MAX_VALUES[categoryKey] || CATEGORY_MAX_VALUES.default;
+  
+  // Environmental impact (60% of total score)
+  const carbonScore = Math.max(0, 1 - (carbon / maxVals.maxCO2));
+  const envScore = 0.6 * carbonScore;
+  
+  // Social/economic impact (30% of total score)
+  const socioEcoScore = 0.3 * (
+    0.4 * keywords +
+    0.3 * rating +
+    0.2 * reviews +
+    0.1 * price
+  );
+  
+  // Product quality (10% of total score)
+  const qualityScore = 0.1 * durability;
+  
+  const totalScore = (envScore + socioEcoScore + qualityScore) * 100;
+  return Math.min(Math.round(totalScore), 100);
 }
 
 export function deriveCategoryKey(text = '') {
@@ -234,4 +223,8 @@ export function deriveCategoryKey(text = '') {
   if (/(water bottle|bottle|flask)/.test(lower)) return 'plastic_bottle';
   if (/(sneaker|shoe|trainers|running shoe)/.test(lower)) return 'sneakers';
   return null;
+}
+
+export function getCategoryMaxValues(categoryKey) {
+  return CATEGORY_MAX_VALUES[categoryKey] || CATEGORY_MAX_VALUES.default;
 }
