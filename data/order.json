@@ -1,0 +1,10 @@
+{
+  "score": 0,
+  "orders": [
+    { "id": 1, "sustainable": 92, "ischecked": false, "score": 0 },
+    { "id": 2, "sustainable": 96, "ischecked": false, "score": 0 },
+    { "id": 3, "sustainable": 90, "ischecked": false, "score": 0 },
+    { "id": 4, "sustainable": 90, "ischecked": false, "score": 0 },
+    { "id": 5, "sustainable": 90, "ischecked": false, "score": 0 }
+  ]
+}

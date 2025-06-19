@@ -1,0 +1,73 @@
+/* General app styling */
+.app-container {
+  width: 300px;
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-y: auto;
+}
+
+.app-title {
+  font-size: 1.25rem;
+  color: #2E7D32;
+}
+
+.app-subtitle {
+  color: #ccc;
+}
+
+.divider {
+  border-color: #ccc;
+}
+
+.centered-progress {
+  width: 160px;
+  margin: 2rem auto;
+}
+
+.app-footer {
+  color: #2E7D32;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Settings panel styling */
+.settings-panel {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+  color: #000;
+}
+
+.settings-title {
+  margin: 4px 0;
+  color: #2E7D32;
+}
+
+.settings-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.settings-range {
+  width: 100%;
+}
+
+.settings-info {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.save-button {
+  padding: 6px 12px;
+  background: #2E7D32;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
