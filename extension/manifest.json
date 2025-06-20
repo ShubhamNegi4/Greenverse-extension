@@ -17,7 +17,7 @@
       "run_at": "document_idle"
     },
     {
-      "matches": ["https://www.amazon.in/gp/cart/view.html"],
+      "matches": ["https://www.amazon.in/gp/cart/view.html*"],
       "js": ["content/cart.js"],
       "run_at": "document_idle"
     },

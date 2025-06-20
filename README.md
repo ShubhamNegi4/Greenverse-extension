@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <img src="./assets/demo.gif" alt="GreenVerse in action" width="600"/>
+  <img src="./extension/sampleImages/animation.gif" alt="GreenVerse in action" width="600"/>
 </p>
 
 ## 🌱 Why GreenVerse?
@@ -13,11 +13,31 @@
 
 
 ## Features
-- 🔍 **GreenMind**: Instant 0–100 Sustainability Score
-- 🔄 **Swap**: One‑click greener alternatives
-- ♻️ **EcoTwin**: Side‑by‑side lifecycle comparisons
-- 📦 **GreenCart AI**: Bundle same‑region items for fewer shipments
-- 🏆 **Gamification**: CO₂ saved dashboard + achievement badges  
+### 🔍 GreenMind  
+Instant 0–100 Sustainability Score for every product 
+
+---
+
+### 🔄 Swap — One‑Click Greener Alternative  
+![Swap Button](./extension/sampleImages/sampleImage1.png)  
+Click the green “Swap” button to instantly replace a product with a higher‑scoring alternative.  
+
+---
+
+### ♻️ EcoTwin — Side‑by‑Side Lifecycle Comparison  
+![EcoTwin Comparison](./extension/sampleImages/sampleImage2.png)  
+Expand the EcoTwin card to see CO₂, water, and waste metrics for your current product vs. the suggested greener option.  
+
+---
+
+### 📦 GreenCart AI  
+Bundle same‑region items for fewer shipments  
+
+### 🏆 Gamification  
+![Swap Button](./extension/sampleImages/sampleImage3.png)  
+CO₂ saved dashboard + achievement badges  
+
+
 
 
 ## How It Works
