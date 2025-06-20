@@ -1,45 +1,41 @@
-import React, { useState, useEffect } from "react";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import { easeQuadInOut } from "d3-ease";
-import AnimatedProgressProvider from "./AnimatedProgressProvider";
-import "react-circular-progressbar/dist/styles.css";
-import "./Progress.css";
-import order from '../../extension/data/order.json';
+// Progress.jsx
+import React, { useState, useEffect } from 'react';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import { easeQuadInOut } from 'd3-ease';
+import AnimatedProgressProvider from './AnimatedProgressProvider';
+import 'react-circular-progressbar/dist/styles.css';
+import './Progress.css';
 
+export default function Progress({ orderData }) {
+  // now we read directly from the prop, never a missing global
+  const [orders,     setOrders]     = useState(orderData.orders);
+  const [baseScore,  setBaseScore]  = useState(orderData.score);
+  const [newScore,   setNewScore]   = useState(0);
+  const [valueEnd,   setValueEnd]   = useState(orderData.score);
+  const [vouchers,   setVouchers]   = useState(Math.floor(orderData.score / 100));
 
-export default function Progress() {
-  const [orders, setOrders] = useState(orderData.orders);
-  const [baseScore, setBaseScore] = useState(orderData.score); // Root level score
-  const [newScore, setNewScore] = useState(0); // Score from newly checked orders
-  const [valueEnd, setValueEnd] = useState(orderData.score);
-  const [vouchers, setVouchers] = useState(Math.floor(orderData.score / 100));
-
-  // Allocates score for unchecked orders and marks them as checked
   const allocateAllScores = () => {
-    let addedScore = 0;
-
-    const updatedOrders = orders.map(order => {
-      if (!order.ischecked) {
-        let score = 0;
-        if (order.sustainable >= 85) score = 20;
-        else if (order.sustainable > 75) score = 15;
-        else if (order.sustainable > 30) score = 10;
-        addedScore += score;
-        return { ...order, ischecked: true, score };
+    let added = 0;
+    const updated = orders.map((o) => {
+      if (!o.ischecked) {
+        let pts = 0;
+        if (o.sustainable >= 85) pts = 20;
+        else if (o.sustainable > 75) pts = 15;
+        else if (o.sustainable > 30) pts = 10;
+        added += pts;
+        return { ...o, ischecked: true, score: pts };
       }
-      return order;
+      return o;
     });
-
-    setOrders(updatedOrders);
-    setNewScore(prev => prev + addedScore);
-    setBaseScore(prev => prev + addedScore);
+    setOrders(updated);
+    setNewScore((n) => n + added);
+    setBaseScore((b) => b + added);
   };
 
-  // Recalculate progress
+  // recalc the animated end & voucher count
   useEffect(() => {
-    const total = baseScore;
-    setValueEnd(Math.round(total));
-    setVouchers(Math.floor(total / 100));
+    setValueEnd(Math.round(baseScore));
+    setVouchers(Math.floor(baseScore / 100));
   }, [baseScore]);
 
   return (
@@ -58,10 +54,10 @@ export default function Progress() {
               value={value}
               text={`${Math.round(value)}`}
               styles={buildStyles({
-                pathColor: "#2ecc71",
-                textColor: "#ffffff",
-                trailColor: "#444444",
-                pathTransition: "none"
+                pathColor: '#2ecc71',
+                textColor: '#fff',
+                trailColor: '#444',
+                pathTransition: 'none',
               })}
             />
           )}
