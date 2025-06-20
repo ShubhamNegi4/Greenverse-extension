@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <img src="./extension/sampleImages/animation.gif" alt="GreenVerse in action" width="600"/>
+  <img src="./extension/sampleImages/animation.gif" alt="GreenVerse in action" width="300"/>
 </p>
 
 ## 🌱 Why GreenVerse?
@@ -50,7 +50,7 @@ CO₂ saved dashboard + achievement badges
 
 
 ## System Architecture
-![Arch](Arch.png)
+![Arch](./extension/sampleImages/sampleImage4.png)
 
 
 ## 🧪 Testing 
