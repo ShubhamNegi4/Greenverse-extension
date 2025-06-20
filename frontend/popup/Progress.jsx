@@ -4,7 +4,8 @@ import { easeQuadInOut } from "d3-ease";
 import AnimatedProgressProvider from "./AnimatedProgressProvider";
 import "react-circular-progressbar/dist/styles.css";
 import "./Progress.css";
-import orderData from "../../data/order.json"; // ✅ new structure
+import order from '../../extension/data/order.json';
+
 
 export default function Progress() {
   const [orders, setOrders] = useState(orderData.orders);
