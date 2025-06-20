@@ -10,19 +10,26 @@
     "service_worker": "background.js"
   },
 
-  "content_scripts": [
+    "content_scripts": [
     {
       "matches": ["*://*.amazon.in/*/dp/*"],
       "js": ["content/product.js"],
       "run_at": "document_idle"
     },
     {
-      "matches": ["*://*.amazon.in/*/gp/cart/*"],
+      "matches": ["https://www.amazon.in/gp/cart/view.html"],
       "js": ["content/cart.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://*.amazon.in/*/gp/your-account/order-history*",
+        "*://*.amazon.in/gp/your-account/order-history*"
+      ],
+      "js": ["content/orders.js"],
       "run_at": "document_idle"
     }
   ],
-
   "web_accessible_resources": [
     {
       "resources": [
