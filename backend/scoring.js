@@ -1,5 +1,5 @@
 function normalize(value, min, max) {
-  if (min === max) return 1;
+  if (min === max) return 0.5;
   return Math.min(Math.max((value - min) / (max - min), 0), 1);
 }
 
@@ -24,7 +24,6 @@ const NEGATIVE_TERMS = [
   "high footprint", "landfill", "incineration", "imported", "long distance transport", "air freighted"
 ];
 
-// Scientific base values (kg CO₂e per unit)
 const SCIENTIFIC_BASE = {
   tshirt: 8.2,
   jeans: 12.5,
@@ -34,7 +33,6 @@ const SCIENTIFIC_BASE = {
   sneakers: 16.8
 };
 
-// Category-specific maximum values (based on industry benchmarks)
 const CATEGORY_MAX_VALUES = {
   tshirt: { maxCO2: 15, maxWater: 2500, maxWaste: 0.5, maxPrice: 2000 },
   jeans: { maxCO2: 25, maxWater: 8000, maxWaste: 1.2, maxPrice: 5000 },
@@ -45,22 +43,24 @@ const CATEGORY_MAX_VALUES = {
   default: { maxCO2: 20, maxWater: 5000, maxWaste: 1.0, maxPrice: 5000 }
 };
 
-// Pre-trained ML model weights
 class CarbonModel {
   constructor() {
     this.weights = {
-      organic: -0.205,
-      recycled: -0.295,
-      recycledPercent: -0.0028,
-      polyester: 0.2375,
-      imported: 0.18,
-      airFreight: 0.4625,
-      fastFashion: 0.195,
-      sustainableBrand: -0.23,
-      distance: 0.000045,
-      durability: -0.095,
-      waterEfficient: -0.0625,
-      energyStar: -0.0875
+      organic: -0.25,
+      recycled: -0.32,
+      recycledPercent: -0.003,
+      polyester: 0.28,
+      imported: 0.22,
+      airFreight: 0.52,
+      fastFashion: 0.23,
+      sustainableBrand: -0.28,
+      distance: 0.00005,
+      durability: -0.12,
+      waterEfficient: -0.08,
+      energyStar: -0.10,
+      localProduction: -0.15,
+      renewableEnergy: -0.18,
+      syntheticMaterial: 0.25
     };
   }
 
@@ -89,7 +89,10 @@ function extractFeatures(text, categoryKey) {
     distance: 0,
     durability: 0,
     waterEfficient: 0,
-    energyStar: 0
+    energyStar: 0,
+    localProduction: 0,
+    renewableEnergy: 0,
+    syntheticMaterial: 0
   };
   
   if (/\borganic\b/.test(lower)) features.organic = 1;
@@ -128,6 +131,13 @@ function extractFeatures(text, categoryKey) {
   if (/\bwater efficient\b/.test(lower)) features.waterEfficient = 1;
   if (/\benergy star\b/.test(lower)) features.energyStar = 1;
   
+  if (/\blocal\b/.test(lower)) features.localProduction = 1;
+  if (/\brenewable energy\b/.test(lower)) features.renewableEnergy = 1;
+  
+  if (/\bacrylic\b/.test(lower) || /\bnylon\b/.test(lower)) {
+    features.syntheticMaterial = 1;
+  }
+  
   return features;
 }
 
@@ -160,21 +170,22 @@ export function computeKeywordScore(text = '') {
     }
   });
   
-  return Math.min(Math.max(score, 0), 100) / 100;
+  return Math.min(Math.max(score, 0), 100);
 }
 
 export function computeRatingScore(rating = 0) {
-  return rating / 5;
+  return (rating / 5) * 100;
 }
 
 export function computeReviewCountScore(count = 0) {
   const logCount = Math.min(Math.log10(count + 1), 4);
-  return logCount / 4;
+  return (logCount / 4) * 100;
 }
 
 export function computePriceScore(price, minPrice, maxPrice) {
-  if (minPrice === maxPrice) return 1;
-  return Math.max(0, 1 - ((price - minPrice) / (maxPrice - minPrice)));
+  if (minPrice === maxPrice) return 100;
+  const normalized = Math.max(0, 1 - ((price - minPrice) / (maxPrice - minPrice)));
+  return normalized * 100;
 }
 
 export function computeDurabilityScore(text = '') {
@@ -187,31 +198,38 @@ export function computeDurabilityScore(text = '') {
   if (/\bhard to repair\b/.test(lower)) score -= 20;
   if (/\bplanned obsolescence\b/.test(lower)) score -= 25;
   
-  return Math.min(Math.max(score, 0), 100) / 100;
+  return Math.min(Math.max(score, 0), 100);
+}
+
+export function computePriceAppropriatenessScore(productPrice, referencePrice) {
+  if (productPrice <= referencePrice) return 100;
+  
+  const ratio = referencePrice / productPrice;
+  return Math.max(20, Math.min(100, ratio * 100));
 }
 
 export function computeFinalScore(
   { carbon, keywords, rating, reviews, price, durability },
-  categoryKey
+  categoryKey,
+  referencePrice
 ) {
   const maxVals = CATEGORY_MAX_VALUES[categoryKey] || CATEGORY_MAX_VALUES.default;
   
-  // Environmental impact (60% of total score)
-  const carbonScore = Math.max(0, 1 - (carbon / maxVals.maxCO2));
-  const envScore = 0.6 * carbonScore;
+  const carbonScore = Math.max(0, 1 - (carbon / maxVals.maxCO2)) * 100;
+  const keywordScore = keywords;
+  const ratingScore = rating;
+  const reviewScore = reviews;
+  const priceScore = computePriceAppropriatenessScore(price, referencePrice);
+  const durabilityScore = durability;
   
-  // Social/economic impact (30% of total score)
-  const socioEcoScore = 0.3 * (
-    0.4 * keywords +
-    0.3 * rating +
-    0.2 * reviews +
-    0.1 * price
-  );
-  
-  // Product quality (10% of total score)
-  const qualityScore = 0.1 * durability;
-  
-  const totalScore = (envScore + socioEcoScore + qualityScore) * 100;
+  const totalScore = 
+    (carbonScore * 0.30) +
+    (keywordScore * 0.15) +
+    (ratingScore * 0.25) +
+    (reviewScore * 0.05) +
+    (priceScore * 0.20) +
+    (durabilityScore * 0.05);
+    
   return Math.min(Math.round(totalScore), 100);
 }
 
