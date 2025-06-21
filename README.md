@@ -13,7 +13,7 @@ PRIYANSHI BARMOLA<br>
   <img src="./extension/sampleImages/animation.gif" alt="GreenVerse in action" width="300"/>
 </p>
 <p align="center">
-  <a href="https://youtu.be/bHJ0i7XgNWM?si=TcwNymdIlkKdvJ-k" target="_blank">
+  <a href="https://youtu.be/mfoP9NAtgjw" target="_blank">
     <img src="https://img.shields.io/badge/🎥%20Demo-Click%20to%20Watch-green?style=for-the-badge" />
   </a>
   <a href="https://www.canva.com/design/DAGq7kPgJlk/OQ7CqUwVT61TKUqnIX0KcA/edit?utm_content=DAGq7kPgJlk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
