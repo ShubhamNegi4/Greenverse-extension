@@ -13,8 +13,15 @@ PRIYANSHI BARMOLA<br>
   <img src="./extension/sampleImages/animation.gif" alt="GreenVerse in action" width="300"/>
 </p>
 <p align="center">
-  <img src="./extension/sampleImages/animation.gif" alt="GreenVerse in action" width="300"/>
+  <a href="https://youtu.be/bHJ0i7XgNWM?si=TcwNymdIlkKdvJ-k" target="_blank">
+    <img src="https://img.shields.io/badge/🎥%20Demo-Click%20to%20Watch-green?style=for-the-badge" />
+  </a>
+  <a href="https://www.canva.com/design/DAGq7kPgJlk/OQ7CqUwVT61TKUqnIX0KcA/edit?utm_content=DAGq7kPgJlk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+  <img src="https://img.shields.io/badge/📑%20Pitch%20Deck-View%20Slides-blue?style=for-the-badge" />
+</a>
 </p>
+
+
 
 ## 🌱 Why GreenVerse?
 - **Fragmented eco‑data: no single source for CO₂, water & waste metrics**
