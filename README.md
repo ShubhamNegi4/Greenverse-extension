@@ -12,6 +12,9 @@ PRIYANSHI BARMOLA<br>
 <p align="center">
   <img src="./extension/sampleImages/animation.gif" alt="GreenVerse in action" width="300"/>
 </p>
+<p align="center">
+  <img src="./extension/sampleImages/animation.gif" alt="GreenVerse in action" width="300"/>
+</p>
 
 ## 🌱 Why GreenVerse?
 - **Fragmented eco‑data: no single source for CO₂, water & waste metrics**
