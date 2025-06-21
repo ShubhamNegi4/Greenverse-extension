@@ -1,4 +1,4 @@
-# 🌿 GreenVerse - Sustainable Shopping Assistant
+# 🌿 GreenVerse - Make Every Cart a Climate Win
 
 # TEAM-ALGORITHM
 SHASHANK SHARMA (TEAM LEAD)<br>
