@@ -7,11 +7,10 @@ import {
   computeKeywordScore,
   computeRatingScore,
   computeReviewCountScore,
-  computePriceScore,
   computeDurabilityScore,
-  computeFinalScore,
   estimateCarbonFootprint,
-  getCategoryMaxValues
+  getCategoryMaxValues,
+  computeFinalScore
 } from '../backend/scoring.js';
 
 const virtualConsole = new VirtualConsole();
@@ -20,6 +19,7 @@ virtualConsole.on('jsdomError', () => {});
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Category-specific price ranges for normalization
 const CATEGORY_PRICE_RANGES = {
   tshirt: { min: 200, max: 2000 },
   jeans: { min: 800, max: 5000 },
@@ -29,6 +29,7 @@ const CATEGORY_PRICE_RANGES = {
   sneakers: { min: 1000, max: 8000 }
 };
 
+// Sort methods for diversified scraping
 const SORT_METHODS = [
   { param: 'review-rank', name: 'Average Customer Review' },
   { param: 'popularity-rank', name: 'Popularity' },
@@ -45,6 +46,39 @@ const USER_AGENTS = [
 // Get random user agent
 function getRandomUserAgent() {
   return USER_AGENTS[Math.floor(Math.random() * USER_AGENTS.length)];
+}
+
+// Enhanced price parsing function
+function parsePriceFromElement(el) {
+  // 1. Try data attribute first
+  const priceElement = el.querySelector('.a-price[data-a-price]');
+  if (priceElement && priceElement.dataset.aPrice) {
+    return parseFloat(priceElement.dataset.aPrice);
+  }
+
+  // 2. Try off-screen price text
+  const offscreenPrice = el.querySelector('.a-offscreen')?.textContent.trim();
+  if (offscreenPrice) {
+    const priceMatch = offscreenPrice.match(/[\d,]+\.?\d*/);
+    if (priceMatch) {
+      return parseFloat(priceMatch[0].replace(/,/g, ''));
+    }
+  }
+
+  // 3. Try whole and fractional parts
+  const priceWhole = el.querySelector('.a-price-whole')?.textContent.replace(/[^\d.]/g, '') || '0';
+  const priceFraction = el.querySelector('.a-price-fraction')?.textContent || '00';
+  const combinedPrice = `${priceWhole}.${priceFraction}`;
+  
+  // 4. Handle cases where whole part might contain decimal
+  const decimalMatch = combinedPrice.match(/\d+\.\d+/);
+  if (decimalMatch) {
+    return parseFloat(decimalMatch[0]);
+  }
+  
+  // 5. Final fallback to 0 with warning
+  console.warn('Price could not be parsed, using 0 as fallback');
+  return 0;
 }
 
 // Enhanced scraping function with pagination
@@ -89,7 +123,7 @@ async function scrapeSearch(categoryKey, query, sortMethod, page = 1) {
   }
 }
 
-// Enhanced product processing with better error handling
+// Enhanced product processing with sustainability scoring
 async function processProduct(el, categoryKey) {
   const asin = el.getAttribute('data-asin');
   if (!asin) return null;
@@ -99,15 +133,8 @@ async function processProduct(el, categoryKey) {
   
   if (!title) return null;
   
-  // Extract price
-  let price = 0;
-  try {
-    const priceWhole = el.querySelector('.a-price-whole')?.textContent.replace(/[^\d.]/g, '') || '0';
-    const priceFraction = el.querySelector('.a-price-fraction')?.textContent || '00';
-    price = parseFloat(`${priceWhole}.${priceFraction}`);
-  } catch (e) {
-    console.error(`Price parse error for ${asin}:`, e.message);
-  }
+  // Extract price using robust parser
+  const price = parsePriceFromElement(el);
   
   // Extract rating
   let rating = 0;
@@ -191,7 +218,12 @@ async function processProduct(el, categoryKey) {
     console.error(`Detail extraction error for ASIN ${asin}:`, e.message);
   }
   
+  // Calculate sustainability metrics
   const carbon = estimateCarbonFootprint(allText, categoryKey);
+  const keywordsScore = computeKeywordScore(allText);
+  const durabilityScore = computeDurabilityScore(allText);
+  const ratingScore = computeRatingScore(rating);
+  const reviewScore = computeReviewCountScore(reviewCount);
   
   return { 
     categoryKey, 
@@ -202,7 +234,11 @@ async function processProduct(el, categoryKey) {
     reviewCount, 
     allText,
     imgUrl,
-    carbon
+    carbon,
+    keywordsScore,
+    durabilityScore,
+    ratingScore,
+    reviewScore
   };
 }
 
@@ -232,8 +268,13 @@ async function scrapeCategory(categoryKey, query) {
           try {
             const product = await processProduct(items[i], categoryKey);
             if (product && !uniqueProducts.has(product.asin)) {
-              uniqueProducts.set(product.asin, product);
-              console.log(`Added product: ${product.title.substring(0, 40)}...`);
+              // Skip products with price 0 (parsing failed)
+              if (product.price > 0) {
+                uniqueProducts.set(product.asin, product);
+                console.log(`Added product: ${product.title.substring(0, 40)}...`);
+              } else {
+                console.warn(`Skipping product with price 0: ${product.title}`);
+              }
             }
           } catch (e) {
             console.error(`Product processing error:`, e.message);
@@ -281,6 +322,21 @@ function deduplicateProducts(products) {
   return uniqueProducts;
 }
 
+// ADDED: Price score calculation function
+function computePriceScore(price, min, max) {
+  if (typeof price !== 'number' || typeof min !== 'number' || typeof max !== 'number') {
+    console.warn('Invalid input types for computePriceScore');
+    return 50; // Default score
+  }
+  
+  if (min === max) return 100;
+  if (price <= min) return 100;
+  if (price >= max) return 0;
+  
+  const normalized = (price - min) / (max - min);
+  return Math.round((1 - normalized) * 100);
+}
+
 (async () => {
   const allProducts = [];
   
@@ -315,50 +371,58 @@ function deduplicateProducts(products) {
   const dedupedProducts = deduplicateProducts(allProducts);
   console.log(`Total unique products after deduplication: ${dedupedProducts.length}`);
 
-  const priceBounds = {};
+  // Calculate price ranges for each category
+  const categoryPriceRanges = {};
   dedupedProducts.forEach(p => {
-    const bounds = priceBounds[p.categoryKey] ||= { min: Infinity, max: 0 };
-    bounds.min = Math.min(bounds.min, p.price);
-    bounds.max = Math.max(bounds.max, p.price);
+    if (!categoryPriceRanges[p.categoryKey]) {
+      categoryPriceRanges[p.categoryKey] = {
+        min: Infinity,
+        max: 0
+      };
+    }
+    categoryPriceRanges[p.categoryKey].min = Math.min(
+      categoryPriceRanges[p.categoryKey].min, 
+      p.price
+    );
+    categoryPriceRanges[p.categoryKey].max = Math.max(
+      categoryPriceRanges[p.categoryKey].max, 
+      p.price
+    );
   });
 
+  // Calculate final scores with price normalization
   const alternatives = dedupedProducts.map(p => {
+    // Use calculated range or fallback to category defaults
+    const priceRange = categoryPriceRanges[p.categoryKey] || 
+                      CATEGORY_PRICE_RANGES[p.categoryKey] || 
+                      { min: p.price * 0.5, max: p.price * 2 };
+    
+    const priceScore = computePriceScore(p.price, priceRange.min, priceRange.max);
+    
     const maxVals = getCategoryMaxValues(p.categoryKey);
-    const { min, max } = priceBounds[p.categoryKey] || { min: 0, max: 0 };
+    const carbonScore = Math.max(0, 1 - (p.carbon / maxVals.maxCO2)) * 100;
     
-    const keywordsScore = computeKeywordScore(p.allText);
-    const ratingScore = computeRatingScore(p.rating);
-    const reviewsScore = computeReviewCountScore(p.reviewCount);
-    const priceScore = computePriceScore(p.price, min, max);
-    const durabilityScore = computeDurabilityScore(p.allText);
+    // Calculate final sustainability score
+    const finalScore = 
+      (carbonScore * 0.30) +
+      (p.keywordsScore * 0.15) +
+      (p.ratingScore * 0.25) +
+      (p.reviewScore * 0.05) +
+      (priceScore * 0.20) +
+      (p.durabilityScore * 0.05);
     
-    const finalScore = computeFinalScore(
-      {
-        carbon: p.carbon,
-        keywords: keywordsScore,
-        rating: ratingScore,
-        reviews: reviewsScore,
-        price: p.price,
-        durability: durabilityScore
-      },
-      p.categoryKey,
-      min // referencePrice is min price in the category for alternatives
-    );
-
     return {
       asin: p.asin,
       category: p.categoryKey,
       title: p.title,
-      score: finalScore,
       imgUrl: p.imgUrl,
       carbon: p.carbon,
       price: p.price,
       rating: p.rating,
       reviewCount: p.reviewCount,
-      keywords: keywordsScore,
-      durability: durabilityScore
+      score: Math.min(Math.round(finalScore), 100)
     };
-  }).filter(Boolean);
+  });
 
   const outPath = path.resolve(__dirname, '../extension/data/alternatives.json');
   fs.writeFileSync(outPath, JSON.stringify(alternatives, null, 2), 'utf-8');
