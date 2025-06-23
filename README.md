@@ -1,4 +1,4 @@
-# 🌿 GreenVerse - Sustainable Shopping Assistant
+# 🌿 GreenVerse - Make Every Cart a Climate Win
 
 # TEAM-ALGORITHM
 SHASHANK SHARMA (TEAM LEAD)<br>
@@ -13,10 +13,10 @@ PRIYANSHI BARMOLA<br>
   <img src="./extension/sampleImages/animation.gif" alt="GreenVerse in action" width="300"/>
 </p>
 <p align="center">
-  <a href="https://your-link-to-demo.com" target="_blank">
+  <a href="https://youtu.be/mfoP9NAtgjw" target="_blank">
     <img src="https://img.shields.io/badge/🎥%20Demo-Click%20to%20Watch-green?style=for-the-badge" />
   </a>
-  <a href="https://your-link-to-ppt.com" target="_blank">
+  <a href="https://www.canva.com/design/DAGq7kPgJlk/OQ7CqUwVT61TKUqnIX0KcA/edit?ui=eyJEIjp7IlAiOnsiQiI6ZmFsc2V9fX0" target="_blank">
     <img src="https://img.shields.io/badge/📑%20Pitch%20Deck-View%20Slides-blue?style=for-the-badge" />
   </a>
 </p>
