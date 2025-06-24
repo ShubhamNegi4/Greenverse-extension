@@ -1,11 +1,5 @@
 # 🌿 GreenVerse - Make Every Cart a Climate Win
 
-# TEAM-ALGORITHM
-SHASHANK SHARMA (TEAM LEAD)<br>
-SHUBHAM NEGI <br>
-SAKSHAM CHAND<br>
-PRIYANSHI BARMOLA<br> 
-#
 **One‑Click Sustainable Shopping on Amazon.in**
 
 
