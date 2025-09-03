@@ -1,5 +1,5 @@
 # 🌿 GreenVerse - Make Every Cart a Climate Win
-#A Chrome extension that adds sustainability scoring and eco-friendly product recommendations to Amazon.in, helping users make climate-conscious shopping decisions with instant green alternatives and carbon footprint tracking.
+## A Chrome extension that adds sustainability scoring and eco-friendly product recommendations to Amazon.in, helping users make climate-conscious shopping decisions with instant green alternatives and carbon footprint tracking.
 
 
 <p align="center">
